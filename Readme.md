@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ярослав Смирнов](https://up.htmlacademy.ru/adaptive/17/user/792897).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://up.htmlacademy.ru/adaptive/17/user/367335).
 
 ---
 
