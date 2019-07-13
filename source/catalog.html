@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Погнали: попутчики</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Погнали: попутчики</title>
+</head>
+
+<body class="page">
 
   <body class="page">
     <header class="page-header">
 
-      <nav class="page-header__main-nav main-nav main-nav--closed popup-wrapper">
+      <button class="page-header__hamburger hamburger hamburger--opener" type="button">
+        <span class="visually-hidden">Переключить видимость меню</span>
+      </button>
 
-        <button class="main-nav__hamburger hamburger hamburger--opener" type="button">
-          <span class="visually-hidden">Раскрыть меню</span>
-        </button>
+      <nav class="page-header__nav main-nav main-nav--closed popup-wrapper">
 
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/100x19.png?text=Pognali" alt="Логотип «Погнали»">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/100x19.png?text=Pognali"
+            alt="Логотип «Погнали»">
         </a>
 
-        <div class="main-nav__popup popup">
+        <div class="popup-wrapper__popup">
 
-          <ul class="main-nav__site-nav site-nav-list list-style-reset">
-            <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#nowhere">
+          <ul class="main-nav__site site-nav list-style-reset">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
                 О сервисе
               </a>
             </li>
-            <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#nowhere">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
                 Направления
               </a>
             </li>
-            <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#nowhere">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
                 Попутчики
               </a>
             </li>
           </ul>
 
-          <ul class="main-nav__user-nav user-nav list-style-reset">
+          <ul class="main-nav__user user-nav list-style-reset">
             <li class="user-nav__item">
               <a class="user-nav__link user-nav__link--login button button--bigger" href="#nowhere">
                 Авторизация
@@ -47,32 +50,32 @@
             </li>
           </ul>
 
-          <ul class="main-nav__contacts-list contacts-list list-style-reset">
-            <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--phone" href="tel:+78005558628">
+          <ul class="main-nav__contacts contacts list-style-reset">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--phone" href="tel:+78005558628">
                 8 800 555-86-28
               </a>
             </li>
-            <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--email" href="mailto:mail@htmlacademy.ru">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru
               </a>
             </li>
           </ul>
 
-          <ul class="main-nav__social social-list list-style-reset">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--fb social-list__link--grey" href="#nowhere">
+          <ul class="main-nav__social social list-style-reset">
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#nowhere">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--vk social-list__link--grey" href="#nowhere">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#nowhere">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--inst social-list__link--grey" href="#nowhere">
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="#nowhere">
                 <span class="visually-hidden">Инстаграмм</span>
               </a>
             </li>
@@ -93,10 +96,11 @@
           Позвать попутчиков
         </h2>
 
-        <ul class="companions__list users-list list-style-reset">
-          <li class="users-list__item user-card">
+        <ul class="companions__list users list-style-reset">
+          <li class="users__item user-card">
             <div class="user-card__image-wrapper">
-              <img class="user-card__image user-card__image--small" src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Tanya" alt="Фото пользователя">
+              <img class="user-card__image user-card__image--small"
+                src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Tanya" alt="Фото пользователя">
               <div class="user-card__likes">
                 <a class="user-card__like-toggle user-card__like-toggle--active" href="#nowhere">
                   <span class="visually-hidden">
@@ -123,7 +127,7 @@
               <p class="user-card__section-title">
                 хочет посетить:
               </p>
-              <ul class="user-card__routes-list user-routes list-style-reset">
+              <ul class="user-card__routes user-routes list-style-reset">
                 <li class="user-routes__item">
                   <span class="user-routes__name user-routes__name--sriLanka">
                     Шри Ланка
@@ -146,23 +150,24 @@
                 <p class="user-card__section-title">
                   транспорт:
                 </p>
-                <ul class="user-card__transportation-list transportation-list list-style-reset">
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--airplane">
+                <ul class="user-card__transportation transportation list-style-reset">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--airplane">
                     <span class="visually-hidden">
                       Авиаперелёт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--bus">
+                  <li class="transportation__item transportation__item--bus">
                     <span class="visually-hidden">
                       Наземный транспорт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--bicycle">
+                  <li class="transportation__item transportation__item--bicycle">
                     <span class="visually-hidden">
                       Велотуризм
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--hiking">
+                  <li class="transportation__item transportation__item--hiking">
                     <span class="visually-hidden">
                       Пешеходный туризм
                     </span>
@@ -186,9 +191,10 @@
             </form>
           </li>
 
-          <li class="users-list__item user-card">
+          <li class="users__item user-card">
             <div class="user-card__image-wrapper">
-              <img class="user-card__image user-card__image--small" src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Petya" alt="Фото пользователя">
+              <img class="user-card__image user-card__image--small"
+                src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Petya" alt="Фото пользователя">
               <div class="user-card__likes">
                 <a class="user-card__like-toggle" href="#nowhere">
                   <span class="visually-hidden">
@@ -215,7 +221,7 @@
               <p class="user-card__section-title">
                 хочет посетить:
               </p>
-              <ul class="user-card__routes-list user-routes list-style-reset">
+              <ul class="user-card__routes user-routes list-style-reset">
                 <li class="user-routes__item">
                   <span class="user-routes__name user-routes__name--belgium">
                     Бельгия
@@ -233,23 +239,26 @@
                 <p class="user-card__section-title">
                   транспорт:
                 </p>
-                <ul class="user-card__transportation-list transportation-list list-style-reset">
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--airplane">
+                <ul class="user-card__transportation transportation list-style-reset">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--airplane">
                     <span class="visually-hidden">
                       Авиаперелёт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--bus">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--bus">
                     <span class="visually-hidden">
                       Наземный транспорт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--bicycle">
+                  <li class="transportation__item transportation__item--bicycle">
                     <span class="visually-hidden">
                       Велотуризм
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--hiking">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--hiking">
                     <span class="visually-hidden">
                       Пешеходный туризм
                     </span>
@@ -273,9 +282,10 @@
             </form>
           </li>
 
-          <li class="users-list__item user-card">
+          <li class="users__item user-card">
             <div class="user-card__image-wrapper">
-              <img class="user-card__image user-card__image--small" src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Mark" alt="Фото пользователя">
+              <img class="user-card__image user-card__image--small"
+                src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Mark" alt="Фото пользователя">
               <div class="user-card__likes">
                 <a class="user-card__like-toggle" href="#nowhere">
                   <span class="visually-hidden">
@@ -302,7 +312,7 @@
               <p class="user-card__section-title">
                 хочет посетить:
               </p>
-              <ul class="user-card__routes-list user-routes list-style-reset">
+              <ul class="user-card__routes user-routes list-style-reset">
                 <li class="user-routes__item">
                   <span class="user-routes__name user-routes__name--usa">
                     США
@@ -325,23 +335,25 @@
                 <p class="user-card__section-title">
                   транспорт:
                 </p>
-                <ul class="user-card__transportation-list transportation-list list-style-reset">
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--airplane">
+                <ul class="user-card__transportation transportation list-style-reset">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--airplane">
                     <span class="visually-hidden">
                       Авиаперелёт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--bus">
+                  <li class="transportation__item transportation__item--bus">
                     <span class="visually-hidden">
                       Наземный транспорт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--bicycle">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--bicycle">
                     <span class="visually-hidden">
                       Велотуризм
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--hiking">
+                  <li class="transportation__item transportation__item--hiking">
                     <span class="visually-hidden">
                       Пешеходный туризм
                     </span>
@@ -365,9 +377,10 @@
             </form>
           </li>
 
-          <li class="users-list__item user-card">
+          <li class="users__item user-card">
             <div class="user-card__image-wrapper">
-              <img class="user-card__image user-card__image--small" src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Larisa" alt="Фото пользователя">
+              <img class="user-card__image user-card__image--small"
+                src="https://via.placeholder.com/70x70/CCCCCC/FFFFFF/?text=Larisa" alt="Фото пользователя">
               <div class="user-card__likes">
                 <a class="user-card__like-toggle" href="#nowhere">
                   <span class="visually-hidden">
@@ -394,7 +407,7 @@
               <p class="user-card__section-title">
                 хочет посетить:
               </p>
-              <ul class="user-card__routes-list user-routes list-style-reset">
+              <ul class="user-card__routes user-routes list-style-reset">
                 <li class="user-routes__item">
                   <span class="user-routes__name user-routes__name--greatBritain">
                     Великобритания
@@ -412,23 +425,25 @@
                 <p class="user-card__section-title">
                   транспорт:
                 </p>
-                <ul class="user-card__transportation-list transportation-list list-style-reset">
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--airplane">
+                <ul class="user-card__transportation transportation list-style-reset">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--airplane">
                     <span class="visually-hidden">
                       Авиаперелёт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--active transportation-list__item--bus">
+                  <li
+                    class="transportation__item transportation__item--active transportation__item--bus">
                     <span class="visually-hidden">
                       Наземный транспорт
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--bicycle">
+                  <li class="transportation__item transportation__item--bicycle">
                     <span class="visually-hidden">
                       Велотуризм
                     </span>
                   </li>
-                  <li class="transportation-list__item transportation-list__item--hiking">
+                  <li class="transportation__item transportation__item--hiking">
                     <span class="visually-hidden">
                       Пешеходный туризм
                     </span>
@@ -479,22 +494,23 @@
     <footer class="page-footer">
 
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/96x15.png?text=Pognali" alt="Логотип «Погнали»">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/96x15.png?text=Pognali"
+          alt="Логотип «Погнали»">
       </a>
 
-      <ul class="page-footer__social social-list list-style-reset">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--fb social-list__link--yellow-blue" href="#nowhere">
+      <ul class="page-footer__social social list-style-reset">
+        <li class="social__item">
+          <a class="social__link social__link--fb social__link--yellow-blue" href="#nowhere">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vk social-list__link--yellow-blue" href="#nowhere">
+        <li class="social__item">
+          <a class="social__link social__link--vk social__link--yellow-blue" href="#nowhere">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--inst social-list__link--yellow-blue" href="#nowhere">
+        <li class="social__item">
+          <a class="social__link social__link--inst social__link--yellow-blue" href="#nowhere">
             <span class="visually-hidden">Инстаграмм</span>
           </a>
         </li>
@@ -512,4 +528,5 @@
 
     </footer>
   </body>
+
 </html>
