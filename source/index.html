@@ -9,11 +9,11 @@
   <body class="page">
     <header class="page-header">
 
-      <nav class="page-header__main-nav main-nav main-nav--closed popup-wrapper">
+      <button class="page-header__hamburger hamburger hamburger--opener" type="button">
+        <span class="visually-hidden">Переключить видимость меню</span>
+      </button>
 
-        <button class="main-nav__hamburger hamburger hamburger--opener" type="button">
-          <span class="visually-hidden">Переключить видимость меню</span>
-        </button>
+      <nav class="page-header__nav main-nav main-nav--closed popup-wrapper">
 
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="https://via.placeholder.com/100x19.png?text=Pognali" alt="Логотип «Погнали»">
@@ -21,25 +21,25 @@
 
         <div class="popup-wrapper__popup">
 
-          <ul class="main-nav__site-nav site-nav-list list-style-reset">
-            <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#nowhere">
+          <ul class="main-nav__site site-nav list-style-reset">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
                 О сервисе
               </a>
             </li>
-            <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#nowhere">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
                 Направления
               </a>
             </li>
-            <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#nowhere">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
                 Попутчики
               </a>
             </li>
           </ul>
 
-          <ul class="main-nav__user-nav user-nav list-style-reset">
+          <ul class="main-nav__user user-nav list-style-reset">
             <li class="user-nav__item">
               <a class="user-nav__link user-nav__link--login button button--bigger" href="#nowhere">
                 Авторизация
@@ -47,32 +47,32 @@
             </li>
           </ul>
 
-          <ul class="main-nav__contacts-list contacts-list list-style-reset">
-            <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--phone" href="tel:+78005558628">
+          <ul class="main-nav__contacts contacts list-style-reset">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--phone" href="tel:+78005558628">
                 8 800 555-86-28
               </a>
             </li>
-            <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--email" href="mailto:mail@htmlacademy.ru">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru
               </a>
             </li>
           </ul>
 
-          <ul class="main-nav__social social-list list-style-reset">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--fb social-list__link--grey" href="#nowhere">
+          <ul class="main-nav__social social list-style-reset">
+            <li class="social__item">
+              <a class="social__link social__link--fb social__link--grey" href="#nowhere">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--vk social-list__link--grey" href="#nowhere">
+            <li class="social__item">
+              <a class="social__link social__link--vk social__link--grey" href="#nowhere">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--inst social-list__link--grey" href="#nowhere">
+            <li class="social__item">
+              <a class="social__link social__link--inst social__link--grey" href="#nowhere">
                 <span class="visually-hidden">Инстаграмм</span>
               </a>
             </li>
@@ -95,25 +95,25 @@
         <p class="authorization__lead">
           В путешествие с крутыми попутчиками!
         </p>
-        <ul class="authorization__contacts links-list list-style-reset">
-          <li class="links-list__item">
-            <a class="links-list__link links-list__link--phone links-list__link--short" href="tel:+78005558628">
-              <span class="links-list__text visually-hidden">
+        <ul class="authorization__contacts links list-style-reset">
+          <li class="links__item">
+            <a class="links__link links__link--phone links__link--short" href="tel:+78005558628">
+              <span class="links__text visually-hidden">
                 8 800 555-86-28
               </span>
             </a>
           </li>
-          <li class="links-list__item">
-            <a class="links-list__link links-list__link--email links-list__link--short" href="mailto:mail@htmlacademy.ru">
-              <span class="links-list__text visually-hidden">
+          <li class="links__item">
+            <a class="links__link links__link--email links__link--short" href="mailto:mail@htmlacademy.ru">
+              <span class="links__text visually-hidden">
                 mail@htmlacademy.ru
               </span>
             </a>
           </li>
         </ul>
-        <ul class="authorization__user-nav links-list list-style-reset">
-          <li class="links-list__item">
-            <a class="links-list__link button" href="#nowhere">
+        <ul class="authorization__user-nav links list-style-reset">
+          <li class="links__item">
+            <a class="links__link button" href="#nowhere">
               Авторизация
             </a>
           </li>
@@ -184,8 +184,8 @@
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
 
-        <ul class="travel-routes__routes routes-list list-style-reset">
-          <li class="routes-list__item route-card">
+        <ul class="travel-routes__routes routes list-style-reset">
+          <li class="routes__item route-card">
             <div class="route-card__top">
               <img class="route-card__image" src="https://via.placeholder.com/270x110/0F000F/FFFFFF/?text=Thai" alt="Тайланд">
             </div>
@@ -195,7 +195,7 @@
               <p class="route-card__visitors">18321</p>
             </div>
           </li>
-          <li class="routes-list__item route-card">
+          <li class="routes__item route-card">
             <div class="route-card__top">
               <img class="route-card__image" src="https://via.placeholder.com/270x110/0F000F/FFFFFF/?text=Franch" alt="Тайланд">
             </div>
@@ -205,7 +205,7 @@
               <p class="route-card__visitors">12518</p>
             </div>
           </li>
-          <li class="routes-list__item route-card">
+          <li class="routes__item route-card">
             <div class="route-card__top">
               <img class="route-card__image" src="https://via.placeholder.com/270x110/0F000F/FFFFFF/?text=Czech" alt="Тайланд">
             </div>
@@ -229,8 +229,8 @@
         <p class="companions__text companions__text--bold">
           Теперь можно легко найти единомышленников!
         </p>
-        <ul class="companions__list users-list list-style-reset">
-          <li class="users-list__item user-card user-card--preview">
+        <ul class="companions__list users list-style-reset">
+          <li class="users__item user-card user-card--preview">
             <div class="user-card__image-wrapper">
               <img class="user-card__image user-card__image--large" src="https://via.placeholder.com/270x270/CCCCCC/FFFFFF/?text=Tanya" alt="Фото пользователя">
             </div>
@@ -249,7 +249,7 @@
               <p class="user-card__section-title visually-hidden">
                 хочет посетить:
               </p>
-              <ul class="user-card__routes-list user-routes list-style-reset">
+              <ul class="user-card__routes user-routes list-style-reset">
                 <li class="user-routes__item">
                   <span class="user-routes__name user-routes__name--sriLanka visually-hidden">
                     Шри Ланка
@@ -282,23 +282,23 @@
               <p class="user-card__section-title visually-hidden">
                 транспорт:
               </p>
-              <ul class="user-card__transportation-list transportation-list list-style-reset">
-                <li class="transportation-list__item transportation-list__item--no-border transportation-list__item--active transportation-list__item--airplane">
+              <ul class="user-card__transportation transportation list-style-reset">
+                <li class="transportation__item transportation__item--no-border transportation__item--active transportation__item--airplane">
                   <span class="visually-hidden">
                     Авиаперелёт
                   </span>
                 </li>
-                <li class="transportation-list__item transportation-list__item--no-border transportation-list__item--bus">
+                <li class="transportation__item transportation__item--no-border transportation__item--bus">
                   <span class="visually-hidden">
                     Наземный транспорт
                   </span>
                 </li>
-                <li class="transportation-list__item transportation-list__item--no-border transportation-list__item--bicycle">
+                <li class="transportation__item transportation__item--no-border transportation__item--bicycle">
                   <span class="visually-hidden">
                     Велотуризм
                   </span>
                 </li>
-                <li class="transportation-list__item transportation-list__item--no-border transportation-list__item--hiking">
+                <li class="transportation__item transportation__item--no-border transportation__item--hiking">
                   <span class="visually-hidden">
                     Пешеходный туризм
                   </span>
@@ -307,7 +307,7 @@
             </div>
           </li>
 
-          <li class="users-list__item user-card user-card--preview">
+          <li class="users__item user-card user-card--preview">
             <div class="user-card__image-wrapper">
               <img class="user-card__image user-card__image--large" src="https://via.placeholder.com/270x270/CCCCCC/FFFFFF/?text=Petya" alt="Фото пользователя">
             </div>
@@ -326,7 +326,7 @@
               <p class="user-card__section-title visually-hidden">
                 хочет посетить:
               </p>
-              <ul class="user-card__routes-list user-routes list-style-reset">
+              <ul class="user-card__routes user-routes list-style-reset">
                 <li class="user-routes__item">
                   <span class="user-routes__name user-routes__name--belgium visually-hidden">
                     Бельгия
@@ -354,23 +354,23 @@
               <p class="user-card__section-title visually-hidden">
                 транспорт:
               </p>
-              <ul class="user-card__transportation-list transportation-list list-style-reset">
-                <li class="transportation-list__item transportation-list__item--no-border transportation-list__item--active transportation-list__item--airplane">
+              <ul class="user-card__transportation transportation list-style-reset">
+                <li class="transportation__item transportation__item--no-border transportation__item--active transportation__item--airplane">
                   <span class="visually-hidden">
                     Авиаперелёт
                   </span>
                 </li>
-                <li class="transportation-list__item transportation-list__item--no-border transportation-list__item--active transportation-list__item--bus">
+                <li class="transportation__item transportation__item--no-border transportation__item--active transportation__item--bus">
                   <span class="visually-hidden">
                     Наземный транспорт
                   </span>
                 </li>
-                <li class="transportation-list__item transportation-list__item--bicycle">
+                <li class="transportation__item transportation__item--bicycle">
                   <span class="visually-hidden">
                     Велотуризм
                   </span>
                 </li>
-                <li class="transportation-list__item transportation-list__item--no-border transportation-list__item--active transportation-list__item--hiking">
+                <li class="transportation__item transportation__item--no-border transportation__item--active transportation__item--hiking">
                   <span class="visually-hidden">
                     Пешеходный туризм
                   </span>
@@ -388,28 +388,28 @@
         <h2 class="add-profile__title section-title">
           Добавьте свой профиль
         </h2>
-        <ul class="add-profile__pricing pricing-list list-style-reset">
-          <li class="pricing-list__item">
-            <span class="pricing-list__text">
+        <ul class="add-profile__pricing pricing list-style-reset">
+          <li class="pricing__item">
+            <span class="pricing__text">
               Базовое размещение
             </span>
-            <span class="pricing-list__price">
+            <span class="pricing__price">
               Бесплатно
           </span>
           </li>
-          <li class="pricing-list__item">
-            <span class="pricing-list__text">
+          <li class="pricing__item">
+            <span class="pricing__text">
               Вывод на первых позициях
             </span>
-            <span class="pricing-list__price">
+            <span class="pricing__price">
               99 руб./мес
             </span>
           </li>
-          <li class="pricing-list__item">
-            <span class="pricing-list__text">
+          <li class="pricing__item">
+            <span class="pricing__text">
               Кастомный цвет карточки
             </span>
-            <span class="pricing-list__price">
+            <span class="pricing__price">
               59 руб./мес
             </span>
           </li>
@@ -421,36 +421,36 @@
           <h3 class="business-modal__title section-title">
             Бизнес-тарифы
           </h3>
-          <ul class="business-modal__list pricing-list list-style-reset">
-            <li class="pricing-list__item ">
-              <span class="pricing-list__text">
+          <ul class="business-modal__list pricing list-style-reset">
+            <li class="pricing__item ">
+              <span class="pricing__text">
                 Реклама у блоггера
               </span>
-              <span class="pricing-list__price">
+              <span class="pricing__price">
                 300 000 руб./пост
               </span>
             </li>
-            <li class="pricing-list__item ">
-              <span class="pricing-list__text">
+            <li class="pricing__item ">
+              <span class="pricing__text">
                 Накрутка подписчиков
               </span>
-              <span class="pricing-list__price">
+              <span class="pricing__price">
                 от 1 руб./шт.
               </span>
             </li>
-            <li class="pricing-list__item ">
-              <span class="pricing-list__text">
+            <li class="pricing__item ">
+              <span class="pricing__text">
                 Лайки от ботов
               </span>
-              <span class="pricing-list__price">
+              <span class="pricing__price">
                 от 20 коп./лайк
               </span>
             </li>
-            <li class="pricing-list__item ">
-              <span class="pricing-list__text">
+            <li class="pricing__item ">
+              <span class="pricing__text">
                 Ваш продакт-плейсмент
               </span>
-              <span class="pricing-list__price">
+              <span class="pricing__price">
                 Индивидуально
               </span>
             </li>
@@ -485,14 +485,14 @@
           Остались вопросы?<br>
           Мы с радостью на них ответим!
         </p>
-        <ul class="user-actions__contacts-list contacts-list list-style-reset">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link contacts-list__link--phone" href="tel:+78005558628">
+        <ul class="user-actions__contacts contacts list-style-reset">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--phone" href="tel:+78005558628">
               8 800 555-86-28
             </a>
           </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link contacts-list__link--email" href="mailto:mail@htmlacademy.ru">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
               mail@htmlacademy.ru
             </a>
           </li>
@@ -521,19 +521,19 @@
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="https://via.placeholder.com/96x15.png?text=Pognali" alt="Логотип «Погнали»">
       </a>
-      <ul class="page-footer__social social-list list-style-reset">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--fb social-list__link--yellow-blue" href="#nowhere">
+      <ul class="page-footer__social social list-style-reset">
+        <li class="social__item">
+          <a class="social__link social__link--fb social__link--yellow-blue" href="#nowhere">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vk social-list__link--yellow-blue" href="#nowhere">
+        <li class="social__item">
+          <a class="social__link social__link--vk social__link--yellow-blue" href="#nowhere">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--inst social-list__link--yellow-blue" href="#nowhere">
+        <li class="social__item">
+          <a class="social__link social__link--inst social__link--yellow-blue" href="#nowhere">
             <span class="visually-hidden">Инстаграмм</span>
           </a>
         </li>
