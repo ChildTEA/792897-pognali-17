@@ -461,17 +461,20 @@
         Заинтересовались?
       </h2>
 
-      <p class="user-actions__text">
-        <span class="user-actions__text-sentence">
+      <div class="user-actions__text-group">
+        <p class="user-actions__text">
           Зарегистрируйтесь, это быстро и бесплатно!
-        </span>
-        <span class="user-actions__text-sentence">
+        </p>
+        <p class="user-actions__text">
           Уже зарегистрированы? Тогда скорее <a class="user-actions__link" href="#nowhere">авторизуйтесь</a>.
-        </span>
-      </p>
+        </p>
+      </div>
 
       <form class="user-actions__form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="user-actions__input" type="email" placeholder="E-mail" required>
+        <label class="hidden-input-description">
+          <span class="visually-hidden">Email для регистрации</span>
+          <input class="user-actions__input" type="email" placeholder="E-mail" required>
+        </label>
         <button class="user-actions__send-button" type="submit">
           <span class="visually-hidden">
             Продолжить регистрацию
@@ -479,7 +482,7 @@
         </button>
       </form>
 
-      <p class="user-actions__text">
+      <p class="user-actions__text user-actions__text--single">
         Остались вопросы?<br>
         Мы с радостью на них ответим!
       </p>
