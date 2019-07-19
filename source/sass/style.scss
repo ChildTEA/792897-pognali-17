@@ -86,3 +86,24 @@ body {
   line-height: 22px;
   font-family: $font-stack;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+
+  text-decoration-skip-ink: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
