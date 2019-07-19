@@ -1,0 +1,14 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin section-shape {
+  border-radius: 0 0 30px 30px;
+}
+
+@mixin section-shift {
+  margin-top: -76px;
+}

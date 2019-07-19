@@ -1,0 +1,6 @@
+.reviews {
+  padding-bottom: 113px;
+  background-color: $color-dark-alter;
+
+  @include section-shift;
+}
