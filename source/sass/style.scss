@@ -1,109 +1,60 @@
-@import "variables.scss";
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "blocks/global";
+@import "blocks/helpers";
+// Header
+@import "blocks/page-header/page-header.scss";
+// Nav
+@import "blocks/hamburger/hamburger.scss";
+@import "blocks/hamburger/--opener/hamburger--opener.scss";
+@import "blocks/main-nav/main-nav.scss";
+@import "blocks/main-nav/--open/main-nav--open.scss";
+@import "blocks/site-nav/site-nav.scss";
+@import "blocks/site-nav/__link/site-nav__link.scss";
+@import "blocks/button/button.scss";
+// Contacts-list
+@import "blocks/contacts-list/contacts-list.scss";
+@import "blocks/contacts-list/__link/contacts-list__link.scss";
+@import "blocks/user-nav/user-nav.scss";
+@import "blocks/user-nav/__link/user-nav__link.scss";
+@import "blocks/teaser/teaser.scss";
+// Social
+@import "blocks/social/social.scss";
+@import "blocks/social/__link/social__link.scss";
+@import "blocks/social/__link/--fb/social__link--fb.scss";
+@import "blocks/social/__link/--inst/social__link--inst.scss";
+@import "blocks/social/__link/--vk/social__link--vk.scss";
+// Teaser
+@import "blocks/teaser/teaser.scss";
+@import "blocks/teaser/__lead/teaser__lead.scss";
+@import "blocks/contacts-menu/contacts-menu.scss";
+@import "blocks/contacts-menu/__link/contacts-menu__link.scss";
+@import "blocks/contacts-menu/__link/--phohe/contacts-menu__link--phone.scss";
+@import "blocks/contacts-menu/__link/--email/contacts-menu__link--email.scss";
+// Reviews
+@import "blocks/reviews/reviews.scss";
+@import "blocks/reviews/__list/reviews__list.scss";
+@import "blocks/reviews/__item/reviews__item.scss";
+@import "blocks/reviews/__blockquote/reviews__blockquote.scss";
+@import "blocks/reviews/__quote/reviews__quote.scss";
+@import "blocks/reviews/__author/reviews__author.scss";
+// Usege quide
+@import "blocks/usage-guide/usage-guide.scss";
+@import "blocks/usage-guide/__list/usage-guide__list.scss";
+@import "blocks/usage-guide/__item/usage-guide__item.scss";
+@import "blocks/usage-guide/__item/--style-1/usage-guide__item--style-1.scss";
+@import "blocks/usage-guide/__item/--style-2/usage-guide__item--style-2.scss";
+@import "blocks/usage-guide/__item/--style-3/usage-guide__item--style-3.scss";
+@import "blocks/usage-guide/__item/--style-4/usage-guide__item--style-4.scss";
+@import "blocks/usage-guide/__text/usage-guide__text.scss";
 
-@font-face {
-  font-style: normal;
-  font-weight: 300;
-  font-family: "Blogger Sans";
 
-  src: local("BloggerSans"), local("BloggerSans-Light"),
-  url("../fonts/bloggersans-light.woff2") format("woff2"),
-  url("../fonts/bloggersans-light.woff") format("woff");
-}
 
-@font-face {
-  font-style: italic;
-  font-weight: 300;
-  font-family: "Blogger Sans";
+// @import "";
+// @import "blocks/";
+// @import "blocks/";
+// @import "blocks/";
+// @import "blocks/";
 
-  src: local("BloggerSans"), local("BloggerSans-Lightitalic"), local("BloggerSans-Light-Italic"),
-  url("../fonts/bloggersans-lightitalic.woff2") format("woff2"),
-  url("../fonts/bloggersans-lightitalic.woff") format("woff");
-}
 
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Blogger Sans";
-
-  src: local("BloggerSans"),
-  url("../fonts/bloggersans.woff2") format("woff2"),
-  url("../fonts/bloggersans.woff") format("woff");
-}
-
-@font-face {
-  font-style: italic;
-  font-weight: 400;
-  font-family: "Blogger Sans";
-
-  src: local("BloggerSans"), local("BloggerSans-Italic"),
-  url("../fonts/bloggersans-italic.woff2") format("woff2"),
-  url("../fonts/bloggersans-italic.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Blogger Sans";
-
-  src: local("BloggerSans"), local("BloggerSans-Medium"),
-  url("../fonts/bloggersans-medium.woff2") format("woff2"),
-  url("../fonts/bloggersans-medium.woff") format("woff");
-}
-
-@font-face {
-  font-style: italic;
-  font-weight: 500;
-  font-family: "Blogger Sans";
-
-  src: local("BloggerSans"), local("BloggerSans-Mediumitalic"), local("BloggerSans-Medium-Italic"),
-  url("../fonts/bloggersans-mediumitalic.woff2") format("woff2"),
-  url("../fonts/bloggersans-mediumitalic.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Blogger Sans";
-
-  src: local("BloggerSans"), local("BloggerSans-Bold"),
-  url("../fonts/bloggersans-bold.woff2") format("woff2"),
-  url("../fonts/bloggersans-bold.woff") format("woff");
-}
-
-@font-face {
-  font-style: italic;
-  font-weight: 700;
-  font-family: "Blogger Sans";
-
-  src: local("BloggerSans"), local("BloggerSans-Bolditalic"), local("BloggerSans-Bold-Italic"),
-  url("../fonts/bloggersans-bolditalic.woff2") format("woff2"),
-  url("../fonts/bloggersans-bolditalic.woff") format("woff");
-}
-
-body {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: $font-stack;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-a {
-  color: inherit;
-
-  text-decoration-skip-ink: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
