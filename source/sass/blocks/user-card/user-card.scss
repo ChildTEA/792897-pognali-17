@@ -1,8 +1,9 @@
 .user-card {
   position: relative;
+
   margin-bottom: 10px;
 
-  &::last-of-type {
+  &:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -45,6 +46,8 @@
   justify-content: center;
   width: 250px;
   padding-left: 0;
+
+  list-style: none;
 }
 
 .user-card__name {
@@ -67,12 +70,6 @@
   line-height: 18px;
   text-align: center;
   color: $text-color-gray;
-}
-
-.user-card__routes {
-  padding-left: 0;
-
-  list-style: none;
 }
 
 .user-card__transportation {
