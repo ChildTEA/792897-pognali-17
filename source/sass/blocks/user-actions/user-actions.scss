@@ -1,0 +1,36 @@
+.user-actions__link {
+  color: $color-bright-4;
+  text-decoration: underline;
+}
+
+.user-actions__form {
+  position: relative;
+}
+
+.user-actions__input {
+  width: 260px;
+  padding: 25px 25px 21px 23px;
+  border: none;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $text-color-gray;
+
+    opacity: 0.3;
+  }
+}
+
+.user-actions__send-button {
+  position: absolute;
+  right: 0;
+
+  width: 60px;
+  height: 62px;
+
+  background-color: $color-bright-4;
+  border: none;
+  border-radius: 10px;
+}

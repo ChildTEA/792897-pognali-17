@@ -1,0 +1,57 @@
+.route-card {
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.route-card__image {
+  display: block;
+  width: 270px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.route-card__info {
+  position: relative;
+  z-index: 1;
+
+  width: 270px;
+  margin-top: -30px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.route-card__lead {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color-gray;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+}
+
+.route-card__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: $color-dark-alter;
+}
+
+.route-card__visitors {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color-gray;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+}

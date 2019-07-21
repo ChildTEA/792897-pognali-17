@@ -1,3 +1,7 @@
 .user-nav {
-  @include list-reset;
+  list-style: none;
+}
+
+.user-nav__link {
+  text-decoration: none;
 }

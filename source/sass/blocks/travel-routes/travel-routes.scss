@@ -1,0 +1,13 @@
+.travel-routes {
+  padding-top: 76px;
+
+  color: $text-color-gray;
+
+  background-color: $color-light;
+
+  @include section-shape;
+}
+
+.travel-routes__list {
+  list-style: none;
+}

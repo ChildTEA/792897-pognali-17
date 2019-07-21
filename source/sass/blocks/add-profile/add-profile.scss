@@ -1,0 +1,18 @@
+.add-profile {
+  color: $text-color-gray;
+
+  background-color: $color-light;
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: right 10px top 20px;
+  background-size: 99px 99px;
+
+  @include section-shape;
+}
+
+.add-profile__business-pricing {
+  font-weight: 700;
+  line-height: 16px;
+  color: $color-dark-lighter;
+  text-decoration: none;
+}

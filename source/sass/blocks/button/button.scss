@@ -1,11 +1,32 @@
 .button {
+  display: inline-block;
+  padding: 6px 20px 4px 20px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
+  text-align: center;
   color: $color-dark-alter;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: $color-bright-4;
   border: none;
   border-radius: 30px;
+
+  &--rect {
+    width: 270px;
+    padding: 20px 25px 18px 20px;
+
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: none;
+
+    border-radius: 10px;
+  }
+
+  &--bordered {
+    border: 3px solid $color-dark-lighter;
+  }
 }

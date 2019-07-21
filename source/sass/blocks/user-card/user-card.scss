@@ -1,0 +1,30 @@
+
+
+.user-card__image {
+  background-color: $text-color-gray;
+  border-radius: 10px 10px 0 0;
+}
+
+.user-card__info {
+  color: #1d2e5b;
+
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+
+.user-card__name {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-card__tags {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color-gray;
+}
+
+.user-card__routes {
+  list-style: none;
+}

@@ -1,0 +1,35 @@
+.get-rout__top {
+  color: $color-dark-lighter;
+
+  background-color: $color-bright-4;
+
+  @include section-shape;
+}
+
+.get-rout__end-point {
+  position: relative;
+
+  padding-left: 61px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-image: url("../img/contacts-location.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.get-rout__interactive-map {
+  position: relative;
+  z-index: -1;
+
+  margin-top: -30px;
+}

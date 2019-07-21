@@ -1,0 +1,20 @@
+.modal-business-prices {
+  color: $text-color-gray;
+
+  background-color: #ffffff;
+
+  @include section-shape;
+}
+
+.modal-business-prices__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  width: 100%;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  background-color: #f3f4f8;
+}

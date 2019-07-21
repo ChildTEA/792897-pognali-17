@@ -1,0 +1,14 @@
+.about-service {
+  z-index: 1;
+  background-color: $color-dark-lighter;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+
+  @include section-shape;
+}
+
+.about-service__text {
+  &--lead {
+    font-weight: 700;
+  }
+}

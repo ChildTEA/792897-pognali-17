@@ -15,8 +15,8 @@
   clip-path: inset(100%);
 }
 
-
 .container {
-  margin-right: 25px;
-  margin-left: 25px;
+  width: 270px; /* Временно, для базовой стилизации */
+  margin-right: auto;
+  margin-left: auto;
 }

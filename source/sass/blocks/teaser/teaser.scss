@@ -1,6 +1,18 @@
 .teaser {
   height: 496px;
+  padding-top: 25px;
+
+  background-color: $color-dark;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom 60px center, 0 0;
+}
+
+.teaser__lead {
+  margin: 0 10px 0 30px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
 }

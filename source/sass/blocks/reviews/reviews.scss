@@ -1,6 +1,18 @@
 .reviews {
   padding-bottom: 113px;
-  background-color: $color-dark-alter;
 
-  @include section-shift;
+  background-color: $color-dark-alter;
+}
+
+.reviews__author {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.reviews__blockquote {
+  font-style: normal;
+}
+
+.reviews__list {
+  list-style: none;
 }

@@ -1,3 +1,16 @@
 .contacts-list {
-  @include list-reset;
+  list-style: none;
+}
+
+.contacts-list__link {
+  display: inline-block;
+
+  font-weight: 700;
+  color: $color-dark-alter;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--bright {
+    color: $color-bright-4;
+  }
 }

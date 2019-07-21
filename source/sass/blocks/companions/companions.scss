@@ -1,0 +1,17 @@
+.companions {
+  background-image: url("../img/blue_back.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left -35px top 10px, left 135px top 10px, left -27px top 240px;
+
+  @include section-shape;
+}
+
+.companions__text {
+  &--lead {
+    font-weight: 700;
+  }
+}
+
+.companions__list {
+  list-style: none;
+}

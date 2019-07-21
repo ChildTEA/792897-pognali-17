@@ -1,11 +1,21 @@
 .hamburger {
-  margin: 0;
-  padding: 0;
   width: 25px;
   height: 11px;
+  margin: 0;
+  padding: 0;
 
   color: inherit;
 
   background-color: transparent;
   border: none;
+
+  &--closer {
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--opener {
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+  }
 }

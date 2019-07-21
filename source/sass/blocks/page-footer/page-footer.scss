@@ -1,0 +1,19 @@
+.page-footer {
+  margin-top: -35px;
+  margin-bottom: -30px;
+
+  color: $text-color-gray;
+
+  background-color: #ffffff;
+
+  @include section-shape-reverse;
+}
+
+.page-footer__logo {
+  display: table;
+  margin: 0 auto 0 auto;
+}
+
+.page-footer__copyrights {
+  font-weight: 400;
+}
