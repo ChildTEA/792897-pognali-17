@@ -1,5 +1,10 @@
 .travel-routes {
-  padding-top: 76px;
+  position: relative;
+  z-index: 5;
+
+  margin-top: -35px;
+  padding-top: 107px;
+  padding-bottom: 30px;
 
   color: $text-color-gray;
 
@@ -9,5 +14,11 @@
 }
 
 .travel-routes__list {
+  padding-left: 0;
   list-style: none;
+}
+
+.travel-routes__text {
+  margin-bottom: 59px;
+  padding-right: 25px;
 }

@@ -5,7 +5,7 @@
   background-color: $color-dark;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom 60px center, 0 0;
+  background-position: bottom 60px left 70%, bottom center;
 }
 
 .teaser__lead {
@@ -15,4 +15,8 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+}
+
+.teaser__menu {
+  z-index: 1;
 }

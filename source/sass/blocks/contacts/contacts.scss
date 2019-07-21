@@ -1,4 +1,9 @@
 .contacts {
+  z-index: 2;
+
+  padding-bottom: 46px;
+
+  background-color: $color-dark-lighter;
+
   @include section-shape;
 }
-

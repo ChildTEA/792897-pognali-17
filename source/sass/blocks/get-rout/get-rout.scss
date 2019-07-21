@@ -1,4 +1,13 @@
+.get-rout {
+  z-index: 1;
+
+  margin-top: -35px;
+}
+
 .get-rout__top {
+  padding-top: 69px;
+  padding-bottom: 35px;
+
   color: $color-dark-lighter;
 
   background-color: $color-bright-4;
@@ -9,6 +18,8 @@
 .get-rout__end-point {
   position: relative;
 
+  margin-top: 0;
+  margin-bottom: 31px;
   padding-left: 61px;
 
   font-weight: 700;
@@ -31,5 +42,9 @@
   position: relative;
   z-index: -1;
 
-  margin-top: -30px;
+  margin-top: -35px;
+}
+
+.get-rout__map-image {
+  display: block;
 }

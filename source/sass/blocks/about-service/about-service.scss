@@ -1,8 +1,16 @@
 .about-service {
-  z-index: 1;
+  z-index: 6;
+
+  padding-top: 33px;
+  padding-right: 25px;
+  padding-bottom: 67px;
+  padding-left: 25px;
+
   background-color: $color-dark-lighter;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: top left 18px;
+  background-origin: padding-box;
 
   @include section-shape;
 }

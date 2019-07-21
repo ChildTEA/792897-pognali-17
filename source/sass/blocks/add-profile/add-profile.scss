@@ -1,16 +1,31 @@
 .add-profile {
+  z-index: 3;
+
+  margin-top: -35px;
+  padding-top: 87px;
+  padding-bottom: 38px;
+
   color: $text-color-gray;
 
   background-color: $color-light;
   background-image: url("../img/rates@1x.png");
   background-repeat: no-repeat;
-  background-position: right 10px top 20px;
+  background-position: right 26px top 72px;
   background-size: 99px 99px;
 
   @include section-shape;
 }
 
+.add-profile__title {
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 85px;
+}
+
 .add-profile__business-pricing {
+  display: block;
+
   font-weight: 700;
   line-height: 16px;
   color: $color-dark-lighter;

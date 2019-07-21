@@ -1,7 +1,14 @@
 .companions {
+  z-index: 4;
+
+  margin-top: -35px;
+  padding-top: 107px;
+  padding-bottom: 30px;
+
+  background-color: $color-dark-lighter;
   background-image: url("../img/blue_back.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left -35px top 10px, left 135px top 10px, left -27px top 240px;
+  background-position: left -19px top 84px, left 152px top 84px, left -10px top 356px;
 
   @include section-shape;
 }
@@ -13,5 +20,7 @@
 }
 
 .companions__list {
+  padding-left: 0;
+
   list-style: none;
 }
