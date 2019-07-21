@@ -62,16 +62,6 @@
   src: local("BloggerSans"), local("BloggerSans-Bolditalic"), local("BloggerSans-Bold-Italic"), url("../fonts/bloggersans-bolditalic.woff2") format("woff2"), url("../fonts/bloggersans-bolditalic.woff") format("woff");
 }
 
-body {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: $font-stack;
-  color: $text-color-white;
-
-  background-color: $color-dark-lighter;
-}
-
 html {
   box-sizing: border-box;
 }

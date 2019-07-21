@@ -1,0 +1,90 @@
+.invite-card {
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 22px;
+  padding-left: 18px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.invite-card__image {
+  border-radius: 50%;
+}
+
+.invite-card__user-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color-dark;
+}
+
+.invite-card__user-status {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  &--offline {
+    background-color: #f97676;
+  }
+
+  &--online {
+    background-color: #81e31e;
+  }
+}
+
+.invite-card__tags {
+  padding-right: 35px;
+  padding-left: 7px;
+}
+
+.invite-card__routes {
+  margin-right: 7px;
+  margin-left: 7px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.invite-card__route-name {
+  position: relative;
+
+  display: inline-block;
+  padding-left: 40px;
+
+  font-weight: 500;
+  color: $text-color-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 26px;
+    height: 18px;
+  }
+}
+
+.invite-card__level-value {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: $text-color-dark;
+}
+
+.invite-card__call-form {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.invite-card__call-button {
+  width: 100%;
+}
