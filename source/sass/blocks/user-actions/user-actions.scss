@@ -21,8 +21,9 @@
 }
 
 .user-actions__input {
+  box-sizing: border-box;
   width: 260px;
-  padding: 25px 25px 21px 23px;
+  padding: 25px 25px 19px 23px;
 
   border: none;
   border-radius: 10px;
@@ -41,6 +42,7 @@
   position: absolute;
   right: 0;
 
+  box-sizing: border-box;
   width: 60px;
   height: 62px;
 

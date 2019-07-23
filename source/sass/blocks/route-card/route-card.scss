@@ -21,7 +21,8 @@
   position: relative;
   z-index: 1;
 
-  width: 270px;
+  box-sizing: border-box;
+  width: 270px;  /* Временно для базовой стилизации */
   margin-top: -11px;
   margin-right: auto;
   margin-bottom: 0;
