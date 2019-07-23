@@ -12,11 +12,14 @@
 }
 
 .reviews__list {
-  list-style: none;
   padding-left: 0;
+
+  list-style: none;
 }
 
 .reviews__blockquote {
   margin: 0;
   padding-right: 65px;
+
+  font-style: normal;
 }
