@@ -72,6 +72,10 @@
   color: $text-color-gray;
 }
 
+.user-card__tag {
+  text-decoration: none;
+}
+
 .user-card__transportation {
   display: flex;
   justify-content: center;
