@@ -1,11 +1,12 @@
 .button {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   padding: 6px 20px 4px 20px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
+  // font-family: inherit;
   text-align: center;
   color: $color-dark-alter;
   text-transform: uppercase;
