@@ -12,7 +12,10 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }
+    ))
     .pipe(postcss([
       autoprefixer()
     ]))
