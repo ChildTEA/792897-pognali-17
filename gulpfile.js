@@ -6,7 +6,7 @@ var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var stylelint = require("gulp-lintspaces");
+var stylelint = require("gulp-stylelint");
 var editorconfig = require("gulp-lintspaces");
 var server = require("browser-sync").create();
 var editorconfigPaths = require("./package.json")["editorconfig-cli"];
@@ -25,7 +25,7 @@ gulp.task("stylelint", function () {
       reporters: [
         {
           console: true,
-          formater: "string"
+          formatter: "string"
         }
       ]
     }));
