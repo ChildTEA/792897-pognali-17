@@ -1,11 +1,11 @@
 .contacts {
+  position: relative;
   z-index: 2;
 
   padding-bottom: 46px;
 
   background-color: $color-dark-lighter;
-
-  @include section-shape;
+  border-radius: $rounded-bottom;
 }
 
 .contacts__text {

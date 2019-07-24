@@ -1,4 +1,5 @@
 .companions {
+  position: relative;
   z-index: 4;
 
   margin-top: -35px;
@@ -9,8 +10,7 @@
   background-image: url("../img/blue_back.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left -19px top 84px, left 152px top 84px, left -10px top 356px;
-
-  @include section-shape;
+  border-radius: $rounded-bottom;
 }
 
 .companions__text {

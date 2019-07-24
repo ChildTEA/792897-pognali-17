@@ -1,4 +1,5 @@
 .add-profile {
+  position: relative;
   z-index: 3;
 
   margin-top: -35px;
@@ -12,8 +13,7 @@
   background-repeat: no-repeat;
   background-position: right 26px top 72px;
   background-size: 99px 99px;
-
-  @include section-shape;
+  border-radius: $rounded-bottom;
 }
 
 .add-profile__title {

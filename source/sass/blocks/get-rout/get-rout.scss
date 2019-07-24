@@ -11,8 +11,7 @@
   color: $color-dark-lighter;
 
   background-color: $color-bright-4;
-
-  @include section-shape;
+  border-radius: $rounded-bottom;
 }
 
 .get-rout__end-point {

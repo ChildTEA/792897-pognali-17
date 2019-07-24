@@ -9,8 +9,7 @@
   color: $text-color-gray;
 
   background-color: $color-light;
-
-  @include section-shape;
+  border-radius: $rounded-bottom;
 }
 
 .travel-routes__list {

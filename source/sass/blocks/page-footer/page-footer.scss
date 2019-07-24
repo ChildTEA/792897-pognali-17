@@ -10,8 +10,7 @@
   color: $text-color-gray;
 
   background-color: #ffffff;
-
-  @include section-shape-reverse;
+  border-radius: $rounded-top;
 
   &--inner-page {
     margin-top: 0;

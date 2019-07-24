@@ -1,4 +1,5 @@
 .about-service {
+  position: relative;
   z-index: 6;
 
   padding-top: 33px;
@@ -11,8 +12,7 @@
   background-repeat: no-repeat;
   background-position: top left 18px;
   background-origin: padding-box;
-
-  @include section-shape;
+  border-radius: $rounded-bottom;
 }
 
 .about-service__text {
