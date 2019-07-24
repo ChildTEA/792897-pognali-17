@@ -15,7 +15,6 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-stylelint": "^9.0.0",
     "htmlacademy-stylelint-config": "0.0.1",
-    "node-normalize-scss": "^8.0.0",
     "stylelint": "10.1.x"
   },
   "scripts": {
@@ -45,6 +44,6 @@
     "node": "8.16"
   },
   "dependencies": {
-    "normalize.scss": "^0.1.0"
+    "normalize.css": "^8.0.1"
   }
 }
