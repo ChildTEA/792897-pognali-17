@@ -12,8 +12,9 @@
 }
 
 .reviews__list {
-  padding-left: 0;
+  box-sizing: border-box;
 
+  padding-left: 0;
   list-style: none;
 }
 
@@ -22,7 +23,8 @@
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-  padding-right: 65px;
+  padding-right: 75px;
+  padding-left: 25px;
 
   font-style: normal;
 }

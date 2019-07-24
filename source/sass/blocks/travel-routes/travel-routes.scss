@@ -19,6 +19,14 @@
 }
 
 .travel-routes__text {
+  box-sizing: border-box;
   margin-bottom: 59px;
-  padding-right: 25px;
+  padding-right: 50px;
+  padding-left: 25px;
+}
+
+.travel-routes__button {
+  width: 270px; /* Временно, для базовой стилизации */
+  margin-right: auto;
+  margin-left: auto;
 }

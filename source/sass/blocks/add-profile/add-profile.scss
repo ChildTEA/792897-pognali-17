@@ -17,10 +17,12 @@
 }
 
 .add-profile__title {
-  width: 220px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 85px;
+  padding-right: 100px;
+}
+
+.add-profile__pricing {
+  box-sizing: border-box;
+  padding-left: 25px;
 }
 
 .add-profile__business-pricing {

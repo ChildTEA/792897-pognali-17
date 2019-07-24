@@ -38,6 +38,12 @@
   }
 }
 
+.get-rout__button {
+  width: 270px; /* Временно, для базовой стилизации */
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .get-rout__interactive-map {
   position: relative;
   z-index: -1;

@@ -1,4 +1,5 @@
 .modal-business-prices {
+  box-sizing: border-box;
   width: 270px; /* Временно, для базовой стилизации */
   margin-right: auto;
   margin-left: auto;
@@ -10,8 +11,8 @@
   border-radius: 20px;
 }
 
-.modal-business-prices__title {
-  text-align: center;
+.modal-business-prices__list {
+  padding-left: 25px;
 }
 
 .modal-business-prices__button {

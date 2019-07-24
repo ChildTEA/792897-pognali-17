@@ -16,6 +16,10 @@
 }
 
 .about-service__text {
+  box-sizing: border-box;
+  padding-right: 25px;
+  padding-left: 25px;
+
   &--lead {
     font-weight: 700;
   }
