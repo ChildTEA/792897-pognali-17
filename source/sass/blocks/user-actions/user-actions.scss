@@ -25,17 +25,16 @@
   width: 260px;
   padding: 25px 25px 19px 23px;
 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
   font-family: inherit;
 
   border: none;
   border-radius: 10px;
 
   &::placeholder {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
     color: $text-color-gray;
-
     opacity: 0.3;
   }
 }
