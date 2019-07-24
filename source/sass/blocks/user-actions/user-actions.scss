@@ -37,13 +37,20 @@
   font-size: 18px;
   line-height: 18px;
   font-family: inherit;
+  color: $text-color-gray;
 
   border: none;
   border-radius: 10px;
 
   &::placeholder {
-    color: $text-color-gray;
+    color: inherit;
     opacity: 0.3;
+  }
+
+  &:hover {
+    &::placeholder {
+      opacity: 0.5;
+    }
   }
 }
 
