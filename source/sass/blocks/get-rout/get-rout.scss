@@ -1,7 +1,7 @@
 .get-rout {
   z-index: 1;
 
-  margin-top: -35px;
+  margin-top: $shift-top;
 }
 
 .get-rout__top {
@@ -47,7 +47,7 @@
   position: relative;
   z-index: -1;
 
-  margin-top: -35px;
+  margin-top: $shift-top;
 }
 
 .get-rout__map-image {
