@@ -1,0 +1,74 @@
+.route-card {
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.route-card__image {
+  display: block;
+  width: 270px;
+  height: 110px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: $text-color-gray;
+  border-radius: 10px 10px 0 0;
+}
+
+.route-card__info {
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 270px;  /* Временно для базовой стилизации */
+  margin-top: -11px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 27px;
+  padding-left: 24px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.route-card__lead {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color-gray;
+
+  opacity: 0.3;
+}
+
+.route-card__title {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: $color-dark-alter;
+
+  &--with-flag::before {
+    position: absolute;
+    top: -39px;
+  }
+}
+
+.route-card__visitors {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color-gray;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+}

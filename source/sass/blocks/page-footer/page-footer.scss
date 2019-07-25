@@ -1,0 +1,30 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 239px; /* Временно, дя базовой стилизации */
+  margin-top: -239px;
+  padding-top: 38px;
+  padding-bottom: 10px;
+
+  color: $text-color-gray;
+
+  background-color: #ffffff;
+  border-radius: $rounded-top;
+
+  &--inner-page {
+    margin-top: 0;
+  }
+}
+
+.page-footer__logo {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-footer__copyrights {
+  align-self: stretch;
+
+  font-weight: 400;
+}

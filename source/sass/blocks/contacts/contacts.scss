@@ -1,0 +1,16 @@
+.contacts {
+  position: relative;
+  z-index: 2;
+
+  padding-bottom: 46px;
+
+  background-color: $color-dark-lighter;
+  border-radius: $rounded-bottom;
+}
+
+.contacts__text {
+  padding-right: 25px;
+  padding-left: 25px;
+
+  text-align: center;
+}

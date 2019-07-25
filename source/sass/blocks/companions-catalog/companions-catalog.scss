@@ -1,0 +1,36 @@
+.companions-catalog {
+  padding-bottom: 10px;
+}
+
+.companions-catalog__list {
+  margin-top: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.companions-catalog__more-button {
+  display: table;
+  margin-right: auto;
+  margin-bottom: 19px;
+  margin-left: auto;
+  padding-left: 34px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: $text-color-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-image: url("../img/show-more-plus.svg");
+  background-repeat: no-repeat;
+  background-position: left 0 top 4px;
+  background-size: 18px;
+  background-origin: padding-box;
+}
+
+.companions-catalog__pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+}

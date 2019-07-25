@@ -1,0 +1,42 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: inherit;
+  text-align: center;
+  color: $color-dark-alter;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-bright-4;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &--alter {
+    display: block;
+    width: 270px;
+    padding-top: 23px;
+    padding-right: 25px;
+    padding-bottom: 21px;
+    padding-left: 24px;
+
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: none;
+
+    border-radius: 10px;
+  }
+
+  &--bordered {
+    border: 3px solid $color-dark-lighter;
+  }
+}

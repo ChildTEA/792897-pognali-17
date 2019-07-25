@@ -1,0 +1,80 @@
+.user-card {
+  position: relative;
+
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.user-card__level {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.user-card__image {
+  display: block;
+  width: 270px;
+  height: 270px;
+
+  background-color: $text-color-gray;
+  border-radius: 10px 10px 0 0;
+}
+
+.user-card__info {
+  padding: 10px;
+
+  color: #1d2e5b;
+
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+
+.user-card__routes {
+  position: absolute;
+  top: 258px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 250px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.user-card__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.user-card__tags {
+  width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: $text-color-gray;
+}
+
+.user-card__tag {
+  text-decoration: none;
+}
+
+.user-card__transportation {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+
+  text-align: center;
+}
