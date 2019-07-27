@@ -1,7 +1,14 @@
 .user-nav {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .user-nav__link {
   text-decoration: none;
+
+  &--login {
+    padding-right: 40px;
+    padding-left: 38px;
+  }
 }

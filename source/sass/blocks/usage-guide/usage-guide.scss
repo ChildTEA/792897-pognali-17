@@ -1,17 +1,8 @@
 .usage-guide {
-  background-color: $color-dark-lighter;
-}
-
-.usage-guide__text {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 10px;
-}
-
-.usage-guide__list {
   position: relative;
-  top: -80px;
-  padding-left: 0;
+  // top: -80px;
+  margin: 0 auto;
+  padding: 0;
 
   list-style: none;
 
@@ -21,6 +12,12 @@
   color: $color-dark-alter;
 
   border-radius: 10px;
+}
+
+.usage-guide__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
 }
 
 .usage-guide__item {

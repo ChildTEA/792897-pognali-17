@@ -1,0 +1,65 @@
+.intro {
+  position: relative;
+}
+
+.intro__lead {
+  height: 384px;
+  margin: 0;
+  padding: 21px 30px 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+
+  background-color: $color-dark;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left 62% bottom 0, center bottom;
+}
+
+.intro__reviews {
+  padding-top: 47px;
+  padding-bottom: 110px;
+
+  background-color: $color-dark-alter;
+}
+
+.intro__blockquote {
+  margin: 0;
+  padding-right: 100px;
+  padding-left: 50px;
+
+  font-style: normal;
+}
+
+.intro__review {
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+
+.intro__reviaw-author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.intro__guide {
+  background-color: $color-dark-lighter;
+}
+
+.intro__usage-guide {
+  position: relative;
+  top: -80px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    position: relative;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .intro {
+    position: relative;
+  }
+}

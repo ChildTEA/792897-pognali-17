@@ -2,6 +2,10 @@
   position: relative;
   z-index: 1;
 
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -18,10 +22,14 @@
   &--email {
     background-color: $color-bright-3;
     background-image: url("../img/topmenu-mail.svg");
+    background-position: center;
+    background-size: 18px 14px;
   }
 
   &--phone {
     background-color: $color-bright-1;
     background-image: url("../img/topmenu-phone.svg");
+    background-position: 12px center;
+    background-size: 18px 18px;
   }
 }

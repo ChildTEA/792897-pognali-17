@@ -1,18 +1,14 @@
 .page-header {
+  position: relative;
   background-color: $color-dark;
 }
 
 .page-header__hamburger {
   position: absolute;
   top: 30px;
-  right: 8px;
+  right: 25px;
 }
 
 .page-header__nav {
   min-height: 70px;
-}
-
-.page-header__logo {
-  position: absolute;
-  left: 8px;
 }

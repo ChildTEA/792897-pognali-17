@@ -1,7 +1,18 @@
 .main-nav {
+  z-index: 2;
+  min-height: 46px;  /* Временно для разметки */
   padding-top: 27px;
 
   &--open {
     background-color: #ffffff;
   }
+}
+
+.main-nav__side-menu {
+  position: absolute;
+  top: 458px;
+
+  display: flex;
+  width: 270px;
+  margin: 0 auto;
 }

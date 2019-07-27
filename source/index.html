@@ -39,7 +39,7 @@
           </li>
         </ul>
 
-        <ul class="main-nav__user user-nav">
+        <ul class="main-nav__user main-nav__user--mobile user-nav">
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__link--login button button--bigger" href="#nowhere">
               Авторизация
@@ -84,23 +84,9 @@
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
 
-  <main class="page__main">
-    <h1 class="visually-hidden">
-      Приложение "Погнали". Главная
-    </h1>
-
-    <section class="teaser">
-      <h2 class="visually-hidden">
-        Вступление
-      </h2>
-      <p class="teaser__lead">
-        В путешествие с крутыми попутчиками!
-      </p>
-      <div class="teaser__menu container">
-        <ul class="teaser__contacts contacts-menu">
+      <div class="main-nav__side-menu">
+        <ul class="main-nav__contacts contacts-menu">
           <li class="contacts-menu__item">
             <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
               <span class="visually-hidden">
@@ -116,7 +102,8 @@
             </a>
           </li>
         </ul>
-        <ul class="teaser__user-nav user-nav">
+
+        <ul class="main-nav__user user-nav">
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__link--login button" href="#nowhere">
               Авторизация
@@ -124,53 +111,66 @@
           </li>
         </ul>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <section class="reviews">
+  <main class="page__main">
+    <h1 class="visually-hidden">
+      Приложение "Погнали". Главная
+    </h1>
+
+    <section class="intro">
       <h2 class="visually-hidden">
-        Отзывы пользователей
+        Вступление
       </h2>
-      <ul class="reviews__list container">
-        <li class="reviews__item">
-          <blockquote class="reviews__blockquote">
-            <p class="reviews__quote">
-              «Лучшее приложение, что я видел в жизни!»
+
+      <p class="intro__lead">
+        В путешествие с крутыми попутчиками!
+      </p>
+
+      <section class="intro__reviews">
+        <h3 class="visually-hidden">
+          Отзывы пользователей
+        </h3>
+
+        <blockquote class="intro__blockquote">
+          <p class="intro__review">
+            «Лучшее приложение, что я видел в жизни!»
+          </p>
+          <cite class="intro__reviaw-author">
+            Мурат Эльтазин главный редактор газеты «гаджетлайф»
+          </cite>
+        </blockquote>
+      </section>
+
+      <section class="intro__guide">
+        <h3 class="visually-hidden">
+          Руководство
+        </h3>
+
+        <ul class="intro__usage-guide usage-guide container">
+          <li class="usage-guide__item usage-guide__item--style-1">
+            <p class="usage-guide__text">
+              Выберите направление
             </p>
-            <cite class="reviews__author">
-              Мурат Эльтазин главный редактор газеты «гаджетлайф»
-            </cite>
-          </blockquote>
-        </li>
-      </ul>
-    </section>
-
-    <section class="usage-guide">
-      <h2 class="visually-hidden">
-        Руководство
-      </h2>
-
-      <ul class="usage-guide__list container">
-        <li class="usage-guide__item usage-guide__item--style-1">
-          <p class="usage-guide__text">
-            Выберите направление
-          </p>
-        </li>
-        <li class="usage-guide__item usage-guide__item--style-2">
-          <p class="usage-guide__text">
-            Изучите идеи путешественников
-          </p>
-        </li>
-        <li class="usage-guide__item usage-guide__item--style-3">
-          <p class="usage-guide__text">
-            Находите тех, кто похож на вас
-          </p>
-        </li>
-        <li class="usage-guide__item usage-guide__item--style-4">
-          <p class="usage-guide__text">
-            Путешествуйте вместе!
-          </p>
-        </li>
-      </ul>
+          </li>
+          <li class="usage-guide__item usage-guide__item--style-2">
+            <p class="usage-guide__text">
+              Изучите идеи путешественников
+            </p>
+          </li>
+          <li class="usage-guide__item usage-guide__item--style-3">
+            <p class="usage-guide__text">
+              Находите тех, кто похож на вас
+            </p>
+          </li>
+          <li class="usage-guide__item usage-guide__item--style-4">
+            <p class="usage-guide__text">
+              Путешествуйте вместе!
+            </p>
+          </li>
+        </ul>
+      </section>
     </section>
 
     <section class="about-service">
