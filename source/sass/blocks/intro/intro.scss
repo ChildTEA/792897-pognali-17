@@ -5,7 +5,7 @@
 .intro__lead {
   height: 384px;
   margin: 0;
-  padding: 21px 30px 0;
+  padding: 41px 30px 0;
 
   font-weight: 700;
   font-size: 36px;
@@ -29,7 +29,7 @@
   width: 160px;
   margin: 0 auto;
   padding-right: 100px;
-  padding-left: 50px;
+  padding-left: 40px;
 
   font-style: normal;
 }
@@ -54,14 +54,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro {
+    color: #ffffff;
+    background-color: #182044;
+  }
+
   .intro__lead {
-    width: 400px;  /* !!!!!!!!!!!!!  ФОН  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    width: 400px;
     height: auto;
+    margin: 0 auto;
     padding: 73px 165px 0;
 
     font-size: 60px;
     line-height: 70px;
 
+    background-color: transparent;
     background-image: none;
   }
 
@@ -69,15 +76,16 @@
     height: 585px;
     padding: 36px 300px 0 21px;
 
-    background-color: $color-dark-alter;
+    background-color: $color-dark-lighter;
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: left 72% bottom 140px, center bottom;
-    // background-origin: padding-box;
   }
 
   .intro__blockquote {
+    width: 295px;
     margin: 0;
+    padding-left: 53px;
   }
 
   .intro__review {
@@ -105,7 +113,6 @@
     justify-content: center;
     align-content: flex-start;
     align-items: flex-start;
-    width: 1320px;
     height: 651px;
     padding: 0 60px;
 
@@ -117,11 +124,10 @@
 
   .intro__lead {
     width: 400px;
-    margin-bottom: 101px;
+    margin: 0 0 101px 0;
     padding: 110px 67px 0;
 
     text-align: left;
-    background-color: transparent; /* Проверить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   }
 
   .intro__reviews {

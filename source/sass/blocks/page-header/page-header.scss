@@ -15,6 +15,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    background-color: #182044;
+  }
+
   .page-header__hamburger {
     top: 60px;
     left: 50%;
@@ -28,6 +32,10 @@
 
 
 @media (min-width: $desctop-width) {
+  .page-header {
+    background-color: #161c34;
+  }
+
   .page-header__hamburger {
     display: none;
   }
