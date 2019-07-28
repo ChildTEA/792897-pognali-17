@@ -1,6 +1,7 @@
 .user-card {
   position: relative;
 
+  width: 270px;
   margin-bottom: 10px;
 
   &:last-of-type {
@@ -10,8 +11,8 @@
 
 .user-card__level {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 17px;
 }
 
 .user-card__image {
@@ -24,7 +25,7 @@
 }
 
 .user-card__info {
-  padding: 10px;
+  padding: 26px 10px 21px;
 
   color: #1d2e5b;
 
@@ -39,26 +40,57 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 250px;
-  padding-left: 0;
+  width: 100%;
+  margin: 0 -17px 0 0;   /* Временно, для стилизации */
+  padding: 0;
 
   list-style: none;
 }
 
+.user-card__route {
+  margin-right: 17px;  /* Временно, для стилизации */
+}
+
 .user-card__name {
-  margin-top: 0;
-  margin-bottom: 10px;
+  position: relative;
+
+  display: table;
+  margin: 0 auto 15px auto;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -17px;
+
+    width: 5px;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 50%;
+  }
+
+  &--offline {
+    &::before {
+      background-color: #f97676;
+    }
+  }
+
+  &--online {
+    &::before {
+      background-color: #81e31e;
+    }
+  }
 }
 
 .user-card__tags {
   width: 180px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto 17px auto;
 
   font-weight: 400;
   font-size: 16px;
@@ -77,4 +109,80 @@
   width: 250px;
 
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .user-card {
+    width: 285px;
+  }
+
+  .user-card__image {
+    width: 285px;
+    height: 285px;
+
+    border-radius: 20px 20px 0 0;
+  }
+
+  .user-card__info {
+    padding: 31px 10px 28px;
+
+    border-radius: 0 0 20px 20px;
+  }
+
+  .user-card__level {
+    top: -8px;
+    left: 20px;
+  }
+
+  .user-card__routes {
+    top: 273px;
+  }
+
+  .user-card__route-icon {
+    &::before {
+      width: 35px;
+      height: 24px;
+
+      border-radius: 3px;
+    }
+  }
+
+  .user-card__name {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      top: 8px;
+      left: -22px;
+
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  .user-card__tags {
+    width: 240px;
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: $desctop-width) {
+  .user-card__level {
+    top: -5px;
+    left: 23px;
+  }
+
+  .user-card__info {
+    padding: 33px 10px 27px;
+  }
+
+  .user-card__name {
+    margin-bottom: 19px;
+  }
 }

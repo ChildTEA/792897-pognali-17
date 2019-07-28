@@ -1,6 +1,7 @@
 .transportation {
   display: flex;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -14,6 +15,9 @@
 
   &--alter {
     position: relative;
+    width: 21px;
+    height: 21px;
+    margin: 0 6px;  /* Временно, для стилизации */
   }
 
   &--airplane {

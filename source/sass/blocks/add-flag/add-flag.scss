@@ -57,3 +57,13 @@
     background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .add-flag {
+    &::before {
+      width: 70px;
+      height: 47px;
+      border-radius: 7px;
+    }
+  }
+}

@@ -9,28 +9,113 @@
   background-color: $color-dark-lighter;
   background-image: url("../img/blue-back-square-mobile.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: -19px 84px, 152px 84px, -10px 356px;
+  background-position: -19px 74px, 152px 74px, -10px 346px;
   border-radius: $rounded-bottom-mobile;
+}
+
+.companions__title {
+  margin-bottom: 19px;
 }
 
 .companions__text {
   box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 21px;
   padding-right: 25px;
   padding-left: 25px;
 
   &--lead {
+    margin-bottom: 56px;
     font-weight: 700;
   }
 }
 
 .companions__list {
-  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
 
   list-style: none;
 }
 
 .companions__button {
-  width: 270px; /* Временно, для базовой стилизации */
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .companions {
+    margin-top: $shift-top-tablet;
+    padding-top: 226px;
+    padding-bottom: 88px;
+
+    background-image: url("../img/blue-back-square-tablet.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-position: 39px 165px, 40px 511px, 408px 165px;
+    border-radius: $rounded-bottom-tablet;
+  }
+
+  .companions__title {
+    margin-bottom: 57px;
+  }
+
+  .companions__text {
+    margin-bottom: 39px;
+    padding-right: 220px;
+    padding-left: 35px;
+
+    &--lead {
+      margin-bottom: 58px;
+
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .companions__list {
+    display: flex;
+    justify-content: space-between;
+    width: 618px;
+    margin-bottom: 70px;
+  }
+
+  .companions__button-container {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .companions {
+    padding-top: 215px;
+    padding-bottom: 88px;
+
+    background-position: 60px 153px, 547px 218px, 191px 470px;
+  }
+
+  .companions__text {
+    margin-bottom: 39px;
+    padding-right: 800px;
+    padding-left: 71px;
+
+    &--lead {
+      margin-bottom: 82px;
+    }
+  }
+
+  .companions__list {
+    position: absolute;
+    top: 218px;
+    left: 750px;
+
+    width: 630px;
+  }
+
+  .companions__button-container {
+    padding-left: 71px;
+  }
+
+  .companions__button {
+    display: table;
+    width: auto;
+    padding-right: 50px;
+  }
 }
