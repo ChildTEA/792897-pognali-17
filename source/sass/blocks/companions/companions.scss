@@ -2,15 +2,15 @@
   position: relative;
   z-index: 4;
 
-  margin-top: $shift-top;
+  margin-top: $shift-top-mobile;
   padding-top: 107px;
   padding-bottom: 30px;
 
   background-color: $color-dark-lighter;
-  background-image: url("../img/blue_back.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-image: url("../img/blue-back-square-mobile.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: -19px 84px, 152px 84px, -10px 356px;
-  border-radius: $rounded-bottom;
+  border-radius: $rounded-bottom-mobile;
 }
 
 .companions__text {

@@ -2,14 +2,14 @@
   position: relative;
   z-index: 5;
 
-  margin-top: $shift-top;
+  margin-top: $shift-top-mobile;
   padding-top: 107px;
   padding-bottom: 30px;
 
   color: $text-color-gray;
 
   background-color: $color-light;
-  border-radius: $rounded-bottom;
+  border-radius: $rounded-bottom-mobile;
 }
 
 .travel-routes__list {

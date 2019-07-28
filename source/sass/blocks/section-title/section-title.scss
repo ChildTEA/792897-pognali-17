@@ -1,6 +1,7 @@
 .section-title {
   box-sizing: border-box;
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 24px;
 
   font-weight: 700;
@@ -11,5 +12,24 @@
   &--centered {
     padding-left: 0;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    padding-left: 34px;
+
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .section-title {
+    padding-left: 70px;
+
+    font-size: 45px;
+    line-height: 45px;
   }
 }

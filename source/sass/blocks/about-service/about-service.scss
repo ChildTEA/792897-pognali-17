@@ -2,25 +2,98 @@
   position: relative;
   z-index: 6;
 
+  margin-top: -41px;
   padding-top: 33px;
-  padding-right: 25px;
   padding-bottom: 67px;
-  padding-left: 25px;
 
   background-color: $color-dark-lighter;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 18px 0;
   background-origin: padding-box;
-  border-radius: $rounded-bottom;
+  border-radius: $rounded-bottom-mobile;
+}
+
+.about-service__title {
+  margin-bottom: 19px;
 }
 
 .about-service__text {
   box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 19px;
   padding-right: 25px;
   padding-left: 25px;
 
   &--lead {
+    margin-bottom: 14px;
     font-weight: 700;
+  }
+}
+
+.about-service__button-container {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-service {
+    margin-top: -44px;
+    padding-top: 42px;
+    padding-bottom: 88px;
+
+    background-image: url("../img/about-tablet@1x.png"), url("../img/blue-back-rect-tablet.png");
+    background-position: 384px 48px, 40px 0;
+    border-radius: $rounded-bottom-tablet;
+  }
+
+  .about-service__title {
+    margin-bottom: 40px;
+  }
+
+  .about-service__text {
+    margin-bottom: 31px;
+    padding-right: 350px;
+    padding-left: 35px;
+
+    &--lead {
+      margin-bottom: 51px;
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .about-service__button-container {
+    display: block;
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .about-service {
+    margin-top: 0;
+    padding-top: 132px;
+    padding-bottom: 163px;
+
+    background-image: url("../img/blue-back-square-desctop.png"), url("../img/about-desktop@1x.png");
+    background-position: 60px 71px, right 60px top 85px;
+  }
+
+  .about-service__title {
+    margin-bottom: 58px;
+  }
+
+  .about-service__text {
+    margin-bottom: 38px;
+    padding-right: 630px;
+    padding-left: 71px;
+
+    &--lead {
+      margin-bottom: 84px;
+      padding-right: 835px;
+    }
+  }
+
+  .about-service__button-container {
+    padding-left: 71px;
   }
 }

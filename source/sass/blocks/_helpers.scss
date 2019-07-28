@@ -16,7 +16,8 @@
 }
 
 .container {
-  width: 270px; /* Временно, для базовой стилизации */
+  box-sizing: border-box;
+  width: 270px;
   margin-right: auto;
   margin-left: auto;
 }

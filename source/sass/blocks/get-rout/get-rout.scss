@@ -1,7 +1,7 @@
 .get-rout {
   z-index: 1;
 
-  margin-top: $shift-top;
+  margin-top: $shift-top-mobile;
 }
 
 .get-rout__top {
@@ -11,7 +11,7 @@
   color: $color-dark-lighter;
 
   background-color: $color-bright-4;
-  border-radius: $rounded-bottom;
+  border-radius: $rounded-bottom-mobile;
 }
 
 .get-rout__end-point {
@@ -47,7 +47,7 @@
   position: relative;
   z-index: -1;
 
-  margin-top: $shift-top;
+  margin-top: $shift-top-mobile;
 }
 
 .get-rout__map-image {

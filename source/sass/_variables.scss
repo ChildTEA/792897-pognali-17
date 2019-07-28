@@ -21,8 +21,11 @@ $text-color-dark: #1d2e5b;
 
 
 // Decoration
-$rounded-bottom: 0 0 30px 30px;
-$rounded-top: 30px 30px 0 0;
+$rounded-bottom-mobile: 0 0 30px 30px;
+$rounded-top-mobile: 30px 30px 0 0;
+$rounded-bottom-tablet: 0 0 60px 60px;
+$rounded-top-tablet: 60px 60px 0 0;
 
 // Section shift
-$shift-top: -35px;
+$shift-top-mobile: -35px;
+$shift-top-tablet: -65px;

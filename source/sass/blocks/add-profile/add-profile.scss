@@ -2,7 +2,7 @@
   position: relative;
   z-index: 3;
 
-  margin-top: $shift-top;
+  margin-top: $shift-top-mobile;
   padding-top: 87px;
   padding-bottom: 38px;
 
@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: right 26px top 72px;
   background-size: 99px 99px;
-  border-radius: $rounded-bottom;
+  border-radius: $rounded-bottom-mobile;
 }
 
 .add-profile__title {
