@@ -1,6 +1,4 @@
 .usage-guide {
-  position: relative;
-  // top: -80px;
   margin: 0 auto;
   padding: 0;
 
@@ -17,29 +15,17 @@
 .usage-guide__text {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 10px;
 }
 
 .usage-guide__item {
+  box-sizing: border-box;
   margin-top: -10px;
-  padding-top: 12px;
-  padding-right: 100px;
-  padding-bottom: 22px;
-  padding-left: 13px;
+  padding: 22px 100px 32px 24px;
 
   border-radius: 10px 10px 0 0;
 
-  &:first-of-type {
-    margin-top: 0;
-  }
-
-  &:last-of-type {
-    padding-bottom: 12px;
-
-    border-radius: 10px;
-  }
-
   &--style-1 {
+    margin-top: 0;
     background-color: $color-bright-1;
   }
 
@@ -52,6 +38,74 @@
   }
 
   &--style-4 {
+    padding-bottom: 22px;
     background-color: $color-bright-4;
+    border-radius: 10px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .usage-guide {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .usage-guide__item {
+    // box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    padding: 31px 100px 61px 33px;
+
+
+    border-radius: 20px;
+
+    &:nth-of-type(even) {
+      margin-left: -35px;
+    }
+
+    &:nth-of-type(odd) {
+      width: calc(50% + 35px);
+    }
+
+    &--style-1 {
+      border-radius: 20px 0 0 0;
+    }
+
+    &--style-2 {
+      border-radius: 20px 20px 0 0;
+    }
+
+    &--style-3 {
+      border-radius: 0 0 0 20px;
+    }
+
+    &--style-4 {
+      border-radius: 0 0 20px 20px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .usage-guide__item {
+    margin-left: -35px;
+
+    border-radius: 20px;
+
+
+    &:nth-of-type(n) {
+      width: 380px;
+      padding: 29px 100px 30px 30px;
+    }
+
+    &:first-of-type {
+      width: 350px;
+      margin-left: 0;
+      padding: 29px 100px 30px 34px;
+    }
+
+    &:last-of-type {
+      width: 315px;
+    }
   }
 }

@@ -1,4 +1,7 @@
 .site-nav {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
   text-align: center;
 }
@@ -10,4 +13,37 @@
   color: $color-dark-lighter;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $desctop-width) {
+  .site-nav {
+    position: relative;
+
+    display: flex;
+    padding-top: 10px;
+    padding-left: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -25px;
+
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 1px;
+    }
+  }
+
+  .site-nav__item {
+    margin-left: 37px;
+  }
+
+  .site-nav__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
 }

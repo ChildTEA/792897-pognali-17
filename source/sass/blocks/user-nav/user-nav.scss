@@ -6,9 +6,11 @@
 
 .user-nav__link {
   text-decoration: none;
+}
 
-  &--login {
-    padding-right: 40px;
-    padding-left: 38px;
+@media (min-width: $tablet-width) {
+  .user-nav__link {
+    padding-right: 30px;
+    padding-left: 28px;
   }
 }

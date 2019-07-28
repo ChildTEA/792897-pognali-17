@@ -20,3 +20,15 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 688px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    width: 1320px;
+  }
+}

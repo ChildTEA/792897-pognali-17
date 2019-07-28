@@ -85,3 +85,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@media (min-width: $tablet-width) {
+  html {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}

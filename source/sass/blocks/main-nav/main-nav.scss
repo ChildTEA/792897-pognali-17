@@ -1,7 +1,6 @@
 .main-nav {
   z-index: 2;
   min-height: 46px;  /* Временно для разметки */
-  padding-top: 27px;
 
   &--open {
     background-color: #ffffff;
@@ -13,6 +12,38 @@
   top: 458px;
 
   display: flex;
-  width: 270px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__user {
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .main-nav__side-menu {
+    position: static;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-nav__popup-wrapper {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .main-nav__contacts {
+    display: none;
+  }
+
+  .main-nav__social {
+    display: none;
+  }
 }

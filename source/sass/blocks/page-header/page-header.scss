@@ -11,4 +11,28 @@
 
 .page-header__nav {
   min-height: 70px;
+  padding-top: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__hamburger {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .page-header__nav {
+    padding-top: 40px;
+  }
+}
+
+
+@media (min-width: $desctop-width) {
+  .page-header__hamburger {
+    display: none;
+  }
+
+  .page-header__nav {
+    padding-top: 49px;
+  }
 }
