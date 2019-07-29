@@ -456,7 +456,7 @@
         Добавтьте свой профиль
       </h2>
 
-      <dl class="add-profile__pricing pricing container">
+      <dl class="add-profile__pricing pricing">
         <dt class="pricing__text pricing__text--offer pricing__text--with-number">
           Базовое размещение
         </dt>
@@ -481,7 +481,8 @@
         Показать тарифы для бизнеса
       </a>
 
-      <div class="add-profile__modal modal-business-prices modal">
+      <!-- Временно скрыт для базовой стилизации -->
+      <div hidden class="add-profile__modal modal-business-prices modal">
         <h3 class="modal-business-prices__title section-title section-title--centered">
           Бизнес-тарифы
         </h3>
@@ -526,7 +527,7 @@
 
       <div class="user-actions__text-group container">
         <p class="user-actions__text">
-          Зарегистрируйтесь,<br> это быстро и бесплатно!
+          Зарегистрируйтесь, это&nbsp;быстро и бесплатно!
         </p>
         <p class="user-actions__text">
           Уже зарегистрированы? Тогда скорее <a class="user-actions__link" href="#nowhere">авторизуйтесь</a>.
@@ -553,8 +554,15 @@
         Контакты
       </h2>
       <p class="contacts__text container">
-        Остались вопросы?<br>
-        Мы с радостью на них ответим!
+        <span class="contacts__text--phrase">
+          Остались вопросы?
+        </span>
+        <span class="contacts__text--phrase contacts__text--mobile">
+          Мы с радостью на них ответим!
+        </span>
+        <span class="contacts__text--phrase contacts__text--desctop">
+          Свяжитесь с нами удобным для вас способом:
+        </span>
       </p>
 
       <ul class="contacts__list contacts-list container">
@@ -571,24 +579,24 @@
       </ul>
     </section>
 
-    <section class="get-rout">
-      <div class="get-rout__top">
+    <section class="map">
+      <div class="map__top">
         <h2 class="visually-hidden">
           Проложить маршрут
         </h2>
 
-        <p class="get-rout__end-point container">
-          ул. Большая Конюшенная,&nbsp;19/8
-        </p>
+        <div class="map__container container">
+          <p class="map__end-point">
+            ул. Большая Конюшенная,&nbsp;19/8
+          </p>
 
-        <div class="get-rout__button-container container">
-          <a class="get-rout__button button button--alter button--bordered">
+          <a class="map__button button button--alter button--bordered">
             Проложить маршрут
           </a>
         </div>
       </div>
-      <div class="get-rout__interactive-map">
-        <img class="get-rout__map-image" src="https://via.placeholder.com/320x546.png?text=Map" alt="Проложить маршрут от ул. Большая Конюшенная, 19/8" width="320" height="546">
+      <div class="map__interactive-map">
+        <img class="map__placeholder" src="https://via.placeholder.com/320x546.png?text=Map" alt="Проложить маршрут от ул. Большая Конюшенная, 19/8" width="320" height="546">
       </div>
     </section>
   </main>

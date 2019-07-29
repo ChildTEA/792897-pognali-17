@@ -12,17 +12,44 @@
   height: 45px;
 
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+
+  &--with-bg {
+    background-color: $color-bright-4;
+    border-radius: 50%;
+  }
 
   &--fb {
     background-image: url("../img/facebook.svg");
+    background-size: 11px 21px;
   }
 
   &--inst {
     background-image: url("../img/instagram.svg");
+    background-size: 18px 18px;
   }
 
   &--vk {
     background-image: url("../img/vk.svg");
+    background-size: 23px 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    width: 60px;
+    height: 60px;
+
+    &--fb {
+      background-size: 14px 28px;
+    }
+
+    &--inst {
+      background-size: 24px 24px;
+    }
+
+    &--vk {
+      background-size: 31px 16px;
+    }
   }
 }

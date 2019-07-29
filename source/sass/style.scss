@@ -1,21 +1,21 @@
 @import "variables";
 @import "global";
 @import "blocks/helpers";
-@import "blocks/page/page.scss";
+// Redefineble blocks
 @import "blocks/button/button.scss";
-@import "blocks/social/social.scss";
 @import "blocks/popup-wrapper/popup-wrapper.scss";
-@import "blocks/page-header/page-header.scss";
+@import "blocks/social/social.scss";
+@import "blocks/contacts-list/contacts-list.scss";
 @import "blocks/hamburger/hamburger.scss";
+// Page blocks
+@import "blocks/page/page.scss";
+@import "blocks/page-header/page-header.scss";
 @import "blocks/main-nav/main-nav.scss";
 @import "blocks/site-nav/site-nav.scss";
-@import "blocks/contacts-list/contacts-list.scss";
 @import "blocks/user-nav/user-nav.scss";
 @import "blocks/intro/intro.scss";
 @import "blocks/page-main/page-main.scss";
-// @import "blocks/teaser/teaser.scss";
 @import "blocks/contacts-menu/contacts-menu.scss";
-// @import "blocks/reviews/reviews.scss";
 @import "blocks/usage-guide/usage-guide.scss";
 @import "blocks/section-title/section-title.scss";
 @import "blocks/about-service/about-service.scss";
@@ -27,12 +27,13 @@
 @import "blocks/user-level/user-level.scss";
 @import "blocks/transportation/transportation.scss";
 @import "blocks/add-profile/add-profile.scss";
-@import "blocks/pricing/pricint.scss";
+@import "blocks/pricing/pricing.scss";
 @import "blocks/modal-busiless-prices/modal-busiless-prices.scss";
 @import "blocks/user-actions/user-actions.scss";
 @import "blocks/contacts/contacts.scss";
-@import "blocks/get-rout/get-rout.scss";
+@import "blocks/map/map.scss";
 @import "blocks/page-footer/page-footer.scss";
+@import "blocks/copyright/copyright.scss";
 @import "blocks/companions-catalog/companions-catalog.scss";
 @import "blocks/invite-card/invite-card.scss";
 @import "blocks/like-counter/like-counter.scss";

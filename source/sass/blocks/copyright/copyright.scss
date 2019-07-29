@@ -1,0 +1,34 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  margin: 0;
+
+  font-weight: 400;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.copyright__text {
+  margin-top: 19px;
+}
+
+.copyright__link {
+  margin-top: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 155px;
+    padding-top: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    border-top: none;
+  }
+
+  .copyright__text {
+    margin-top: 17px;
+  }
+}

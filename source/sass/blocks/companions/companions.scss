@@ -86,7 +86,7 @@
 @media (min-width: $desctop-width) {
   .companions {
     padding-top: 215px;
-    padding-bottom: 88px;
+    padding-bottom: 134px;
 
     background-position: 60px 153px, 547px 218px, 191px 470px;
   }
@@ -116,6 +116,7 @@
   .companions__button {
     display: table;
     width: auto;
+    min-width: 280px;
     padding-right: 50px;
   }
 }
