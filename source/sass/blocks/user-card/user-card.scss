@@ -4,6 +4,10 @@
   width: 270px;
   margin-bottom: 10px;
 
+  @media ($tablet) {
+    width: 285px;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -11,8 +15,20 @@
 
 .user-card__level {
   position: absolute;
-  top: 0;
-  left: 17px;
+  top: 16px;
+  left: 16px;
+
+  margin: 0;
+
+  @media ($tablet) {
+    top: 20px;
+    left: 20px;
+  }
+
+  @media ($desktop) {
+    top: 23px;
+    left: 23px;
+  }
 }
 
 .user-card__image {
@@ -22,6 +38,13 @@
 
   background-color: $text-color-gray;
   border-radius: 10px 10px 0 0;
+
+  @media ($tablet) {
+    width: 285px;
+    height: 285px;
+
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .user-card__info {
@@ -31,6 +54,15 @@
 
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
+
+  @media ($tablet) {
+    padding: 31px 10px 28px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  @media ($desktop) {
+    padding: 33px 10px 27px;
+  }
 }
 
 .user-card__routes {
@@ -45,10 +77,25 @@
   padding: 0;
 
   list-style: none;
+
+  @media ($tablet) {
+    top: 273px;
+  }
 }
 
 .user-card__route {
   margin-right: 17px;  /* Временно, для стилизации */
+}
+
+.user-card__route-icon {
+  &::before {
+    @media ($tablet) {
+      width: 35px;
+      height: 24px;
+
+      border-radius: 3px;
+    }
+  }
 }
 
 .user-card__name {
@@ -60,6 +107,17 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
+
+  @media ($tablet) {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 19px;
+  }
 
   &::before {
     content: "";
@@ -73,6 +131,14 @@
     padding: 0;
 
     border-radius: 50%;
+
+    @media ($tablet) {
+      top: 8px;
+      left: -22px;
+
+      width: 7px;
+      height: 7px;
+    }
   }
 
   &--offline {
@@ -97,6 +163,14 @@
   line-height: 18px;
   text-align: center;
   color: $text-color-gray;
+
+  @media ($tablet) {
+    width: 240px;
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .user-card__tag {
@@ -109,80 +183,4 @@
   width: 250px;
 
   text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-  .user-card {
-    width: 285px;
-  }
-
-  .user-card__image {
-    width: 285px;
-    height: 285px;
-
-    border-radius: 20px 20px 0 0;
-  }
-
-  .user-card__info {
-    padding: 31px 10px 28px;
-
-    border-radius: 0 0 20px 20px;
-  }
-
-  .user-card__level {
-    top: -8px;
-    left: 20px;
-  }
-
-  .user-card__routes {
-    top: 273px;
-  }
-
-  .user-card__route-icon {
-    &::before {
-      width: 35px;
-      height: 24px;
-
-      border-radius: 3px;
-    }
-  }
-
-  .user-card__name {
-    margin-bottom: 20px;
-
-    font-size: 24px;
-    line-height: 24px;
-
-    &::before {
-      top: 8px;
-      left: -22px;
-
-      width: 7px;
-      height: 7px;
-    }
-  }
-
-  .user-card__tags {
-    width: 240px;
-    margin-bottom: 26px;
-
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-
-
-@media (min-width: $desctop-width) {
-  .user-card__level {
-    top: -5px;
-    left: 23px;
-  }
-
-  .user-card__info {
-    padding: 33px 10px 27px;
-  }
-
-  .user-card__name {
-    margin-bottom: 19px;
-  }
 }

@@ -1,12 +1,30 @@
 .companions-catalog {
-  padding-bottom: 10px;
+  padding-bottom: 46px;
+
+  @media ($tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media ($desktop) {
+    width: 950px;
+    margin-bottom: 31px;
+  }
 }
 
 .companions-catalog__list {
   margin-top: 0;
+  margin-bottom: 20px;
   padding-left: 0;
 
   list-style: none;
+
+  @media ($tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 65px;
+  }
 }
 
 .companions-catalog__more-button {
@@ -14,6 +32,7 @@
   margin-right: auto;
   margin-bottom: 19px;
   margin-left: auto;
+  padding-top: 1px;
   padding-left: 34px;
 
   font-weight: 700;
@@ -25,12 +44,32 @@
 
   background-image: url("../img/show-more-plus.svg");
   background-repeat: no-repeat;
-  background-position: left 0 top 4px;
+  background-position: 0 4px;
   background-size: 18px;
   background-origin: padding-box;
+
+  @media ($tablet) {
+    margin-bottom: 47px;
+    padding-right: 8px;  /* Временное решение */
+    padding-left: 51px;
+
+    font-size: 20px;
+
+    background-position: 0 0;
+    background-size: 27px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 66px;
+    padding-right: 74px;  /* Временное решение */
+  }
 }
 
 .companions-catalog__pagination {
   margin-top: 0;
   margin-bottom: 0;
+
+  @media ($desktop) {
+    width: 950px;
+  }
 }

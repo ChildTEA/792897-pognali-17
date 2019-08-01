@@ -1,5 +1,5 @@
 .user-level {
-  position: absolute;
+  position: relative;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
@@ -23,6 +23,30 @@
     background-color: #ffffff;
     opacity: 0.3;
   }
+
+  &--light {
+    width: 45px;
+    height: 45px;
+
+    color: $text-color-dark;
+
+    background-color: #ffffff;
+
+    @media ($tablet) {
+      width: 60px;
+      height: 60px;
+    }
+
+    &::before {
+      content: none;
+
+      @media ($tablet) {
+        content: "";
+        background-color: $text-color-gray;
+        opacity: 0.1;
+      }
+    }
+  }
 }
 
 .user-level__value {
@@ -32,16 +56,30 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+
+  @media ($tablet) {
+    margin-bottom: -11px;  /* Разобраться, почему на планшетной версии произошло смещение */
+  }
+
+  &--light {
+    @media ($tablet) {
+      margin-bottom: 1px;
+    }
+  }
 }
 
 .user-level__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-}
 
-@media (min-width: $tablet-width) {
-  .user-level__value {
-    margin-bottom: -11px;  /* Разобраться, почему на планшетной версии произошло смещение */
+  &--light {
+    display: none;
+
+    @media ($tablet) {
+      display: block;
+      color: $text-color-gray;
+      opacity: 0.4;
+    }
   }
 }

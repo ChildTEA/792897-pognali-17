@@ -7,6 +7,7 @@
 @import "blocks/social/social.scss";
 @import "blocks/contacts-list/contacts-list.scss";
 @import "blocks/hamburger/hamburger.scss";
+@import "blocks/user-level/user-level.scss";
 // Page blocks
 @import "blocks/page/page.scss";
 @import "blocks/page-header/page-header.scss";
@@ -15,6 +16,8 @@
 @import "blocks/user-nav/user-nav.scss";
 @import "blocks/intro/intro.scss";
 @import "blocks/page-main/page-main.scss";
+@import "blocks/countries-filter/countries-filter.scss";
+@import "blocks/companions-filter/companions-filter.scss";
 @import "blocks/contacts-menu/contacts-menu.scss";
 @import "blocks/usage-guide/usage-guide.scss";
 @import "blocks/section-title/section-title.scss";
@@ -24,7 +27,6 @@
 @import "blocks/add-flag/add-flag.scss";
 @import "blocks/companions/companions.scss";
 @import "blocks/user-card/user-card.scss";
-@import "blocks/user-level/user-level.scss";
 @import "blocks/transportation/transportation.scss";
 @import "blocks/add-profile/add-profile.scss";
 @import "blocks/pricing/pricing.scss";

@@ -1,9 +1,12 @@
 .invite-card {
-  margin-bottom: 10px;
-  padding-top: 15px;
-  padding-right: 18px;
-  padding-bottom: 22px;
-  padding-left: 18px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 270px;
+  margin: 0 auto 10px auto;
+  padding: 15px 18px 76px 18px;
 
   font-weight: 400;
   font-size: 15px;
@@ -11,49 +14,354 @@
 
   background-color: #ffffff;
   border-radius: 20px;
+
+  @media ($tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 688px;
+    margin-bottom: 40px;
+    padding: 33px 25px 10px 35px;
+  }
+
+  @media ($desktop) {
+    width: 950px;
+    margin: 0 0 30px 0;
+    padding: 0 44px 0 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.invite-card__mobile-only {
+  @media ($tablet) {
+    display: none;
+  }
 }
 
 .invite-card__image {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+
   border-radius: 50%;
+
+  @media ($tablet) {
+    position: static;
+
+    width: 190px;
+    height: 190px;
+    margin-top: 2px;
+
+    border-radius: 20px;
+  }
+
+  @media ($desktop) {
+    width: 285px;
+    height: 285px;
+    margin-top: 0;
+    margin-right: 35px;
+
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.invite-card__main-info {
+  @media ($tablet) {
+    width: 300px;
+    margin: 0 auto 0 30px;
+  }
+
+  @media ($desktop) {
+    margin: 0;
+    padding-top: 47px;
+  }
 }
 
 .invite-card__user-name {
+  position: relative;
+
+  margin: 0 0 45px;
+  padding-right: 30px;
+  padding-left: 86px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: $text-color-dark;
-}
 
-.invite-card__user-status {
-  width: 6px;
-  height: 6px;
+  @media ($tablet) {
+    display: table;
+    margin-bottom: 18px;
+    padding-right: 28px;
+    padding-left: 3px;
 
-  border-radius: 50%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media ($desktop) {
+    padding-right: 0;
+    padding-left: 24px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 4px;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    @media ($tablet) {
+      top: 12px;
+      right: 0;
+    }
+
+    @media ($desktop) {
+      top: 12px;
+      left: 0;
+    }
+  }
 
   &--offline {
-    background-color: #f97676;
+    &::before {
+      background-color: #f97676;
+    }
   }
 
   &--online {
-    background-color: #81e31e;
+    &::before {
+      background-color: #81e31e;
+    }
   }
 }
 
 .invite-card__tags {
+  margin: 0 0 13px;
   padding-right: 35px;
   padding-left: 7px;
+
+  @media ($tablet) {
+    margin-bottom: 45px;
+    padding-left: 6px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media ($desktop) {
+    margin-left: 21px;
+  }
 }
 
 .invite-card__tag {
   text-decoration: none;
 }
 
-.invite-card__routes {
-  margin-right: 7px;
+.invite-card__actions {
+  @media ($tablet) {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media ($desktop) {
+    padding-left: 21px;
+  }
+}
+
+.invite-card__call-form {
+  position: absolute;
+  right: 20px;
+  bottom: 22px;
+  left: 20px;
+
+  @media ($tablet) {
+    position: static;
+  }
+}
+
+.invite-card__call-button {
+  width: 100%;
+
+  @media ($tablet) {
+    width: auto;
+    padding-right: 32px;
+    padding-left: 31px;
+  }
+}
+
+.invite-card__likes {
+  position: absolute;
+  top: 60px;
+  left: 67px;
+
+  @media ($tablet) {
+    position: static;
+    padding-top: 11px;
+  }
+}
+
+.invite-card__sub-info {
+  display: flex;
+  order: 1;
+
+  @media ($tablet) {
+    flex-direction: column;
+    align-items: center;
+    order: 0;
+  }
+
+  @media ($desktop) {
+    position: absolute;
+    right: 42px;
+    bottom: 42px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    width: 240px;
+  }
+}
+
+.invite-card__transportation {
+  flex-grow: 1;
+}
+
+.invite-card__transportation-list {
   margin-left: 7px;
-  padding-left: 0;
+
+  @media ($tablet) {
+    flex-direction: column;
+    margin-bottom: 14px;
+    margin-left: 0;
+  }
+
+  @media ($desktop) {
+    flex-direction: row;
+    margin-bottom: 8px;
+  }
+}
+
+.invite-card__subtitle {
+  display: flex;
+  align-items: center;
+  margin: 0 -18px 14px -18px;
+  padding: 0;
+
+  @media ($tablet) {
+    margin: 0 -25px 14px -35px;
+    padding-top: 19px;
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 14px;
+    height: 1px;
+    margin-right: 12px;
+    margin-bottom: 2px;
+
+    background-color: $color-light;
+
+    @media ($tablet) {
+      width: 71px;
+    }
+  }
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 14px;
+    height: 1px;
+    margin-bottom: 2px;
+    margin-left: 11px;
+
+    background-color: $color-light;
+  }
+
+  &--align-r {
+    margin-left: 4px;
+
+    &::before {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+
+    &::after {
+      flex-grow: 0;
+      flex-shrink: 1;
+      width: 12px;
+      margin-left: 11px;
+    }
+  }
+
+  &--mobile {
+    @media ($tablet) {
+      display: none;
+    }
+  }
+}
+
+.invite-card__level-info {
+  margin-left: auto;
+}
+
+.invite-card__user-level {
+  margin: -7px 2px 0 auto;
+}
+
+.invite-card__wishes {
+  width: 100%;
+
+  @media ($desktop) {
+    width: 232px;
+    margin-left: auto;
+    padding-top: 46px;
+    padding-bottom: 70px;  /* Чтобы не наползал на абсолютно спозиционированный список транспорта в случае переполнения */
+  }
+}
+
+.invite-card__routes {
+  margin: 0 7px 15px;
+  padding: 3px 0 0 0;
 
   list-style: none;
+
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  @media ($desktop) {
+    display: block;
+  }
+}
+
+.invite-card__route {
+  margin-bottom: 10px;
+
+  @media ($tablet) {
+    margin-right: 28px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 6px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .invite-card__route-name {
@@ -67,6 +375,16 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  @media ($tablet) {
+    padding-left: 47px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media ($desktop) {
+    padding-left: 54px;
+  }
+
   &::before {
     position: absolute;
     top: -3px;
@@ -74,21 +392,15 @@
 
     width: 26px;
     height: 18px;
+
+    @media ($tablet) {
+      top: 0;
+      left: 0;
+
+      width: 35px;
+      height: 24px;
+
+      border-radius: 3px;
+    }
   }
-}
-
-.invite-card__level-value {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 18px;
-  color: $text-color-dark;
-}
-
-.invite-card__call-form {
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.invite-card__call-button {
-  width: 100%;
 }

@@ -1,0 +1,20 @@
+.companions-filter {
+  width: 270px;
+  height: 624px;
+  margin-bottom: 28px;
+
+  background-color: $color-bright-4;
+  border-radius: 20px;
+
+  @media ($tablet) {
+    width: 688px;
+    height: 550px;
+    margin-bottom: 40px;
+  }
+
+  @media ($desktop) {
+    width: 285px;
+    height: 815px;
+    margin: 0;
+  }
+}

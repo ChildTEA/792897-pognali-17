@@ -1,9 +1,41 @@
 .main-nav {
   z-index: 2;
-  min-height: 46px;  /* Временно для разметки */
+  // min-height: 46px;  /* Временно для разметки */
+
+  @media ($tablet) {
+    display: flex;
+  }
 
   &--open {
     background-color: #ffffff;
+  }
+
+  &--inner {
+    padding-top: 19px;
+
+    @media ($tablet) {
+      padding-top: 40px;
+    }
+
+    @media ($desktop) {
+      padding-top: 49px;
+    }
+  }
+}
+
+.main-nav__popup-wrapper {
+  @media ($desktop) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+
+.main-nav__user {
+  &--mobile {
+    @media ($tablet) {
+      display: none;
+    }
   }
 }
 
@@ -13,37 +45,29 @@
 
   display: flex;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: flex;
-  }
-
-  .main-nav__user {
-    &--mobile {
-      display: none;
-    }
-  }
-
-  .main-nav__side-menu {
+  @media ($tablet) {
     position: static;
     margin-right: 0;
   }
+
+  &--inner {
+    display: none;
+
+    @media ($tablet) {
+      display: flex;
+    }
+  }
 }
 
-@media (min-width: $desctop-width) {
-  .main-nav__popup-wrapper {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-
-  .main-nav__contacts {
+.main-nav__contacts {
+  @media ($desktop) {
     display: none;
   }
+}
 
-  .main-nav__social {
+.main-nav__social {
+  @media ($desktop) {
     display: none;
   }
 }
