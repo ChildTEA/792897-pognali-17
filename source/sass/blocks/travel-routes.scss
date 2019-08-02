@@ -81,6 +81,7 @@
 
 .travel-routes__button-container {
   @media ($tablet) {
+    box-sizing: border-box;
     padding-right: 35px;
     padding-left: 35px;
   }
