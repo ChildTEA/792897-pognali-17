@@ -35,14 +35,7 @@
     }
   }
 
-  &--alter {
-    position: relative;
-    width: 21px;
-    height: 21px;
-    margin: 0 6px;  /* Временно, для стилизации */
-  }
-
-  &--airplane {
+    &--airplane {
     background-image: url("../img/plane.svg");
     background-size: 14px 16px;
 
@@ -75,6 +68,25 @@
 
     @media ($tablet) {
       background-size: 20px 21px;
+    }
+  }
+
+  &--alter {
+    position: relative;
+    width: 24px;
+    height: 21px;
+    margin: 0 10px 0 0;  /* Временно, для стилизации */
+
+    background-color: transparent;
+    background-size: auto 21px;
+    border-radius: 0;
+
+    @media ($tablet) {
+
+    }
+
+    &:last-of-type {
+      margin-right: 0;
     }
   }
 }
