@@ -41,7 +41,9 @@
   }
 
   &:nth-of-type(odd) {
-    width: calc(50% + 35px);
+    @media ($tablet) {
+      width: calc(50% + 35px);
+    }
   }
 
   &:nth-of-type(even) {
