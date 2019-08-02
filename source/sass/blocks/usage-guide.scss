@@ -10,6 +10,11 @@
   color: $color-dark-alter;
 
   border-radius: 10px;
+
+  @media ($tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .usage-guide__text {
@@ -24,88 +29,96 @@
 
   border-radius: 10px 10px 0 0;
 
+  @media ($tablet) {
+    width: 50%;
+    margin: 0;
+    padding: 31px 100px 61px 33px;
+  }
+
+  @media ($desktop) {
+    margin-left: -35px;
+    border-radius: 20px;
+  }
+
+  &:nth-of-type(odd) {
+    width: calc(50% + 35px);
+  }
+
+  &:nth-of-type(even) {
+    @media ($tablet) {
+      margin-left: -35px;
+    }
+  }
+
+  &:nth-of-type(n) {
+    @media ($desktop) {
+      width: 380px;
+      padding: 29px 100px 30px 30px;
+    }
+  }
+
+  &:last-of-type {
+    @media ($desktop) {
+      width: 315px;
+    }
+  }
+
+  &:first-of-type {
+    @media ($desktop) {
+      width: 350px;
+      margin-left: 0;
+      padding-left: 34px;
+    }
+  }
+
   &--style-1 {
     margin-top: 0;
     background-color: $color-bright-1;
+
+    @media ($tablet) {
+      border-radius: 20px 0 0 0;
+    }
+
+    @media ($desktop) {
+      border-radius: 20px;
+    }
   }
 
   &--style-2 {
     background-color: $color-bright-2;
+
+    @media ($tablet) {
+      border-radius: 20px 20px 0 0;
+    }
+
+    @media ($desktop) {
+      border-radius: 20px;
+    }
   }
 
   &--style-3 {
     background-color: $color-bright-3;
+
+    @media ($tablet) {
+      border-radius: 0 0 0 20px;
+    }
+
+    @media ($desktop) {
+      border-radius: 20px;
+    }
   }
 
   &--style-4 {
     padding-bottom: 22px;
     background-color: $color-bright-4;
     border-radius: 10px;
-  }
-}
 
-
-@media (min-width: $tablet-width) {
-  .usage-guide {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .usage-guide__item {
-    // box-sizing: border-box;
-    width: 50%;
-    margin: 0;
-    padding: 31px 100px 61px 33px;
-
-
-    border-radius: 20px;
-
-    &:nth-of-type(even) {
-      margin-left: -35px;
-    }
-
-    &:nth-of-type(odd) {
-      width: calc(50% + 35px);
-    }
-
-    &--style-1 {
-      border-radius: 20px 0 0 0;
-    }
-
-    &--style-2 {
-      border-radius: 20px 20px 0 0;
-    }
-
-    &--style-3 {
-      border-radius: 0 0 0 20px;
-    }
-
-    &--style-4 {
+    @media ($tablet) {
       border-radius: 0 0 20px 20px;
     }
-  }
-}
 
-@media (min-width: $desctop-width) {
-  .usage-guide__item {
-    margin-left: -35px;
-
-    border-radius: 20px;
-
-
-    &:nth-of-type(n) {
-      width: 380px;
-      padding: 29px 100px 30px 30px;
-    }
-
-    &:first-of-type {
-      width: 350px;
-      margin-left: 0;
-      padding: 29px 100px 30px 34px;
-    }
-
-    &:last-of-type {
-      width: 315px;
+    @media ($desktop) {
+      border-radius: 20px;
     }
   }
 }

@@ -86,7 +86,7 @@ img {
   height: auto;
 }
 
-@media (min-width: $tablet-width) {
+@media ($tablet) {
   html {
     font-size: 28px;
     line-height: 33px;

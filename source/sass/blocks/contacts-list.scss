@@ -4,12 +4,33 @@
   padding: 0;
 
   list-style: none;
+
+  @media ($tablet) {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1176px;
+    padding-left: 152px;
+  }
 }
 
 .contacts-list__item {
   display: flex;
   align-items: center;
   min-height: 45px;
+
+  @media ($tablet) {
+    min-height: 68px;
+  }
+
+  @media ($desktop) {
+    min-height: 90px;
+    margin-right: 111px;
+  }
 }
 
 .contacts-list__link {
@@ -26,6 +47,14 @@
 
   cursor: pointer;
 
+  @media ($tablet) {
+    padding-left: 91px;
+  }
+
+  @media ($desktop) {
+    padding-left: 120px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -38,82 +67,47 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+
+    @media ($tablet) {
+      top: -22px;
+      width: 68px;
+      height: 68px;
+    }
+
+    @media ($desktop) {
+      top: -33px;
+      width: 90px;
+      height: 90px;
+    }
   }
 
   &--phone::before {
     background-image: url("../img/contacts-phone.svg");
     background-size: 18px 18px;
+
+    @media ($tablet) {
+      background-size: 27px 27px;
+    }
+
+    @media ($desktop) {
+      background-size: 36px 36px;
+    }
   }
 
   &--email::before {
     background-image: url("../img/contacts-mail.svg");
     background-size: 18px 13px;
+
+    @media ($tablet) {
+      background-size: 27px 20px;
+    }
+
+    @media ($desktop) {
+      background-size: 36px 26px;
+    }
   }
 
   &--bright {
     color: $color-bright-4;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .contacts-list {
-    padding-right: 35px;
-    padding-left: 35px;
-  }
-
-  .contacts-list__item {
-    min-height: 68px;
-  }
-
-  .contacts-list__link {
-    padding-left: 91px;
-
-    &::before {
-      top: -22px;
-
-      width: 68px;
-      height: 68px;
-    }
-
-    &--phone::before {
-      background-size: 27px 27px;
-    }
-
-    &--email::before {
-      background-size: 27px 20px;
-    }
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .contacts-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1176px;
-    padding-left: 152px;
-  }
-
-  .contacts-list__item {
-    min-height: 90px;
-    margin-right: 111px;
-  }
-
-  .contacts-list__link {
-    padding-left: 120px;
-
-    &::before {
-      top: -33px;
-
-      width: 90px;
-      height: 90px;
-    }
-
-    &--phone::before {
-      background-size: 36px 36px;
-    }
-
-    &--email::before {
-      background-size: 36px 26px;
-    }
   }
 }

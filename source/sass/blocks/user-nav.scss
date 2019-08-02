@@ -6,10 +6,8 @@
 
 .user-nav__link {
   text-decoration: none;
-}
 
-@media (min-width: $tablet-width) {
-  .user-nav__link {
+  @media ($tablet) {
     padding-right: 30px;
     padding-left: 28px;
   }

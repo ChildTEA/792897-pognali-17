@@ -22,13 +22,13 @@
   margin-left: auto;
 }
 
-@media (min-width: $tablet-width) {
+@media ($tablet) {
   .container {
     width: 688px;
   }
 }
 
-@media (min-width: $desctop-width) {
+@media ($desktop) {
   .container {
     width: 1320px;
   }

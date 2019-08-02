@@ -73,7 +73,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin: 0 -17px 0 0;   /* Временно, для стилизации */
+  margin: 0 -17px 0 0;
   padding: 0;
 
   list-style: none;
@@ -84,7 +84,7 @@
 }
 
 .user-card__route {
-  margin-right: 17px;  /* Временно, для стилизации */
+  margin-right: 17px;
 }
 
 .user-card__route-icon {
@@ -92,7 +92,6 @@
     @media ($tablet) {
       width: 35px;
       height: 24px;
-
       border-radius: 3px;
     }
   }
@@ -110,7 +109,6 @@
 
   @media ($tablet) {
     margin-bottom: 20px;
-
     font-size: 24px;
     line-height: 24px;
   }

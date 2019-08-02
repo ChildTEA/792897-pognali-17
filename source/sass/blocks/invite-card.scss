@@ -124,7 +124,6 @@
     }
 
     @media ($desktop) {
-      top: 12px;
       left: 0;
     }
   }
@@ -281,7 +280,7 @@
     content: "";
     flex-grow: 1;
     flex-shrink: 0;
-    width: 14px;
+    width: 12px;
     height: 1px;
     margin-bottom: 2px;
     margin-left: 11px;
@@ -300,8 +299,6 @@
     &::after {
       flex-grow: 0;
       flex-shrink: 1;
-      width: 12px;
-      margin-left: 11px;
     }
   }
 
@@ -395,7 +392,6 @@
 
     @media ($tablet) {
       top: 0;
-      left: 0;
 
       width: 35px;
       height: 24px;

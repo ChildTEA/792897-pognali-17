@@ -1,19 +1,38 @@
 .user-actions {
   margin-top: $shift-top-mobile;
   padding-top: 107px;
-
   background-color: $color-dark-lighter;
+
+  @media ($tablet) {
+    margin-top: $shift-top-tablet;
+    padding-top: 161px;
+  }
+
+  @media ($desktop) {
+    padding-top: 192px;
+  }
 }
 
 .user-actions__title {
   margin-top: 0;
   margin-bottom: 20px;
-
   text-align: center;
+
+  @media ($tablet) {
+    margin-bottom: 57px;
+  }
 }
 
 .user-actions__text-group {
   margin-bottom: 28px;
+
+  @media ($tablet) {
+    margin-bottom: 63px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 57px;
+  }
 }
 
 .user-actions__text {
@@ -35,6 +54,16 @@
   display: flex;
   width: 270px;
   margin-bottom: 20px;
+
+  @media ($tablet) {
+    width: 618px;
+    margin-bottom: 50px;
+  }
+
+  @media ($desktop) {
+    width: 1176px;
+    margin-bottom: 60px;
+  }
 }
 
 .user-actions__input {
@@ -51,6 +80,21 @@
 
   border: none;
   border-radius: 10px;
+
+  @media ($tablet) {
+    width: 536px;
+    height: 81px;
+    padding-left: 34px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px 0 0 20px;
+  }
+
+  @media ($desktop) {
+    width: 850px;
+  }
 
   &::placeholder {
     color: inherit;
@@ -77,69 +121,21 @@
   background-color: $color-bright-4;
   border: none;
   border-radius: 10px;
-}
 
-@media (min-width: $tablet-width) {
-  .user-actions {
-    margin-top: $shift-top-tablet;
-    padding-top: 161px;
-  }
-
-  .user-actions__title {
-    margin-bottom: 57px;
-  }
-
-  .user-actions__text-group {
-    margin-bottom: 63px;
-  }
-
-  .user-actions__form {
-    width: 618px;
-    margin-bottom: 50px;
-  }
-
-  .user-actions__input {
-    width: 536px;
-    height: 81px;
-    padding-left: 34px;
-
-    font-size: 24px;
-    line-height: 24px;
-
-    border-radius: 20px 0 0 20px;
-  }
-
-  .user-actions__send-button {
+  @media ($tablet) {
     width: 82px;
     height: 81px;
     margin-left: 0;
 
     border-radius: 0 20px 20px 0;
   }
-}
 
-@media (min-width: $desctop-width) {
-  .user-actions {
-    padding-top: 192px;
-  }
-
-  .user-actions__text-group {
-    margin-bottom: 57px;
-  }
-
-  .user-actions__form {
-    width: 1176px;
-    margin-bottom: 60px;
-  }
-
-  .user-actions__input {
-    width: 850px;
-  }
-
-  .user-actions__send-button {
+  @media ($desktop) {
     width: 324px;
+  }
 
-    &::after {
+  &::after {
+    @media ($desktop) {
       content: "Регистрация";
       position: absolute;
       top: 30px;

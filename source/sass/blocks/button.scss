@@ -17,6 +17,13 @@
   border-radius: 30px;
   cursor: pointer;
 
+  @media ($tablet) {
+    padding: 11px 40px 9px 38px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &--alter {
     display: block;
     width: 270px;
@@ -31,21 +38,8 @@
     text-transform: none;
 
     border-radius: 10px;
-  }
 
-  &--bordered {
-    box-shadow: inset 0 0 0 3px $color-dark-lighter;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .button {
-    padding: 11px 40px 9px 38px;
-
-    font-size: 20px;
-    line-height: 30px;
-
-    &--alter {
+    @media ($tablet) {
       min-width: 274px;
       padding: 30px 60px 27px 33px;
 
@@ -54,5 +48,9 @@
 
       border-radius: 20px;
     }
+  }
+
+  &--bordered {
+    box-shadow: inset 0 0 0 3px $color-dark-lighter;
   }
 }

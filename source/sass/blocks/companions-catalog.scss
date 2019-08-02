@@ -50,7 +50,7 @@
 
   @media ($tablet) {
     margin-bottom: 47px;
-    padding-right: 8px;  /* Временное решение */
+    padding-right: 8px;  /* Временное решение для центровки по макету */
     padding-left: 51px;
 
     font-size: 20px;
@@ -61,7 +61,7 @@
 
   @media ($desktop) {
     margin-bottom: 66px;
-    padding-right: 74px;  /* Временное решение */
+    padding-right: 74px;  /* Временное решение для центровки по макету*/
   }
 }
 

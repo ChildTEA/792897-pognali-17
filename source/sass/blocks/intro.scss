@@ -1,113 +1,12 @@
 .intro {
   position: relative;
-}
 
-.intro__lead {
-  height: 384px;
-  margin: 0;
-  padding: 41px 30px 0;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-
-  background-color: $color-dark;
-  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: left 62% bottom 0, 50% -53px;
-}
-
-.intro__reviews {
-  padding-top: 47px;
-  padding-bottom: 110px;
-
-  background-color: $color-dark-alter;
-}
-
-.intro__blockquote {
-  width: 160px;
-  margin: 0 auto;
-  padding-right: 100px;
-  padding-left: 40px;
-
-  font-style: normal;
-}
-
-.intro__review {
-  margin: 0 0 18px 0;
-  padding: 0;
-}
-
-.intro__reviaw-author {
-  font-weight: 700;
-  font-style: normal;
-}
-
-.intro__guide {
-  background-color: $color-dark-lighter;
-}
-
-.intro__usage-guide {
-  position: relative;
-  top: -80px;
-}
-
-@media (min-width: $tablet-width) {
-  .intro {
+  @media ($tablet) {
     color: #ffffff;
     background-color: #182044;
   }
 
-  .intro__lead {
-    width: 400px;
-    height: auto;
-    margin: 0 auto;
-    padding: 73px 165px 0;
-
-    font-size: 60px;
-    line-height: 70px;
-
-    background-color: transparent;
-    background-image: none;
-  }
-
-  .intro__reviews {
-    height: 585px;
-    padding: 36px 300px 0 21px;
-
-    background-color: $color-dark-lighter;
-    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left 72% bottom 140px, center bottom;
-  }
-
-  .intro__blockquote {
-    width: 295px;
-    margin: 0;
-    padding-left: 53px;
-  }
-
-  .intro__review {
-    margin-bottom: 38px;
-    padding-top: 50px;
-    padding-bottom: 0;
-  }
-
-  .intro__reviaw-author {
-    font-size: 21px;
-    line-height: 25px;
-  }
-
-  .intro__usage-guide {
-    top: -140px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .intro {
+  @media ($desktop) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,35 +20,133 @@
     background-repeat: no-repeat;
     background-position: left 60% bottom 0, center bottom;
   }
+}
 
-  .intro__lead {
+.intro__lead {
+  height: 384px;
+  margin: 0;
+  padding: 24px 30px 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+
+  background-color: $color-dark;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left 62% bottom 0, 50% -53px;
+
+  @media ($tablet) {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 73px 165px 0;
+
+    font-size: 60px;
+    line-height: 70px;
+
+    background-color: transparent;
+    background-image: none;
+  }
+
+  @media ($desktop) {
     width: 400px;
     margin: 0 0 101px 0;
     padding: 110px 67px 0;
 
     text-align: left;
   }
+}
 
-  .intro__reviews {
+.intro__reviews {
+  padding-top: 47px;
+  padding-bottom: 110px;
+
+  background-color: $color-dark-alter;
+
+  @media ($tablet) {
+    height: 585px;
+    padding: 36px 300px 0 21px;
+
+    background-color: $color-dark-lighter;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left 72% bottom 140px, center bottom;
+  }
+
+  @media ($desktop) {
     width: 260px;
     height: auto;
     margin-bottom: 30px;
     margin-left: auto;
     padding: 71px 26px 0 26px;
+
     background: none;
   }
+}
 
-  .intro__blockquote {
-    width: 260px;
-    padding: 0 0 0 0;
+.intro__blockquote {
+  width: 160px;
+  margin: 0 auto;
+  padding-right: 100px;
+  padding-left: 40px;
+
+  font-style: normal;
+
+  @media ($tablet) {
+    width: 295px;
+    margin: 0;
+    padding-left: 53px;
   }
 
-  .intro__guide {
+  @media ($desktop) {
+    width: 260px;
+    padding: 0;
+  }
+}
+
+.intro__review {
+  margin: 0 0 18px 0;
+  padding: 0;
+
+  @media ($tablet) {
+    margin-bottom: 38px;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+
+.intro__review-author {
+  font-weight: 700;
+  font-style: normal;
+
+  @media ($tablet) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.intro__guide {
+  background-color: $color-dark-lighter;
+
+  @media ($desktop) {
     width: 1320px;
     background-color: transparent;
   }
+}
 
-  .intro__usage-guide {
-    top: auto;
+.intro__usage-guide {
+  position: relative;
+  top: -80px;
+
+  @media ($tablet) {
+    top: -140px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media ($desktop) {
+    top: 0;
   }
 }

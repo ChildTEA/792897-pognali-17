@@ -12,31 +12,8 @@
   background-position: 18px 0;
   background-origin: padding-box;
   border-radius: $rounded-bottom-mobile;
-}
 
-.about-service__title {
-  margin-bottom: 19px;
-}
-
-.about-service__text {
-  box-sizing: border-box;
-  margin-top: 0;
-  margin-bottom: 19px;
-  padding-right: 25px;
-  padding-left: 25px;
-
-  &--lead {
-    margin-bottom: 14px;
-    font-weight: 700;
-  }
-}
-
-.about-service__button-container {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .about-service {
+  @media ($tablet) {
     margin-top: -44px;
     padding-top: 42px;
     padding-bottom: 88px;
@@ -46,34 +23,7 @@
     border-radius: $rounded-bottom-tablet;
   }
 
-  .about-service__title {
-    margin-bottom: 40px;
-  }
-
-  .about-service__text {
-    margin-bottom: 31px;
-    padding-right: 350px;
-    padding-left: 35px;
-
-    &--lead {
-      margin-bottom: 51px;
-      font-size: 21px;
-      line-height: 25px;
-    }
-  }
-
-  .about-service__button-container {
-    display: block;
-    padding-left: 35px;
-  }
-
-  // .about-service__button {
-  //   width: 274px;
-  // }
-}
-
-@media (min-width: $desctop-width) {
-  .about-service {
+  @media ($desktop) {
     margin-top: 0;
     padding-top: 132px;
     padding-bottom: 163px;
@@ -81,23 +31,65 @@
     background-image: url("../img/blue-back-square-desctop.png"), url("../img/about-desktop@1x.png");
     background-position: 60px 71px, right 60px top 85px;
   }
+}
 
-  .about-service__title {
-    margin-bottom: 58px;
+.about-service__title {
+  margin-bottom: 19px;
+
+  @media ($tablet) {
+    margin-bottom: 40px;
   }
 
-  .about-service__text {
+  @media ($desktop) {
+    margin-bottom: 58px;
+  }
+}
+
+.about-service__text {
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 19px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @media ($tablet) {
+    margin-bottom: 31px;
+    padding-right: 350px;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
     margin-bottom: 38px;
     padding-right: 630px;
     padding-left: 71px;
+  }
 
-    &--lead {
+  &--lead {
+    margin-bottom: 14px;
+    font-weight: 700;
+
+    @media ($tablet) {
+      margin-bottom: 51px;
+      font-size: 21px;
+      line-height: 25px;
+    }
+
+    @media ($desktop) {
       margin-bottom: 84px;
       padding-right: 835px;
     }
   }
+}
 
-  .about-service__button-container {
+.about-service__button-container {
+  display: none;
+
+  @media ($tablet) {
+    display: block;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
     padding-left: 71px;
   }
 }

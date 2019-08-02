@@ -5,6 +5,16 @@
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
+
+  @media ($tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 618px;
+  }
+
+  @media ($desktop) {
+    width: 559px;
+  }
 }
 
 .route-card__image {
@@ -16,6 +26,12 @@
 
   background-color: $text-color-gray;
   border-radius: 10px 10px 0 0;
+
+  @media ($tablet) {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 .route-card__info {
@@ -28,6 +44,19 @@
 
   background-color: #ffffff;
   border-radius: 10px;
+
+  @media ($tablet) {
+    width: 432px;
+    margin-top: 0;
+    padding: 31px 50px 16px 30px;
+
+    border-radius: 20px 0 0 20px;
+  }
+
+  @media ($desktop) {
+    width: 373px;
+    padding-top: 24px;
+  }
 }
 
 .route-card__lead {
@@ -40,6 +69,16 @@
   color: $text-color-gray;
 
   opacity: 0.3;
+
+  @media ($tablet) {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 17.68px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 22px;
+  }
 }
 
 .route-card__title {
@@ -53,10 +92,28 @@
   line-height: 21px;
   color: $color-dark-alter;
 
-  &--with-flag::before {
-    position: absolute;
-    top: -39px;
-    left: 1px;
+  @media ($tablet) {
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &--with-flag {
+    &::before {
+      position: absolute;
+      top: -39px;
+      left: 1px;
+
+      @media ($tablet) {
+        top: -15px;
+        left: 368px;
+      }
+
+      @media ($desktop) {
+        top: -1px;
+        left: 308px;
+      }
+    }
   }
 }
 
@@ -76,78 +133,10 @@
   text-transform: uppercase;
 
   opacity: 0.3;
-}
 
-
-@media (min-width: $tablet-width) {
-  .route-card {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 618px;
-  }
-
-  .route-card__image {
-    width: 186px;
-    height: 140px;
-
-    border-radius: 0 20px 20px 0;
-  }
-
-  .route-card__info {
-    width: 432px;
-    margin-top: 0;
-    padding: 31px 50px 16px 30px;
-
-    border-radius: 20px 0 0 20px;
-  }
-
-  .route-card__title {
-    margin-bottom: 6px;
-
-    font-size: 24px;
-    line-height: 24px;
-
-    &--with-flag::before {
-      top: -15px;
-      left: 368px;
-    }
-  }
-
-  .route-card__lead {
-    margin-bottom: 16px;
-
-    font-size: 20px;
-    line-height: 17.68px;
-  }
-
-  .route-card__visitors {
+  @media ($tablet) {
     position: static;
-
     padding-left: 29px;
-
     font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .route-card {
-    width: 559px;
-  }
-
-  .route-card__info {
-    width: 373px;
-    padding-top: 24px;
-  }
-
-  .route-card__title {
-    &--with-flag::before {
-      top: -1px;
-      left: 308px;
-    }
-  }
-
-  .route-card__lead {
-    margin-bottom: 22px;
   }
 }

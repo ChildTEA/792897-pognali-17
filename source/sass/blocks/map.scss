@@ -1,7 +1,10 @@
 .map {
   z-index: 1;
-
   margin-top: $shift-top-mobile;
+
+  @media ($tablet) {
+    margin-top: $shift-top-tablet;
+  }
 }
 
 .map__top {
@@ -12,6 +15,27 @@
 
   background-color: $color-bright-4;
   border-radius: $rounded-bottom-mobile;
+
+  @media ($tablet) {
+    padding-top: 153px;
+    padding-bottom: 85px;
+
+    border-radius: $rounded-bottom-tablet;
+  }
+
+  @media ($desktop) {
+    padding-top: 144px;
+    padding-bottom: 60px;
+  }
+}
+
+.map__container {
+  @media ($desktop) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 74px;
+  }
 }
 
 .map__end-point {
@@ -23,6 +47,17 @@
 
   font-weight: 700;
   text-transform: uppercase;
+
+  @media ($tablet) {
+    margin-bottom: 58px;
+    padding-left: 128px;
+  }
+
+  @media ($desktop) {
+    margin-right: 148px;
+    margin-bottom: 0;
+    padding-top: 1px;
+  }
 
   &::before {
     content: "";
@@ -39,47 +74,8 @@
     background-position: center;
     background-size: 14px 22px;
     border-radius: 50%;
-  }
-}
 
-.map__button {
-  width: 270px; /* Временно, для базовой стилизации */
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.map__interactive-map {
-  position: relative;
-  z-index: -1;
-
-  margin-top: $shift-top-mobile;
-
-  background-color: #fbf9f5;
-}
-
-.map__placeholder {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: $tablet-width) {
-  .map {
-    margin-top: $shift-top-tablet;
-  }
-
-  .map__top {
-    padding-top: 153px;
-    padding-bottom: 85px;
-
-    border-radius: $rounded-bottom-tablet;
-  }
-
-  .map__end-point {
-    margin-bottom: 58px;
-    padding-left: 128px;
-
-    &::before {
+    @media ($tablet) {
       top: -21px;
       left: 35px;
 
@@ -88,43 +84,8 @@
 
       background-size: 21px 32px;
     }
-  }
 
-  .map__button {
-    width: 618px;
-    padding-right: 65px;
-    padding-left: 36px;
-  }
-
-  .map__interactive-map {
-    margin-top: $shift-top-tablet;
-  }
-
-  .map__placeholder {
-    width: 768px;
-    height: 700px;
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .map__top {
-    padding-top: 144px;
-    padding-bottom: 60px;
-  }
-
-  .map__container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 74px;
-  }
-
-  .map__end-point {
-    margin-right: 148px;
-    margin-bottom: 0;
-    padding-top: 1px;
-
-    &::before {
+    @media ($desktop) {
       top: -29px;
       left: 6px;
 
@@ -134,20 +95,55 @@
       background-size: 28px 43px;
     }
   }
+}
 
-  .map__button {
+.map__button {
+  width: 270px; /* Временно, для базовой стилизации */
+  margin-right: auto;
+  margin-left: auto;
+
+  @media ($tablet) {
+    width: 618px;
+    padding-right: 65px;
+    padding-left: 36px;
+  }
+
+  @media ($desktop) {
     display: table;
     width: auto;
     margin: 0;
     padding-right: 66px;
-    padding-left: 36px;
+  }
+}
+
+.map__interactive-map {
+  position: relative;
+  z-index: -1;
+
+  margin-top: $shift-top-mobile;
+
+  background-color: #fbf9f5;
+
+  @media ($tablet) {
+    margin-top: $shift-top-tablet;
   }
 
-  .map__interactive-map {
+  @media ($desktop) {
     margin-top: -200px;
   }
+}
 
-  .map__placeholder {
+.map__placeholder {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media ($tablet) {
+    width: 768px;
+    height: 700px;
+  }
+
+  @media ($desktop) {
     width: 1440px;
     height: 750px;
   }
