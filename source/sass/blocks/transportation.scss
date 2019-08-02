@@ -35,7 +35,7 @@
     }
   }
 
-    &--airplane {
+  &--airplane {
     background-image: url("../img/plane.svg");
     background-size: 14px 16px;
 
@@ -80,10 +80,6 @@
     background-color: transparent;
     background-size: auto 21px;
     border-radius: 0;
-
-    @media ($tablet) {
-
-    }
 
     &:last-of-type {
       margin-right: 0;
