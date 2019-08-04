@@ -54,3 +54,19 @@
     padding-top: 49px;
   }
 }
+
+.page-header__logo-image {
+  display: block;
+  width: 100px;
+  height: 19px;
+
+  @media ($tablet) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media ($desktop) {
+    width: 200px;
+    height: 52px;
+  }
+}

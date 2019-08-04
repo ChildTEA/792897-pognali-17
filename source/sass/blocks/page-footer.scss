@@ -32,15 +32,28 @@
 }
 
 .page-footer__logo {
-  display: table;
   margin-right: auto;
-  margin-bottom: 31px;
+  margin-bottom: 41px;
   margin-left: auto;
 
   @media ($tablet) {
-    width: 164px;  /* Временно, для базовой стилизации */
-    height: 42px;
     margin: 0;
+  }
+}
+
+.page-footer__logo-image {
+  display: block;
+  width: 96px;
+  height: 15px;
+
+  @media ($tablet) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media ($desktop) {
+    width: 198px;
+    height: 52px;
   }
 }
 
@@ -53,7 +66,7 @@
   }
 
   @media ($desktop) {
-    margin-left: -12px;
+    margin-left: -45px;
   }
 }
 
