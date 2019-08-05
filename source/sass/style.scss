@@ -1,6 +1,7 @@
 @import "variables";
 @import "global";
-@import "blocks/helpers";
+@import "helpers";
+
 // Redefineble blocks
 @import "blocks/button.scss";
 @import "blocks/popup-wrapper.scss";
@@ -40,3 +41,4 @@
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/companions-catalog.scss";
+
