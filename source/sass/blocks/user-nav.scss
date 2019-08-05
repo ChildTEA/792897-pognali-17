@@ -1,5 +1,4 @@
 .user-nav {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -10,5 +9,9 @@
   @media ($tablet) {
     padding-right: 30px;
     padding-left: 28px;
+  }
+
+  @media ($desktop) {
+    padding-left: 29px;
   }
 }

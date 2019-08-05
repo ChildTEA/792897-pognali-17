@@ -19,9 +19,6 @@
   border-radius: 0 0 20px 20px;
 
   @media ($tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     padding-top: 129px;
     padding-bottom: 62px;
 
@@ -29,8 +26,16 @@
   }
 
   @media ($desktop) {
-    padding-top: 119px;
-    padding-bottom: 63px;
+    padding-top: 118px;
+    padding-bottom: 62px;
+  }
+}
+
+.page-main__container {
+  @media ($tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -39,15 +44,13 @@
 
   display: table;
   margin: 0;
-  margin-bottom: 0;
-  margin-left: 25px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
 
   @media ($tablet) {
-    margin-left: 74px;
+    margin-left: 34px;
 
     font-size: 60px;
     line-height: 70px;
@@ -55,16 +58,16 @@
   }
 
   @media ($desktop) {
-    margin-left: 126px;
+    margin-left: 66px;
   }
 
   &::after {
     content: "";
     position: absolute;
+    right: 0;
     bottom: -11px;
     left: 0;
 
-    width: 100%;
     height: 5px;
 
     background-color: $color-bright-1;
@@ -72,8 +75,6 @@
 
     @media ($tablet) {
       bottom: -66px;
-      left: 2px;
-
       height: 8px;
       border-radius: 4px;
     }
@@ -85,11 +86,11 @@
 
   @media ($tablet) {
     display: block;
-    margin: 19px 75px 0 0;
+    margin: 19px 35px 0 0;
   }
 
   @media ($desktop) {
-    margin-right: 123px;
+    margin-right: 63px;
   }
 }
 

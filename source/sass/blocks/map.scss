@@ -62,7 +62,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -2px;
+    top: 48%;  /* Комментарий: Для подгонки под макет */
     left: 0;
 
     width: 45px;
@@ -75,8 +75,10 @@
     background-size: 14px 22px;
     border-radius: 50%;
 
+    transform: translateY(-50%);
+
     @media ($tablet) {
-      top: -21px;
+      top: 40%;
       left: 35px;
 
       width: 68px;
@@ -86,7 +88,7 @@
     }
 
     @media ($desktop) {
-      top: -29px;
+      top: 48%;
       left: 6px;
 
       width: 90px;
@@ -98,12 +100,10 @@
 }
 
 .map__button {
-  width: 270px; /* Временно, для базовой стилизации */
-  margin-right: auto;
-  margin-left: auto;
-
   @media ($tablet) {
-    width: 618px;
+    // width: 618px;
+    margin-right: 35px;
+    margin-left: 35px;
     padding-right: 65px;
     padding-left: 36px;
   }

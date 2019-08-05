@@ -10,15 +10,15 @@
 
     display: flex;
     padding-top: 10px;
-    padding-left: 80px;
+    padding-left: 105px;
   }
 
   &::before {
     @media ($tablet) {
       content: "";
       position: absolute;
-      top: 15px;
-      left: -25px;
+      top: 25px;
+      left: 0;
 
       width: 60px;
       height: 2px;
@@ -31,6 +31,11 @@
 .site-nav__item {
   @media ($tablet) {
     margin-left: 37px;
+  }
+
+  @media ($desktop) {
+    margin-right: 34px;
+    margin-left: 0;
   }
 }
 

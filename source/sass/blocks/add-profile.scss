@@ -9,10 +9,10 @@
   color: $text-color-gray;
 
   background-color: $color-light;
-  background-image: url("../img/rates@1x.png");
-  background-repeat: no-repeat;
-  background-position: right 26px top 72px;
-  background-size: 99px 99px;
+  // background-image: url("../img/rates@1x.png");
+  // background-repeat: no-repeat;
+  // background-position: right 26px top 72px;
+  // background-size: 99px 99px;
   border-radius: $rounded-bottom-mobile;
 
   @media ($tablet) {
@@ -27,6 +27,19 @@
   @media ($desktop) {
     padding-top: 192px;
     padding-bottom: 187px;
+  }
+}
+
+.add-profile__container {
+  position: relative;
+  max-width: 390px;  /* Когда сильно разъезжается, то вид силшком портится */
+
+  @media ($tablet) {
+    max-width: 1000px;
+  }
+
+  @media ($desktop) {
+    max-width: 1320px;
   }
 }
 
@@ -48,10 +61,10 @@
 
 .add-profile__pricing {
   box-sizing: border-box;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 32px 24px;
 
   @media ($tablet) {
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
   }
 }
 
@@ -75,7 +88,7 @@
   }
 
   @media ($desktop) {
-    width: 1178px;
+    margin-left: 71px;
   }
 
   &::before {

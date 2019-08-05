@@ -29,11 +29,19 @@
   }
 }
 
+.companions__container {
+  position: relative;
+}
+
 .companions__title {
   margin-bottom: 19px;
 
   @media ($tablet) {
     margin-bottom: 57px;
+  }
+
+  @media ($desktop) {
+    padding-right: 690px;
   }
 }
 
@@ -81,16 +89,25 @@
   @media ($tablet) {
     display: flex;
     justify-content: space-between;
-    width: 618px;
-    margin-bottom: 70px;
+    width: 666px;
+    margin: 0 auto 70px;
   }
 
   @media ($desktop) {
     position: absolute;
-    top: 218px;
-    left: 750px;
-
+    top: 3px;
+    left: 690px;
     width: 630px;
+  }
+}
+
+.companions-card {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media ($desktop) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

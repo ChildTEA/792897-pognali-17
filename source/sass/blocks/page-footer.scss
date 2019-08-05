@@ -1,7 +1,4 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: -239px;
   padding-top: 38px;
   padding-bottom: 7px;
@@ -12,11 +9,9 @@
   border-radius: $rounded-top-mobile;
 
   @media ($tablet) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
     margin-top: -154px;
-    padding: 48px 40px 46px 40px;
+    padding-top: 48px;
+    padding-bottom: 46px;
 
     border-radius: $rounded-top-tablet;
   }
@@ -28,6 +23,18 @@
 
   &--inner {
     margin-top: 0;
+  }
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media ($tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 

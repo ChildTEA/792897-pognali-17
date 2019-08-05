@@ -17,6 +17,10 @@
   }
 }
 
+.page-header__container {
+  position: relative;
+}
+
 .page-header__hamburger {
   position: absolute;
   top: 30px;
@@ -52,6 +56,12 @@
 
   @media ($desktop) {
     padding-top: 49px;
+  }
+}
+
+.page-header__logo {
+  @media ($desktop) {
+    margin-right: 40px;
   }
 }
 

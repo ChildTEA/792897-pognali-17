@@ -1,14 +1,11 @@
 .pricing {
-  width: 270px;
-  padding-left: 25px;
+  position: relative;
+  counter-reset: num;
 
   @media ($tablet) {
-    position: relative;
-
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 688px;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 90px;
@@ -18,20 +15,24 @@
     width: 1176px;
   }
 
-  &::after {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: 1px;
+
+    width: 99px;
+    height: 99px;
+
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
     @media ($tablet) {
-      content: "";
-      position: absolute;
-      right: 45px;
+      top: auto;
+      right: 46px;
       bottom: -88px;
-
-      width: 100px;
-      height: 99px;
-
-      background-color: transparent;
-      background-image: url("../img/rates@1x.png");
-      background-repeat: no-repeat;
-      background-size: contain;
+      z-index: 1;
     }
 
     @media ($desktop) {
@@ -43,10 +44,31 @@
       margin-top: -98px;
     }
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 46px;
+    bottom: -1px;
+    left: 0;
+
+    height: 1px;
+    background-color: $divider-color;
+
+    @media ($tablet) {
+      right: 35px;
+      bottom: 29px;
+      left: 85px;
+    }
+
+    @media ($desktop) {
+      right: 270px;
+    }
+  }
 }
 
 .pricing__text {
-  width: 200px;
+  padding-right: 45px;
 
   @media ($tablet) {
     box-sizing: border-box;
@@ -57,56 +79,84 @@
     padding-top: 12px;
 
     @media ($tablet) {
-      width: 400px;
+      flex-grow: 1;
+      min-width: 400px;
       padding-top: 17px;
       padding-right: 20px;
     }
 
     @media ($desktop) {
+      flex-grow: 0;
       width: 528px;
       padding-top: 17px;
       padding-right: 20px;
     }
 
-    &:last-of-type {
-      &::after {
-        @media ($tablet) {
-          content: "";
-          position: absolute;
-          bottom: -1px;
-          left: 0;
-          z-index: 1;
+    &::before {
+      content: counter(num);
+      position: absolute;
+      top: 4px;
+      right: 1px;
 
-          width: 562px;
-          height: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
 
-          background-color: rgba(0, 0, 0, 0.05);
-        }
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      color: #ffffff;
 
-        @media ($desktop) {
-          width: 813px;
-        }
+      background-color: $color-bright-2;
+      border-radius: 50%;
+      counter-increment: num;
+
+      @media ($tablet) {
+        top: -1px;
+        right: auto;
+        left: -90px;
+
+        width: 67px;
+        height: 67px;
+
+        font-size: 28px;
+        line-height: 28px;
       }
     }
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       top: 0;
+      right: 45px;
       left: 0;
 
-      width: 200px;
       height: 1px;
 
-      background-color: rgba(0, 0, 0, 0.05);
+      background-color: $divider-color;
 
       @media ($tablet) {
+        right: -163px;
         z-index: 1;
-        width: 562px;
+        // width: 562px;
       }
 
       @media ($desktop) {
-        width: 813px;
+        right: -285px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::before {
+        background-color: $color-bright-3;
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        background-color: $color-bright-4;
       }
     }
   }
@@ -117,6 +167,7 @@
     padding-bottom: 10px;
 
     @media ($tablet) {
+      box-sizing: border-box;
       width: 198px;
       padding-top: 18px;
       padding-right: 33px;
@@ -139,9 +190,9 @@
           content: "";
           position: absolute;
           top: -43px;
+          right: 0;
           left: 0;
 
-          width: 198px;
           height: 43px;
 
           background-color: inherit;
@@ -161,10 +212,10 @@
         @media ($tablet) {
           content: "";
           position: absolute;
+          right: 0;
           bottom: -44px;
           left: 0;
 
-          width: 198px;
           height: 44px;
 
           background-color: inherit;
@@ -175,22 +226,6 @@
           bottom: -51px;
           width: 444px;
           height: 51px;
-        }
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-
-        width: 200px;
-        height: 1px;
-
-        background-color: $divider-color;
-
-        @media ($tablet) {
-          content: none;
         }
       }
     }

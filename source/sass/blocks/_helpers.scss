@@ -16,19 +16,24 @@
 }
 
 .container {
-  width: 270px;
+  max-width: 618px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 @media ($tablet) {
   .container {
-    width: 688px;
+    max-width: 1320px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
 @media ($desktop) {
   .container {
-    width: 1320px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

@@ -1,12 +1,32 @@
 .intro {
-  position: relative;
   margin-bottom: 39px;
+  padding-top: 24px;
+
+  background-color: $color-dark;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 62% 153px, 50% -70px;
 
   @media ($tablet) {
     margin-bottom: 96px;
+    padding-top: 73px;
     color: #ffffff;
-    background-color: #182044;
+    background: #182044;
   }
+
+  @media ($desktop) {
+    margin-bottom: 0;
+    padding-top: 0;
+
+    background-color: #161c34;
+    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left 60% bottom 0, center bottom;
+  }
+}
+
+.intro__container {
+  position: relative;
 
   @media ($desktop) {
     display: flex;
@@ -16,36 +36,23 @@
     align-items: flex-start;
     box-sizing: border-box;
     height: 649px;
-    margin-bottom: 0;
-    padding: 0 60px 250px;
-
-    background-color: #161c34;
-    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left 60% bottom 0, center bottom;
   }
 }
 
 .intro__lead {
-  height: 384px;
-  margin: 0;
-  padding: 24px 30px 0;
+  width: 250px;
+  min-height: 384px;
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
 
-  background-color: $color-dark;
-  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: left 62% bottom 0, 50% -53px;
-
   @media ($tablet) {
     width: 400px;
-    height: auto;
+    min-height: auto;
     margin: 0 auto;
-    padding: 73px 165px 0;
 
     font-size: 60px;
     line-height: 70px;
@@ -56,22 +63,25 @@
 
   @media ($desktop) {
     width: 400px;
-    margin: 0 0 101px 0;
-    padding: 110px 67px 0;
+    margin: 0 0 100px 0;
+    padding: 109px 67px 0;
 
     text-align: left;
   }
 }
 
 .intro__reviews {
-  padding-top: 47px;
-  padding-bottom: 110px;
+  margin-right: -25px;
+  margin-left: -25px;
+  padding: 47px 100px 110px 50px;
 
   background-color: $color-dark-alter;
 
   @media ($tablet) {
     height: 585px;
-    padding: 36px 300px 0 21px;
+    margin-right: -40px;
+    margin-left: -40px;
+    padding: 36px 400px 0 74px;
 
     background-color: $color-dark-lighter;
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
@@ -84,30 +94,18 @@
     height: auto;
     margin-bottom: 30px;
     margin-left: auto;
-    padding: 71px 26px 0 26px;
+    padding: 70px 66px 0 58px;
 
     background: none;
   }
 }
 
 .intro__blockquote {
-  width: 160px;
-  margin: 0 auto;
-  padding-right: 100px;
-  padding-left: 40px;
+  display: table;
+  margin: 0;
+  padding: 0;
 
   font-style: normal;
-
-  @media ($tablet) {
-    width: 295px;
-    margin: 0;
-    padding-left: 53px;
-  }
-
-  @media ($desktop) {
-    width: 260px;
-    padding: 0;
-  }
 }
 
 .intro__review {
@@ -133,25 +131,45 @@
 
 .intro__guide {
   margin-top: -80px;
+  background-color: $color-dark-lighter;
+
+  @media ($tablet) {
+    margin: -80px 0 0;
+    padding: 0;
+    background-color: transparent;
+  }
 
   @media ($desktop) {
-    width: 1320px;
-    background-color: transparent;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  &::before {
+    content: "";  // Комментарий: Задаёт контрастный фон у пошаговой инструкции
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    height: 240px;
+    margin-right: -50vw;
+    margin-left: -50vw;
+    background-color: $color-dark-lighter;
+
+    @media ($tablet) {
+      content: none;
+    }
   }
 }
 
 .intro__usage-guide {
-  margin: 0 auto;
+  margin: -80px 0 0;
 
   @media ($tablet) {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: -140px;
   }
 
   @media ($desktop) {
-    position: absolute;
-    bottom: 123px;
     margin-top: 0;
   }
 }

@@ -1,21 +1,20 @@
 .contacts-list {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
 
   list-style: none;
 
   @media ($tablet) {
     box-sizing: border-box;
-    padding-right: 35px;
-    padding-left: 35px;
+    // padding-right: 35px;
+    // padding-left: 35px;
   }
 
   @media ($desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1176px;
-    padding-left: 152px;
+    justify-content: flex-start;
+    // padding-left: 152px;
   }
 }
 
@@ -23,14 +22,20 @@
   display: flex;
   align-items: center;
   min-height: 45px;
+  margin-right: 45px;
 
   @media ($tablet) {
     min-height: 68px;
+    margin-right: 68px;
   }
 
   @media ($desktop) {
     min-height: 90px;
-    margin-right: 111px;
+    margin-right: 112px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
   }
 }
 

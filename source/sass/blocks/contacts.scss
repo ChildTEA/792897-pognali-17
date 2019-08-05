@@ -59,7 +59,14 @@
 }
 
 .contacts-list {
+  margin: 0 auto;
+
   @media ($tablet) {
-    margin-bottom: 30px;
+    margin: 0 35px 30px;
+  }
+
+  @media ($desktop) {
+    margin-right: 50px;
+    margin-left: 223px;
   }
 }

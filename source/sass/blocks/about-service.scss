@@ -2,7 +2,6 @@
   position: relative;
   z-index: 6;
 
-  // margin-top: -41px;
   padding-top: 33px;
   padding-bottom: 67px;
 
@@ -14,17 +13,15 @@
   border-radius: $rounded-bottom-mobile;
 
   @media ($tablet) {
-    // margin-top: -44px;
     padding-top: 42px;
     padding-bottom: 88px;
 
     background-image: url("../img/about-tablet@1x.png"), url("../img/blue-back-rect-tablet.png");
-    background-position: 384px 48px, 40px 0;
+    background-position: right 8px top 48px, 40px 0;
     border-radius: $rounded-bottom-tablet;
   }
 
   @media ($desktop) {
-    // margin-top: 0;
     padding-top: 132px;
     padding-bottom: 163px;
 
@@ -93,4 +90,9 @@
   @media ($desktop) {
     padding-left: 71px;
   }
+}
+
+.about-service__button {
+  display: table;
+  width: auto;
 }
