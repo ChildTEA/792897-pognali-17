@@ -1,7 +1,7 @@
 .countries-filter {
   margin-top: $shift-top-mobile;
   margin-bottom: 24px;
-  padding: 50px 31px 37px 25px;  /* Временно для базовой стилизации */
+  padding: 50px 31px 37px 25px;  // Временно для базовой стилизации
 
   font-weight: 700;
   font-size: 16px;
@@ -15,13 +15,13 @@
   @media ($tablet) {
     margin-top: $shift-top-tablet;
     margin-bottom: 46px;
-    padding: 147px 31px 74px 25px;  /* Временно для базовой стилизации */
+    padding: 147px 31px 74px 25px;  // Временно для базовой стилизации
 
     border-radius: $rounded-bottom-tablet;
   }
 
   @media ($desktop) {
-    height: 2597px;  /* Временно для базовой стилизации */
+    height: 2597px;  // Временно для базовой стилизации
     margin-bottom: 77px;
   }
 }

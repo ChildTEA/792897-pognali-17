@@ -33,10 +33,6 @@
 }
 
 .site-nav__item {
-  @media ($tablet) {
-    // margin-left: 37px;
-  }
-
   @media ($desktop) {
     margin-right: 34px;
     margin-left: 0;
