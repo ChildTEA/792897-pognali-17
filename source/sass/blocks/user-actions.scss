@@ -36,7 +36,6 @@
 }
 
 .user-actions__text {
-  box-sizing: border-box;
   margin: 0 auto;
   padding-right: 35px;
   padding-left: 35px;
@@ -107,7 +106,7 @@
 
 .user-actions__send-button {
   position: relative;
-  box-sizing: border-box;
+
   width: 60px;
   height: 62px;
   margin-left: -15px;

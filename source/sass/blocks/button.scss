@@ -1,6 +1,5 @@
 .button {
   display: block;
-  box-sizing: border-box;
   padding: 6px 40px 4px 38px;
 
   font-weight: 700;
@@ -42,6 +41,7 @@
     @media ($tablet) {
       position: relative;
 
+      box-sizing: border-box;
       min-width: 274px;
       padding: 30px 60px 27px 33px;
 

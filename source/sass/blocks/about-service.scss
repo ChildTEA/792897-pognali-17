@@ -43,7 +43,6 @@
 }
 
 .about-service__text {
-  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 19px;
   padding-right: 25px;
@@ -83,7 +82,6 @@
 
   @media ($tablet) {
     display: block;
-    box-sizing: border-box;
     padding-left: 35px;
   }
 

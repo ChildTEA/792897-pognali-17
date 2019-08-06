@@ -60,7 +60,6 @@
 }
 
 .travel-routes__text {
-  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 59px;
   padding-right: 50px;
@@ -81,7 +80,6 @@
 
 .travel-routes__button-wrapper {
   @media ($tablet) {
-    box-sizing: border-box;
     padding-right: 35px;
     padding-left: 35px;
   }
@@ -92,8 +90,6 @@
 }
 
 .travel-routes__button {
-  width: 100%;
-
   @media ($desktop) {
     display: table;
     width: auto;

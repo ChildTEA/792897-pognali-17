@@ -46,7 +46,6 @@
 }
 
 .companions__text {
-  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 21px;
   padding-right: 25px;
@@ -113,7 +112,6 @@
 
 .companions__button-wrapper {
   @media ($tablet) {
-    box-sizing: border-box;
     padding-right: 35px;
     padding-left: 35px;
   }
@@ -124,8 +122,6 @@
 }
 
 .companions__button {
-  width: 100%;
-
   @media ($desktop) {
     display: table;
     width: auto;

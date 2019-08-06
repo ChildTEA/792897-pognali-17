@@ -1,5 +1,4 @@
 .countries-filter {
-  box-sizing: border-box;
   margin-top: $shift-top-mobile;
   margin-bottom: 24px;
   padding: 50px 31px 37px 25px;  /* Временно для базовой стилизации */
@@ -22,7 +21,7 @@
   }
 
   @media ($desktop) {
-    height: 2818px;
+    height: 2597px;  /* Временно для базовой стилизации */
     margin-bottom: 77px;
   }
 }

@@ -6,15 +6,8 @@
 
   list-style: none;
 
-  @media ($tablet) {
-    box-sizing: border-box;
-    // padding-right: 35px;
-    // padding-left: 35px;
-  }
-
   @media ($desktop) {
     justify-content: flex-start;
-    // padding-left: 152px;
   }
 }
 
@@ -43,7 +36,6 @@
   position: relative;
 
   display: block;
-  box-sizing: border-box;
   padding-left: 61px;
 
   font-weight: 700;

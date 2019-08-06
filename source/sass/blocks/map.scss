@@ -33,7 +33,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-sizing: border-box;
     padding-right: 74px;
   }
 }
@@ -101,7 +100,6 @@
 
 .map__button {
   @media ($tablet) {
-    // width: 618px;
     margin-right: 35px;
     margin-left: 35px;
     padding-right: 65px;
