@@ -6,6 +6,10 @@
   text-align: center;
 
   @media ($tablet) {
+    text-align: left;
+  }
+
+  @media ($desktop) {
     position: relative;
 
     display: flex;
@@ -14,7 +18,7 @@
   }
 
   &::before {
-    @media ($tablet) {
+    @media ($desktop) {
       content: "";
       position: absolute;
       top: 25px;
@@ -30,7 +34,7 @@
 
 .site-nav__item {
   @media ($tablet) {
-    margin-left: 37px;
+    // margin-left: 37px;
   }
 
   @media ($desktop) {
@@ -48,6 +52,11 @@
   text-decoration: none;
 
   @media ($tablet) {
+    font-size: 60px;
+    line-height: 71.01px;
+  }
+
+  @media ($desktop) {
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;

@@ -17,18 +17,14 @@
   }
 }
 
-.page-header__container {
-  position: relative;
-}
-
 .page-header__hamburger {
   position: absolute;
-  top: 30px;
+  top: 4px;
   right: 25px;
   z-index: 3;
 
   @media ($tablet) {
-    top: 60px;
+    top: 21px;
     left: 50%;
     transform: translateX(-50%);
   }
