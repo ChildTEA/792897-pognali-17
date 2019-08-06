@@ -35,12 +35,6 @@
   }
 }
 
-.invite-card__mobile-only {
-  @media ($tablet) {
-    display: none;
-  }
-}
-
 .invite-card__image {
   position: absolute;
   top: 15px;
@@ -299,12 +293,6 @@
     &::after {
       flex-grow: 0;
       flex-shrink: 1;
-    }
-  }
-
-  &--mobile {
-    @media ($tablet) {
-      display: none;
     }
   }
 }

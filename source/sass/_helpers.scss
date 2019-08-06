@@ -1,3 +1,27 @@
+.mobile-only {
+  @media ($tablet) {
+    display: none;
+  }
+}
+
+.gt-mobile {
+  @media ($gt-mobile) {
+    display: none;
+  }
+}
+
+.lt-desktop {
+  @media ($desktop) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  @media ($desktop-only) {
+    display: none;
+  }
+}
+
 .visually-hidden {
   position: absolute;
 

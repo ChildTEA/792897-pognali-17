@@ -42,20 +42,6 @@
       display: inline;
     }
   }
-
-  &--mobile {
-    @media ($desktop) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media ($desktop) {
-      display: inline;
-    }
-  }
 }
 
 .contacts-list {

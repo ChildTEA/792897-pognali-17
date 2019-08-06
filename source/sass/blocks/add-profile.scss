@@ -52,6 +52,10 @@
   @media ($tablet) {
     margin: 0 auto 30px;
   }
+
+  @media ($desktop) {
+    margin-left: 71px;
+  }
 }
 
 .add-profile__business-pricing {

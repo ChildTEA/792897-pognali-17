@@ -65,12 +65,6 @@
 
 .main-nav__user {
   margin: 0;
-
-  &--mobile {
-    @media ($tablet) {
-      display: none;
-    }
-  }
 }
 
 .main-nav__contacts {

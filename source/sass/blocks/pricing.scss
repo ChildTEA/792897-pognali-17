@@ -10,10 +10,6 @@
     padding-left: 90px;
   }
 
-  @media ($desktop) {
-    width: 1176px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -36,7 +32,7 @@
 
     @media ($desktop) {
       top: 50%;
-      right: 2px;
+      right: 74px;
 
       width: 198px;
       height: 198px;
@@ -82,7 +78,7 @@
 
     @media ($desktop) {
       flex-grow: 0;
-      width: 528px;
+      width: 509px;
       min-width: auto;
       padding-top: 17px;
       padding-right: 20px;

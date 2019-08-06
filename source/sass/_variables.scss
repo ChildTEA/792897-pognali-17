@@ -1,6 +1,9 @@
 // Screen resolution
+$gt-mobile: "max-width: 767px";
 $tablet: "min-width: 768px";
 $desktop: "min-width: 1440px";
+// $lt-desktop: "max-width: 1";
+$desktop-only: "max-width: 1439px";
 
 // Font
 $font-stack: "Blogger Sans", "Arial", "Trebuchet MS", sans-serif;
