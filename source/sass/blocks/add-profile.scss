@@ -9,10 +9,6 @@
   color: $text-color-gray;
 
   background-color: $color-light;
-  // background-image: url("../img/rates@1x.png");
-  // background-repeat: no-repeat;
-  // background-position: right 26px top 72px;
-  // background-size: 99px 99px;
   border-radius: $rounded-bottom-mobile;
 
   @media ($tablet) {
@@ -32,15 +28,6 @@
 
 .add-profile__container {
   position: relative;
-  max-width: 390px;  /* Когда сильно разъезжается, то вид силшком портится */
-
-  @media ($tablet) {
-    max-width: 1000px;
-  }
-
-  @media ($desktop) {
-    max-width: 1320px;
-  }
 }
 
 .add-profile__title {
@@ -60,7 +47,6 @@
 }
 
 .add-profile__pricing {
-  box-sizing: border-box;
   margin: 0 auto 32px 24px;
 
   @media ($tablet) {
@@ -80,7 +66,6 @@
   @media ($tablet) {
     position: relative;
 
-    box-sizing: border-box;
     padding-left: 89px;
     font-size: 20px;
     line-height: 20px;
