@@ -7,19 +7,22 @@
 }
 
 .map__top {
-  padding-top: 69px;
-  padding-bottom: 35px;
-
   color: $color-dark-lighter;
-
   background-color: $color-bright-4;
   border-radius: $rounded-bottom-mobile;
 
   @media ($tablet) {
+    border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.map__container {
+  padding-top: 69px;
+  padding-bottom: 35px;
+
+  @media ($tablet) {
     padding-top: 153px;
     padding-bottom: 85px;
-
-    border-radius: $rounded-bottom-tablet;
   }
 
   @media ($desktop) {
