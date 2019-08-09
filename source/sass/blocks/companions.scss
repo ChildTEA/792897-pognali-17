@@ -1,36 +1,41 @@
 .companions {
   position: relative;
   z-index: 4;
-
   margin-top: $shift-top-mobile;
-  padding-top: 107px;
-  padding-bottom: 30px;
+  overflow: hidden;
 
   background-color: $color-dark-lighter;
   background-image: url("../img/blue-back-square-mobile.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: -19px 74px, 152px 74px, -10px 346px;
+  background-position: -19px 74px, right 25px top 74px, -10px 346px;
   border-radius: $rounded-bottom-mobile;
 
   @media ($tablet) {
     margin-top: $shift-top-tablet;
-    padding-top: 226px;
-    padding-bottom: 88px;
-
-    background-image: url("../img/blue-back-square-tablet.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
-    background-position: 39px 165px, 40px 511px, 408px 165px;
+    background-image: none;
     border-radius: $rounded-bottom-tablet;
-  }
-
-  @media ($desktop) {
-    padding-top: 215px;
-    padding-bottom: 134px;
-    background-position: 60px 153px, 547px 218px, 191px 470px;
   }
 }
 
 .companions__container {
   position: relative;
+  padding-top: 107px;
+  padding-bottom: 30px;
+
+  @media ($tablet) {
+    padding-top: 226px;
+    padding-bottom: 88px;
+
+    background-image: url("../img/blue-back-square-tablet.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 40px 165px, 40px 511px, right 75px top 165px;
+  }
+
+  @media ($desktop) {
+    padding-top: 215px;
+    padding-bottom: 134px;
+    background-position: 40px 153px, 527px 218px, 171px 470px;
+  }
 }
 
 .companions__title {
@@ -94,8 +99,8 @@
 
   @media ($desktop) {
     position: absolute;
-    top: 3px;
-    left: 690px;
+    top: 218px;
+    right: 40px;
     width: 630px;
   }
 }
