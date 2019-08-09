@@ -3,8 +3,7 @@
   z-index: 5;
 
   margin-top: $shift-top-mobile;
-  padding-top: 107px;
-  padding-bottom: 30px;
+  overflow: hidden;
 
   color: $text-color-gray;
 
@@ -13,19 +12,28 @@
 
   @media ($tablet) {
     margin-top: $shift-top-tablet;
+    border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.travel-routes__container {
+  position: relative;
+  padding-top: 107px;
+  padding-bottom: 30px;
+
+  @media ($tablet) {
     padding-top: 158px;
     padding-bottom: 80px;
 
     background-image: url("../img/flags-back@1x.png"), url("../img/light-back-square-tablet.png");
     background-repeat: no-repeat;
     background-position: right 40px top 165px, 40px 491px;
-    border-radius: $rounded-bottom-tablet;
   }
 
   @media ($desktop) {
     padding-top: 251px;
     padding-bottom: 139px;
-    background-position: right 60px top 173px, 60px 174px;
+    background-position: right 40px top 173px, 40px 174px;
   }
 }
 
