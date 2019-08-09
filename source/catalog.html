@@ -10,19 +10,45 @@
 
 <body class="page page--inner">
   <header class="page-header page-header--inner">
-    <div class="page-header__container container">
-      <button class="page-header__hamburger page-header__hamburger--inner hamburger hamburger--opener" type="button">
-        <span class="visually-hidden">
-          Переключить видимость меню
-        </span>
-      </button>
-
-      <nav class="page-header__nav main-nav main-nav--closed main-nav--inner popup-wrapper">
+    <nav class="page-header__nav main-nav main-nav--closed main-nav--inner popup-wrapper">
+      <div class="main-nav__container container">
+        <button class="page-header__hamburger page-header__hamburger--inner hamburger hamburger--opener" type="button">
+          <span class="visually-hidden">
+            Переключить видимость меню
+          </span>
+        </button>
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
         </a>
 
-        <div class="main-nav__popup-wrapper popup-wrapper__popup">
+        <div class="main-nav__side-menu main-nav__side-menu--inner">
+          <ul class="main-nav__contacts contacts-menu">
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
+                <span class="visually-hidden">
+                  8 800 555-86-28
+                </span>
+              </a>
+            </li>
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__link contacts-menu__link--email" href="mailto:mail@htmlacademy.ru">
+                <span class="visually-hidden">
+                  mail@htmlacademy.ru
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__user user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--login button" href="#nowhere">
+                Авторизация
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-nav__popup popup-wrapper__popup">
           <ul class="main-nav__site site-nav">
             <li class="site-nav__item">
               <a class="site-nav__link" href="#nowhere">
@@ -41,7 +67,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__user user-nav mobile-only">
+          <ul class="main-nav__user main-nav__user--with-mb user-nav mobile-only">
             <li class="user-nav__item">
               <a class="user-nav__link user-nav__link--login button button--bigger" href="#nowhere">
                 Авторизация
@@ -86,35 +112,8 @@
             </li>
           </ul>
         </div>
-
-        <div class="main-nav__side-menu main-nav__side-menu--inner">
-          <ul class="main-nav__contacts main-nav__contacts--inner contacts-menu">
-            <li class="contacts-menu__item">
-              <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
-                <span class="visually-hidden">
-                  8 800 555-86-28
-                </span>
-              </a>
-            </li>
-            <li class="contacts-menu__item">
-              <a class="contacts-menu__link contacts-menu__link--email" href="mailto:mail@htmlacademy.ru">
-                <span class="visually-hidden">
-                  mail@htmlacademy.ru
-                </span>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__user main-nav__user--inner user-nav">
-            <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--login button" href="#nowhere">
-                Авторизация
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main class="page-main page-main--inner">
