@@ -39,7 +39,7 @@
 }
 
 .intro__lead {
-  width: 300px;
+  width: 280px;
   min-height: 384px;
   margin: 0 auto;
 
@@ -71,7 +71,7 @@
 .intro__reviews {
   margin-right: -25px;
   margin-left: -25px;
-  padding: 47px 100px 110px 50px;
+  padding: 47px 100px 30px 50px;
 
   background-color: $color-dark-alter;
 
@@ -128,7 +128,6 @@
 }
 
 .intro__guide {
-  margin-top: -80px;
   background-color: $color-dark-lighter;
 
   @media ($tablet) {
@@ -161,7 +160,7 @@
 }
 
 .intro__usage-guide {
-  margin: -80px 0 0;
+  margin: 0;
 
   @media ($tablet) {
     margin-top: -140px;
