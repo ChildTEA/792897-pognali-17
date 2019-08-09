@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 6px 40px 4px 38px;
+  padding: 6px 24px 4px 24px;
 
   font-weight: 700;
   font-size: 17px;
@@ -17,7 +17,7 @@
   cursor: pointer;
 
   @media ($tablet) {
-    padding: 11px 40px 9px 38px;
+    padding: 11px 24px 9px 24px;
 
     font-size: 20px;
     line-height: 30px;
@@ -31,10 +31,7 @@
   &--alter {
     position: relative;
     display: block;
-    padding-top: 23px;
-    padding-right: 50px;
-    padding-bottom: 21px;
-    padding-left: 24px;
+    padding: 23px 50px 21px 24px;
 
     font-size: 18px;
     line-height: 18px;

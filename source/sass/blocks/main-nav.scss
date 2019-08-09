@@ -60,11 +60,14 @@
 .main-nav__side-menu {
   position: absolute;
   top: 431px;
-  right: 0;
-  left: 0;
+  right: 25px;
+  left: 25px;
 
   display: flex;
   justify-content: center;
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media ($tablet) {
     position: static;
@@ -86,6 +89,7 @@
 }
 
 .main-nav__user {
+  flex-grow: 1;
   margin: 0;
 
   &--with-mb {
