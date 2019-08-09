@@ -1,16 +1,25 @@
 .about-service {
   position: relative;
   z-index: 6;
+  overflow: hidden;
 
+  background-color: $color-dark-lighter;
+  border-radius: $rounded-bottom-mobile;
+
+  @media ($tablet) {
+    border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.about-service__container {
   padding-top: 33px;
   padding-bottom: 67px;
 
   background-color: $color-dark-lighter;
-  background-image: url("../img/about-mobile@1x.png");
+  background-image: url("../img/about-mobile@1x.png"), url("../img/blue-back-square-mobile.png");
   background-repeat: no-repeat;
-  background-position: 18px 0;
+  background-position: calc(50% + 4px) 0, calc(50% - 113px) 0;
   background-origin: padding-box;
-  border-radius: $rounded-bottom-mobile;
 
   @media ($tablet) {
     padding-top: 42px;
@@ -18,7 +27,6 @@
 
     background-image: url("../img/about-tablet@1x.png"), url("../img/blue-back-rect-tablet.png");
     background-position: right 8px top 48px, 40px 0;
-    border-radius: $rounded-bottom-tablet;
   }
 
   @media ($desktop) {
@@ -26,7 +34,7 @@
     padding-bottom: 163px;
 
     background-image: url("../img/blue-back-square-desktop.png"), url("../img/about-desktop@1x.png");
-    background-position: 60px 71px, right 60px top 85px;
+    background-position: 40px 71px, right 40px top 85px;
   }
 }
 
