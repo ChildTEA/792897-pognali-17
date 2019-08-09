@@ -196,6 +196,7 @@
 
   @media ($tablet) {
     position: static;
+    min-width: 115px;
     padding-top: 11px;
   }
 }
@@ -303,6 +304,14 @@
 
 .invite-card__user-level {
   margin: -7px 2px 0 auto;
+
+  @media ($tablet) {
+    margin: 7px 0 0;
+  }
+
+  @media ($desktop) {
+    margin-top: 0;
+  }
 }
 
 .invite-card__wishes {
