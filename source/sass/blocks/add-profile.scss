@@ -3,8 +3,6 @@
   z-index: 3;
 
   margin-top: $shift-top-mobile;
-  padding-top: 87px;
-  padding-bottom: 38px;
 
   color: $text-color-gray;
 
@@ -13,11 +11,19 @@
 
   @media ($tablet) {
     margin-top: $shift-top-tablet;
+    border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.add-profile__container {
+  position: relative;
+
+  padding-top: 87px;
+  padding-bottom: 38px;
+
+  @media ($tablet) {
     padding-top: 159px;
     padding-bottom: 86px;
-
-    background-image: none;
-    border-radius: $rounded-bottom-tablet;
   }
 
   @media ($desktop) {
@@ -26,11 +32,8 @@
   }
 }
 
-.add-profile__container {
-  position: relative;
-}
-
 .add-profile__title {
+  min-height: 40px;
   margin-bottom: 43px;
   padding-right: 100px;
 
