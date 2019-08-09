@@ -1,16 +1,20 @@
 .contacts {
   position: relative;
   z-index: 2;
-
-  padding-top: 9px;
-  padding-bottom: 28px;
-
   background-color: $color-dark-lighter;
   border-radius: $rounded-bottom-mobile;
 
   @media ($tablet) {
-    padding-bottom: 26px;
     border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.contacts__container {
+  padding-top: 9px;
+  padding-bottom: 28px;
+
+  @media ($tablet) {
+    padding-bottom: 26px;
   }
 
   @media ($desktop) {

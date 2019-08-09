@@ -1,10 +1,16 @@
 .user-actions {
   margin-top: $shift-top-mobile;
-  padding-top: 107px;
   background-color: $color-dark-lighter;
 
   @media ($tablet) {
     margin-top: $shift-top-tablet;
+  }
+}
+
+.user-actions__container {
+  padding-top: 107px;
+
+  @media ($tablet) {
     padding-top: 161px;
   }
 
