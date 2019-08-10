@@ -61,6 +61,7 @@
     width: 480px;
     min-height: auto;
     margin: 0 auto;
+    padding-bottom: 0;
 
     font-size: 60px;
     line-height: 70px;
@@ -68,7 +69,7 @@
 
   @media ($desktop) {
     margin: 0 0 100px 0;
-    padding: 109px 67px 0;
+    padding: 109px 92px 0;
 
     text-align: left;
   }
@@ -87,7 +88,7 @@
     margin-left: -40px;
     padding: 36px 400px 0 74px;
 
-    background-color: $color-dark-lighter;
+    background-color: #182044;
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: left calc(50% + 86px) bottom 140px, center bottom;
