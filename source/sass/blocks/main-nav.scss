@@ -58,38 +58,11 @@
 }
 
 .main-nav__side-menu {
-  position: absolute;
-  top: 431px;
-  right: 25px;
-  left: 25px;
-
   display: flex;
-  justify-content: center;
-  max-width: 320px;
-  margin-right: auto;
   margin-left: auto;
-
-  @media ($tablet) {
-    position: static;
-    margin-right: 0;
-  }
-
-  @media ($desktop) {
-    order: 1;
-    margin-left: auto;
-  }
-
-  &--inner {
-    display: none;
-
-    @media ($tablet) {
-      display: flex;
-    }
-  }
 }
 
 .main-nav__user {
-  flex-grow: 1;
   margin: 0;
 
   &--with-mb {
@@ -97,7 +70,11 @@
   }
 }
 
-.main-nav__contacts {
+.main-nav__short-contacts {
+  margin: 0;
+}
+
+.main-nav__full-contacts {
   margin: 0 0 30px;
 
   @media ($tablet) {

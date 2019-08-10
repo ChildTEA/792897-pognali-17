@@ -35,6 +35,7 @@
 }
 
 .intro__lead-wrapper {
+  position: relative;
   margin-right: -25px;
   margin-left: -25px;
 
@@ -73,6 +74,23 @@
 
     text-align: left;
   }
+}
+
+.intro__actions-menu {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  left: 20px;
+  display: flex;
+  width: 270px;
+}
+
+.intro__contacts {
+  margin: 0;
+}
+
+.intro__user {
+  margin: 0;
 }
 
 .intro__reviews {
