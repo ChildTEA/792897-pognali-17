@@ -1,4 +1,6 @@
 .user-nav {
+  display: flex;
+  justify-content: center;
   padding: 0;
   list-style: none;
 }
@@ -19,5 +21,9 @@
     width: 129px;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  &--bigger {
+    width: 210px;
   }
 }
