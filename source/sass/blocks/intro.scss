@@ -41,7 +41,8 @@
 
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: left calc(50% + 15px) bottom 0, left 50% bottom -91px;
+  background-position: left calc(50% + 15px) bottom 0, left 50% bottom 49%;
+  background-size: auto, 100% auto;
 
   @media ($tablet) {
     background-image: none;
