@@ -34,24 +34,8 @@
   }
 }
 
-.intro__lead-wrapper {
-  position: relative;
-  margin-right: -25px;
-  margin-left: -25px;
-
-  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: left calc(50% + 15px) bottom 0, left 50% bottom 49%;
-  background-size: auto, 100% auto;
-
-  @media ($tablet) {
-    background-image: none;
-  }
-}
-
 .intro__lead {
-  width: 270px;
-  margin: 0 auto;
+  margin: 0 -25px;
   padding-bottom: 264px;
 
   font-weight: 700;
@@ -59,31 +43,39 @@
   line-height: 40px;
   text-align: center;
 
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 15px) bottom 0, left 50% bottom 49%;
+  background-size: auto, 100% auto;
+
   @media ($tablet) {
-    width: 480px;
     min-height: auto;
-    margin: 0 auto;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 60px;
     padding-bottom: 0;
 
     font-size: 60px;
     line-height: 70px;
+
+    background-image: none;
   }
 
   @media ($desktop) {
+    width: 500px;
     margin: 0 0 100px 0;
-    padding: 109px 92px 0;
+    padding-top: 109px;
+    padding-left: 92px;
 
     text-align: left;
   }
 }
 
 .intro__actions-menu {
-  position: absolute;
-  right: 20px;
-  bottom: -20px;
-  left: 20px;
   display: flex;
-  width: 270px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -20px 0 0;
 }
 
 .intro__contacts {
@@ -97,7 +89,7 @@
 .intro__reviews {
   margin-right: -25px;
   margin-left: -25px;
-  padding: 47px 100px 30px 50px;
+  padding: 27px 100px 30px 50px;
 
   background-color: $color-dark-alter;
 

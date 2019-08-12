@@ -14,4 +14,10 @@
   @media ($desktop) {
     padding-left: 29px;
   }
+
+  &--login {
+    width: 129px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
