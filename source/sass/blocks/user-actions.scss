@@ -87,6 +87,7 @@
 
   border: none;
   border-radius: 10px;
+  opacity: 1;
 
   @media ($tablet) {
     height: 81px;
@@ -99,13 +100,12 @@
   }
 
   &::placeholder {
-    color: inherit;
-    opacity: 0.3;
+    color: rgba($text-color-gray, 0.3);
   }
 
   &:hover {
     &::placeholder {
-      opacity: 0.5;
+      color: rgba($text-color-gray, 0.5);
     }
   }
 }
