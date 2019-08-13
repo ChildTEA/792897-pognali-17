@@ -241,15 +241,12 @@
   }
 }
 
-.invite-card__subtitle {
-  display: flex;
-  align-items: center;
-  margin: 0 -18px 14px -18px;
-  padding: 0;
+.invite-card__subtitle-wrapper {
+  position: relative;
+  margin: 0 0 14px;
 
   @media ($tablet) {
-    margin: 0 -25px 14px -35px;
-    padding-top: 19px;
+    margin-top: 19px;
   }
 
   @media ($desktop) {
@@ -258,43 +255,38 @@
 
   &::before {
     content: "";
-    flex-shrink: 0;
-    width: 14px;
+    position: absolute;
+    top: 45%;
+    right: -18px;
+    left: -18px;
     height: 1px;
-    margin-right: 12px;
-    margin-bottom: 2px;
-
     background-color: $color-light;
 
     @media ($tablet) {
-      width: 71px;
+      right: -25px;
+      left: -35px;
     }
   }
+}
 
-  &::after {
-    content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: 12px;
-    height: 1px;
-    margin-bottom: 2px;
-    margin-left: 11px;
+.invite-card__subtitle {
+  position: relative;
+  left: -3px;
+  z-index: 1;
+  display: inline-block;
+  padding-right: 11px;
+  padding-left: 11px;
 
-    background-color: $color-light;
+  background-color: #ffffff;
+
+  @media ($tablet) {
+    left: 37px;
   }
 
   &--align-r {
-    margin-left: 4px;
-
-    &::before {
-      flex-grow: 1;
-      flex-shrink: 0;
-    }
-
-    &::after {
-      flex-grow: 0;
-      flex-shrink: 1;
-    }
+    right: -6px;
+    left: auto;
+    text-align: center;
   }
 }
 
@@ -326,7 +318,7 @@
 }
 
 .invite-card__routes {
-  margin: 0 7px 15px;
+  margin: 0 7px 11px;
   padding: 3px 0 0;
 
   list-style: none;
