@@ -10,5 +10,7 @@ node_modules/
 npm-debug.*
 source/css/*.css
 source/css/*.map
+source/test-catalog.html
+source/test-form.html
 Thumbs.db
 server.bat
