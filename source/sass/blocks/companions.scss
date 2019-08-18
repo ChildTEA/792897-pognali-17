@@ -1,0 +1,136 @@
+.companions {
+  position: relative;
+  z-index: 4;
+  margin-top: $shift-top-mobile;
+  overflow: hidden;
+
+  background-color: $color-dark-lighter;
+  background-image: url("../img/blue-back-square-mobile.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: -19px 74px, right 25px top 74px, -10px 346px;
+  border-radius: $rounded-bottom-mobile;
+
+  @media ($tablet) {
+    margin-top: $shift-top-tablet;
+    background-image: none;
+    border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.companions__container {
+  position: relative;
+  padding-top: 107px;
+  padding-bottom: 30px;
+
+  @media ($tablet) {
+    padding-top: 226px;
+    padding-bottom: 88px;
+
+    background-image: url("../img/blue-back-square-tablet.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 40px 165px, 40px 511px, right 75px top 165px;
+  }
+
+  @media ($desktop) {
+    padding-top: 215px;
+    padding-bottom: 134px;
+    background-position: 40px 153px, 527px 218px, 171px 470px;
+  }
+}
+
+.companions__title {
+  margin-bottom: 19px;
+
+  @media ($tablet) {
+    margin-bottom: 57px;
+  }
+
+  @media ($desktop) {
+    padding-right: 690px;
+  }
+}
+
+.companions__text {
+  margin-top: 0;
+  margin-bottom: 21px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @media ($tablet) {
+    margin-bottom: 39px;
+    padding-right: 220px;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
+    padding-right: 800px;
+    padding-left: 71px;
+  }
+
+  &--lead {
+    margin-bottom: 56px;
+    font-weight: 700;
+
+    @media ($tablet) {
+      margin-bottom: 58px;
+      font-size: 21px;
+      line-height: 25px;
+    }
+
+    @media ($desktop) {
+      margin-bottom: 82px;
+    }
+  }
+}
+
+.companions__list {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  list-style: none;
+
+  @media ($tablet) {
+    display: flex;
+    justify-content: space-between;
+    width: 666px;
+    margin: 0 auto 70px;
+  }
+
+  @media ($desktop) {
+    position: absolute;
+    top: 218px;
+    right: 40px;
+    width: 630px;
+  }
+}
+
+.companions-card {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media ($desktop) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.companions__button-wrapper {
+  @media ($tablet) {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
+    padding-left: 71px;
+  }
+}
+
+.companions__button {
+  @media ($desktop) {
+    display: table;
+    width: auto;
+    min-width: 280px;
+    padding-right: 50px;
+  }
+}

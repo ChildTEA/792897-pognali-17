@@ -1,0 +1,185 @@
+.user-card {
+  position: relative;
+
+  width: 270px;
+  margin-bottom: 10px;
+
+  @media ($tablet) {
+    width: 285px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.user-card__level {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  margin: 0;
+
+  @media ($tablet) {
+    top: 20px;
+    left: 20px;
+  }
+
+  @media ($desktop) {
+    top: 23px;
+    left: 23px;
+  }
+}
+
+.user-card__image {
+  display: block;
+  width: 270px;
+  height: 270px;
+
+  background-color: $text-color-gray;
+  border-radius: 10px 10px 0 0;
+
+  @media ($tablet) {
+    width: 285px;
+    height: 285px;
+
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.user-card__info {
+  padding: 26px 10px 21px;
+
+  color: #1d2e5b;
+
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+
+  @media ($tablet) {
+    padding: 31px 10px 28px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  @media ($desktop) {
+    padding: 33px 10px 27px;
+  }
+}
+
+.user-card__routes {
+  position: absolute;
+  top: 258px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 -17px 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media ($tablet) {
+    top: 273px;
+  }
+}
+
+.user-card__route {
+  margin-right: 17px;
+}
+
+.user-card__route-icon {
+  &::before {
+    @media ($tablet) {
+      width: 35px;
+      height: 24px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.user-card__name {
+  position: relative;
+
+  display: table;
+  margin: 0 auto 15px auto;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+
+  @media ($tablet) {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 19px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -17px;
+
+    width: 5px;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 50%;
+
+    @media ($tablet) {
+      top: 8px;
+      left: -22px;
+
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  &--offline {
+    &::before {
+      background-color: #f97676;
+    }
+  }
+
+  &--online {
+    &::before {
+      background-color: #81e31e;
+    }
+  }
+}
+
+.user-card__tags {
+  width: 180px;
+  margin: 0 auto 17px auto;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: $text-color-gray;
+
+  @media ($tablet) {
+    width: 240px;
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.user-card__tag {
+  text-decoration: none;
+}
+
+.user-card__transportation {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: 0 auto;
+
+  text-align: center;
+}

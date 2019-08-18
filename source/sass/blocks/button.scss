@@ -1,0 +1,80 @@
+.button {
+  display: block;
+  padding: 6px 24px 4px 24px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: inherit;
+  text-align: center;
+  color: $color-dark-alter;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-bright-4;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  @media ($tablet) {
+    padding: 11px 24px 9px 24px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--bigger {
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  &--alter {
+    position: relative;
+    display: block;
+    padding: 23px 50px 21px 24px;
+
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: none;
+
+    border-radius: 10px;
+
+    @media ($tablet) {
+      position: relative;
+
+      box-sizing: border-box;
+      min-width: 274px;
+      padding: 30px 60px 27px 33px;
+
+      font-size: 24px;
+      line-height: 24px;
+
+      border-radius: 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 23px;
+
+      width: 0;
+      height: 0;
+
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 10px solid;
+
+      transform: translateY(-50%);
+
+      @media ($tablet) {
+        right: 36px;
+      }
+    }
+  }
+
+  &--bordered {
+    box-shadow: inset 0 0 0 3px $color-dark-lighter;
+  }
+}

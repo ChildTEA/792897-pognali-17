@@ -69,6 +69,11 @@ html {
   font-size: 16px;
   line-height: 22px;
   font-family: $font-stack;
+
+  @media ($tablet) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 body {

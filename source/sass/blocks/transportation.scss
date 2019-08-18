@@ -1,0 +1,88 @@
+.transportation {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.transportation__item {
+  width: 32px;
+  height: 32px;
+
+  background-color: $color-light;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+
+  @media ($tablet) {
+    width: 31px;
+    height: 31px;
+    margin-bottom: 1px;
+
+    background-color: transparent;
+  }
+
+  @media ($desktop) {
+    margin-right: 3px;
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    @media ($desktop) {
+      margin-right: 0;
+    }
+  }
+
+  &--airplane {
+    background-image: url("../img/plane.svg");
+    background-size: 14px 16px;
+
+    @media ($tablet) {
+      background-size: 19px 21px;
+    }
+  }
+
+  &--bus {
+    background-image: url("../img/bus.svg");
+    background-size: 13px 16px;
+
+    @media ($tablet) {
+      background-size: 17px 21px;
+    }
+  }
+
+  &--bicycle {
+    background-image: url("../img/bike.svg");
+    background-size: 19px 17px;
+
+    @media ($tablet) {
+      background-size: 24px 21px;
+    }
+  }
+
+  &--hiking {
+    background-image: url("../img/run.svg");
+    background-size: 15px 17px;
+
+    @media ($tablet) {
+      background-size: 20px 21px;
+    }
+  }
+
+  &--alter {
+    position: relative;
+    width: 24px;
+    height: 21px;
+    margin: 0 10px 0 0;  // Временно, для стилизации
+
+    background-color: transparent;
+    background-size: auto 21px;
+    border-radius: 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

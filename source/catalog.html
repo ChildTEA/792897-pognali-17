@@ -4,577 +4,679 @@
 <head>
   <meta charset="utf-8">
   <title>Погнали: попутчики</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page page--inner">
-  <header class="page-header">
-    <button class="page-header__hamburger hamburger hamburger--opener" type="button">
-      <span class="visually-hidden">Переключить видимость меню</span>
-    </button>
+  <header class="page-header page-header--inner">
+    <nav class="page-header__nav main-nav main-nav--closed main-nav--inner popup-wrapper">
+      <div class="main-nav__container container">
+        <button class="page-header__hamburger page-header__hamburger--inner hamburger hamburger--opener" type="button">
+          <span class="visually-hidden">
+            Переключить видимость меню
+          </span>
+        </button>
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+        </a>
 
-    <nav class="page-header__nav main-nav main-nav--closed popup-wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
-      </a>
+        <div class="main-nav__popup popup-wrapper__popup">
+          <ul class="main-nav__site site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
+                О сервисе
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
+                Направления
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#nowhere">
+                Попутчики
+              </a>
+            </li>
+          </ul>
 
-      <div class="popup-wrapper__popup">
-        <ul class="main-nav__site site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#nowhere">
-              О сервисе
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#nowhere">
-              Направления
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#nowhere">
-              Попутчики
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__user user-nav">
-          <li class="user-nav__item">
-            <a class="user-nav__link user-nav__link--login button button--bigger" href="#nowhere">
-              Авторизация
-            </a>
-          </li>
-        </ul>
+          <ul class="main-nav__user main-nav__user--with-mb user-nav mobile-only">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--login button button--bigger" href="#nowhere">
+                Авторизация
+              </a>
+            </li>
+          </ul>
 
-        <ul class="main-nav__contacts contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link contacts-list__link--phone" href="tel:+78005558628">
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link contacts-list__link--email" href="mailto:mail@htmlacademy.ru">
-              mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
+          <ul class="main-nav__full-contacts contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--phone" href="tel:+78005558628">
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--email" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
 
-        <ul class="main-nav__social social">
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#nowhere">
-              <span class="visually-hidden">
-                Фейсбук
-              </span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#nowhere">
-              <span class="visually-hidden">
-                Вконтакте
-              </span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--inst" href="#nowhere">
-              <span class="visually-hidden">
-                Инстаграмм
-              </span>
-            </a>
-          </li>
-        </ul>
+          <ul class="main-nav__social social">
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#nowhere">
+                <span class="visually-hidden">
+                  Фейсбук
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#nowhere">
+                <span class="visually-hidden">
+                  Вконтакте
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="#nowhere">
+                <span class="visually-hidden">
+                  Инстаграмм
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-nav__side-menu gt-mobile">
+            <ul class="main-nav__short-contacts contacts-menu">
+              <li class="contacts-menu__item">
+                <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
+                  <span class="visually-hidden">
+                    8 800 555-86-28
+                  </span>
+                </a>
+              </li>
+              <li class="contacts-menu__item">
+                <a class="contacts-menu__link contacts-menu__link--email" href="mailto:mail@htmlacademy.ru">
+                  <span class="visually-hidden">
+                    mail@htmlacademy.ru
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__user user-nav">
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--login button" href="#nowhere">
+                  Авторизация
+                </a>
+              </li>
+            </ul>
+          </div>
       </div>
     </nav>
   </header>
 
-  <main class="page-main page-main--inner-page">
+  <main class="page-main page-main--inner">
     <div class="page-main__heading">
-      <h1 class="page-main__title">
-        Попутчики
-      </h1>
+      <div class="page-main__container container">
+        <h1 class="page-main__title">
+          Попутчики
+        </h1>
+
+        <p class="page-main__return">
+          <a href="index.html" class="page-main__return-link">
+            На главную
+          </a>
+        </p>
+      </div>
     </div>
 
-    <section class="companions-catalog">
-      <h2 class="visually-hidden">
-        Позвать попутчиков
-      </h2>
+    <div class="countries-filter">
+      <!-- Временная заглушка для работы с PP -->
+    </div>
 
-      <ul class="companions-catalog__list">
-        <li class="companions-catalog__card invite-card container">
-          <img class="invite-card__image" src="img/firsova-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
+    <div class="page-main__layout-columns container">
 
-          <p class="invite-card__user-name">
-            Таня<br>
-            Фирсова
-          </p>
+      <div class="companions-filter">
+        <!-- Временная заглушка для работы с PP -->
+      </div>
 
-          <p class="invite-card__user-status invite-card__user-status--offline">
-            <span class="visually-hidden">
-              Офлайн
-            </span>
-          </p>
+      <section class="companions-catalog">
+        <h2 class="visually-hidden">
+          Позвать попутчиков
+        </h2>
 
-          <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="like-counter__like-toggler like-counter__like-toggler--liked" type="submit" name="liked-user-id" value="12345678" aria-label="Снять лайк">
-              1,5 M
-            </button>
-          </form>
+        <ul class="companions-catalog__list">
+          <li class="companions-catalog__card invite-card">
+            <img class="invite-card__image" src="img/firsova-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
 
-          <p class="invite-card__tags">
-            <a class="invite-card__tag" href="#nowhere">
-              #ЗОЖ
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #ПП
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #Фитнес
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #пляж
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #авокадо
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #смузи
-            </a>
-          </p>
-
-          <div class="invite-card__wishes">
-            <p class="invite-card__section-title">
-              хочет посетить:
-            </p>
-            <ul class="invite-card__routes">
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--sriLanka" href="#nowhere">
-                  Шри Ланка
-                </a>
-              </li>
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--thailand" href="#nowhere">
-                  Тайланд
-                </a>
-              </li>
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--seychelles" href="#nowhere">
-                  Сейшелы
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="invite-card__columns">
-            <div class="invite-card__transportation">
-              <p class="invite-card__section-title">
-                транспорт:
+            <div class="invite-card__main-info">
+              <p class="invite-card__user-name invite-card__user-name--offline">
+                Таня<br class="mobile-only">
+                Фирсова
               </p>
-              <ul class="invite-card__transportation transportation">
-                <li class="transportation__item transportation__item--active transportation__item--airplane">
-                  <span class="visually-hidden">
-                    Доступен авиаперелёт
+
+              <p class="invite-card__tags">
+                <a class="invite-card__tag" href="#nowhere">
+                  #ЗОЖ
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #ПП
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #Фитнес
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #пляж
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #авокадо
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #смузи
+                </a>
+              </p>
+
+              <div class="invite-card__actions">
+                <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345678">
+                    Позвать!
+                  </button>
+                </form>
+
+                <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="like-counter__like-toggler like-counter__like-toggler--liked" type="submit" name="liked-user-id" value="12345678" aria-label="Снять лайк">
+                    1,5 M
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="invite-card__sub-info">
+              <div class="invite-card__transportation">
+                <p class="invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle">транспорт:</span>
+                </p>
+
+                <ul class="invite-card__transportation-list transportation">
+                  <li class="transportation__item transportation__item--active transportation__item--airplane">
+                    <span class="visually-hidden">
+                      Авиаперелёт (доступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--bus">
+                    <span class="visually-hidden">
+                      Наземный транспорт (недоступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--bicycle">
+                    <span class="visually-hidden">
+                      Велотуризм (недоступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--hiking">
+                    <span class="visually-hidden">
+                      Пешеходный туризм (недоступен)
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="invite-card__level-info">
+                <p class="invite-card__subtitle-wrapper invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle invite-card__subtitle--align-r">левел:</span>
+                </p>
+
+                <p class="invite-card__user-level user-level user-level--light">
+                  <b class="user-level__value user-level__value--light">
+                    99
+                  </b>
+                  <span class="user-level__text user-level__text--light">
+                    level
                   </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="invite-card__wishes">
+              <p class="invite-card__subtitle-wrapper">
+                <span class="invite-card__subtitle">хочет посетить:</span>
+              </p>
+              <ul class="invite-card__routes">
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--sriLanka" href="#nowhere">
+                    Шри Ланка
+                  </a>
                 </li>
-                <li class="transportation__item transportation__item--bus" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен наземный транспорт
-                  </span>
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--thailand" href="#nowhere">
+                    Тайланд
+                  </a>
                 </li>
-                <li class="transportation__item transportation__item--bicycle" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен велотуризм
-                  </span>
-                </li>
-                <li class="transportation__item transportation__item--hiking" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен пешеходный туризм
-                  </span>
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--seychelles" href="#nowhere">
+                    Сейшелы
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class="invite-card__user-level">
-              <p class="invite-card__section-title">
-                левел:
+          </li>
+
+          <li class="companions-catalog__card invite-card">
+            <img class="invite-card__image" src="img/demin-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
+
+            <div class="invite-card__main-info">
+              <p class="invite-card__user-name invite-card__user-name--offline">
+                Петя<br class="mobile-only">
+                Демин
               </p>
-              <b class="invite-card__level-value">
-                99
-              </b>
+
+              <p class="invite-card__tags">
+                <a class="invite-card__tag" href="#nowhere">
+                  #бургер
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #бар
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #футбол
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #концерт
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #крафт
+                </a>
+              </p>
+
+              <div class="invite-card__actions">
+                <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345677">
+                    Позвать!
+                  </button>
+                </form>
+
+                <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="like-counter__like-toggler like-counter__like-toggler--liked" type="submit" name="liked-user-id" value="12345677" aria-label="Снять лайк">
+                    150
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
 
-          <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345678">
-              Позвать!
-            </button>
-          </form>
-        </li>
+            <div class="invite-card__sub-info">
+              <div class="invite-card__transportation">
+                <p class="invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle">транспорт:</span>
+                </p>
 
-        <li class="companions-catalog__card invite-card container">
-          <img class="invite-card__image" src="img/photo-account-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
+                <ul class="invite-card__transportation-list transportation">
+                  <li class="transportation__item transportation__item--active transportation__item--airplane">
+                    <span class="visually-hidden">
+                      Авиаперелёт (доступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--active transportation__item--bus">
+                    <span class="visually-hidden">
+                      Наземный транспорт (доступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--bicycle">
+                    <span class="visually-hidden">
+                      Аелотуризм (недоступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--active transportation__item--hiking">
+                    <span class="visually-hidden">
+                      Пешеходный туризм (доступен)
+                    </span>
+                  </li>
+                </ul>
+              </div>
 
-          <p class="invite-card__user-name">
-            Петя<br>
-            Демин
-          </p>
+              <div class="invite-card__level-info">
+                <p class="invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle invite-card__subtitle--align-r">левел:</span>
+                </p>
 
-          <p class="invite-card__user-status invite-card__user-status--offline">
-            <span class="visually-hidden">
-              Офлайн
-            </span>
-          </p>
+                <p class="invite-card__user-level user-level user-level--light">
+                  <b class="user-level__value user-level__value--light">
+                    80
+                  </b>
+                  <span class="user-level__text user-level__text--light">
+                    level
+                  </span>
+                </p>
+              </div>
+            </div>
 
-          <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="like-counter__like-toggler" type="submit" name="liked-user-id" value="12345677" aria-label="Лайкнуть">
-              150
-            </button>
-          </form>
-
-          <p class="invite-card__tags">
-            <a class="invite-card__tag" href="#nowhere">
-              #бургер
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #бар
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #футбол
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #концерт
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #крафт
-            </a>
-          </p>
-
-          <div class="invite-card__wishes">
-            <p class="invite-card__section-title">
-              хочет посетить:
-            </p>
-            <ul class="invite-card__routes">
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--belgium" href="#nowhere">
-                  Бельгия
-                </a>
-              </li>
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--czech" href="#nowhere">
-                  Чехия
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="invite-card__columns">
-            <div class="invite-card__transportation">
-              <p class="invite-card__section-title">
-                транспорт:
+            <div class="invite-card__wishes">
+              <p class="invite-card__subtitle-wrapper">
+                <span class="invite-card__subtitle">хочет посетить:</span>
               </p>
-              <ul class="invite-card__transportation transportation">
-                <li class="transportation__item transportation__item--active transportation__item--airplane">
-                  <span class="visually-hidden">
-                    Доступен авиаперелёт
-                  </span>
+              <ul class="invite-card__routes">
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--belgium" href="#nowhere">
+                    Бельгия
+                  </a>
                 </li>
-                <li class="transportation__item transportation__item--active transportation__item--bus">
-                  <span class="visually-hidden">
-                    Доступен наземный транспорт
-                  </span>
-                </li>
-                <li class="transportation__item transportation__item--bicycle" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен велотуризм
-                  </span>
-                </li>
-                <li class="transportation__item transportation__item--active transportation__item--hiking">
-                  <span class="visually-hidden">
-                    Доступен пешеходный туризм
-                  </span>
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--czech" href="#nowhere">
+                    Чехия
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class="invite-card__user-level">
-              <p class="invite-card__section-title">
-                левел:
+          </li>
+
+          <li class="companions-catalog__card invite-card">
+            <img class="invite-card__image" src="img/smolov-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
+
+            <div class="invite-card__main-info">
+              <p class="invite-card__user-name invite-card__user-name--offline">
+                Марк<br class="mobile-only">
+                Смолов
               </p>
-              <b class="invite-card__level-value">
-                80
-              </b>
+
+              <p class="invite-card__tags">
+                <a class="invite-card__tag" href="#nowhere">
+                  #рэп
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #тату
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #хайпбист
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #кроссовки
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #суприм
+                </a>
+              </p>
+
+              <div class="invite-card__actions">
+                <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345676">
+                    Позвать!
+                  </button>
+                </form>
+
+                <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="like-counter__like-toggler like-counter__like-toggler--liked" type="submit" name="liked-user-id" value="12345676" aria-label="Снять лайк">
+                    1700
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
 
-          <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345677">
-              Позвать!
-            </button>
-          </form>
-        </li>
+            <div class="invite-card__sub-info">
+              <div class="invite-card__transportation">
+                <p class="invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle">транспорт:</span>
+                </p>
 
-        <li class="companions-catalog__card invite-card container">
-          <img class="invite-card__image" src="img/smolov-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
+                <ul class="invite-card__transportation-list transportation">
+                  <li class="transportation__item transportation__item--active transportation__item--airplane">
+                    <span class="visually-hidden">
+                      Авиаперелёт (доступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--bus">
+                    <span class="visually-hidden">
+                      Наземный транспорт (недоступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--active transportation__item--bicycle">
+                    <span class="visually-hidden">
+                      Велотуризм (доступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--hiking">
+                    <span class="visually-hidden">
+                      Пешеходный туризм (недоступен)
+                    </span>
+                  </li>
+                </ul>
+              </div>
 
-          <p class="invite-card__user-name">
-            Марк<br>
-            Смолов
-          </p>
+              <div class="invite-card__level-info">
+                <p class="invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle invite-card__subtitle--align-r">левел:</span>
+                </p>
 
-          <p class="invite-card__user-status invite-card__user-status--offline">
-            <span class="visually-hidden">
-              Офлайн
-            </span>
-          </p>
+                <p class="invite-card__user-level user-level user-level--light">
+                  <b class="user-level__value user-level__value--light">
+                    25
+                  </b>
+                  <span class="user-level__text user-level__text--light">
+                    level
+                  </span>
+                </p>
+              </div>
+            </div>
 
-          <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="like-counter__like-toggler" type="submit" name="liked-user-id" value="12345676" aria-label="Лайкнуть">
-              1700
-            </button>
-          </form>
-
-          <p class="invite-card__tags">
-            <a class="invite-card__tag" href="#nowhere">
-              #рэп
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #тату
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #хайпбист
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #кроссовки
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #суприм
-            </a>
-          </p>
-
-          <div class="invite-card__wishes">
-            <p class="invite-card__section-title">
-              хочет посетить:
-            </p>
-            <ul class="invite-card__routes">
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--usa" href="#nowhere">
-                  США
-                </a>
-              </li>
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--australia" href="#nowhere">
-                  Австралия
-                </a>
-              </li>
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--dominicana" href="#nowhere">
-                  Доминикана
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="invite-card__columns">
-            <div class="invite-card__transportation">
-              <p class="invite-card__section-title">
-                транспорт:
+            <div class="invite-card__wishes">
+              <p class="invite-card__subtitle-wrapper">
+                <span class="invite-card__subtitle">хочет посетить:</span>
               </p>
-              <ul class="invite-card__transportation transportation">
-                <li class="transportation__item transportation__item--active transportation__item--airplane">
-                  <span class="visually-hidden">
-                    Доступен авиаперелёт
-                  </span>
+              <ul class="invite-card__routes">
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--usa" href="#nowhere">
+                    США
+                  </a>
                 </li>
-                <li class="transportation__item transportation__item--bus" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен наземный транспорт
-                  </span>
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--australia" href="#nowhere">
+                    Австралия
+                  </a>
                 </li>
-                <li class="transportation__item transportation__item--active transportation__item--bicycle">
-                  <span class="visually-hidden">
-                    Доступен велотуризм
-                  </span>
-                </li>
-                <li class="transportation__item transportation__item--hiking" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен пешеходный туризм
-                  </span>
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--dominicana" href="#nowhere">
+                    Доминикана
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class="invite-card__user-level">
-              <p class="invite-card__section-title">
-                левел:
+          </li>
+
+          <li class="companions-catalog__card invite-card">
+            <img class="invite-card__image" src="img/rogovaya-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
+
+            <div class="invite-card__main-info">
+              <p class="invite-card__user-name invite-card__user-name--online">
+                Лариса<br class="invite-card mobile-only">
+                Роговая
               </p>
-              <b class="invite-card__level-value">
-                25
-              </b>
+
+              <p class="invite-card__tags">
+                <a class="invite-card__tag" href="#nowhere">
+                  #образование
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #карьера
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #учеба
+                </a>
+                <a class="invite-card__tag" href="#nowhere">
+                  #линкедин
+                </a>
+              </p>
+
+              <div class="invite-card__actions">
+                <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345675">
+                    Позвать!
+                  </button>
+                </form>
+
+                <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
+                  <button class="like-counter__like-toggler like-counter__like-toggler--liked" type="submit" name="liked-user-id" value="12345675" aria-label="Снять лайк">
+                    23
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
 
-          <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345676">
-              Позвать!
-            </button>
-          </form>
-        </li>
+            <div class="invite-card__sub-info">
+              <div class="invite-card__transportation">
+                <p class="invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle">транспорт:</span>
+                </p>
 
-        <li class="companions-catalog__card invite-card container">
-          <img class="invite-card__image" src="img/rogovaya-mobile@1x.jpg" alt="Фото пользователя" width="70" height="70">
+                <ul class="invite-card__transportation-list transportation">
+                  <li class="transportation__item transportation__item--active transportation__item--airplane">
+                    <span class="visually-hidden">
+                      Авиаперелёт (доступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--active transportation__item--bus">
+                    <span class="visually-hidden">
+                      Наземный транспорт (доступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--bicycle">
+                    <span class="visually-hidden">
+                      Велотуризм (недоступен)
+                    </span>
+                  </li>
+                  <li class="transportation__item transportation__item--hiking">
+                    <span class="visually-hidden">
+                      Пешеходный туризм (недоступен)
+                    </span>
+                  </li>
+                </ul>
+              </div>
 
-          <p class="invite-card__user-name">
-            Лариса<br>
-            Роговая
-          </p>
+              <div class="invite-card__level-info">
+                <p class="invite-card__subtitle-wrapper mobile-only">
+                  <span class="invite-card__subtitle invite-card__subtitle--align-r">левел:</span>
+                </p>
 
-          <p class="invite-card__user-status invite-card__user-status--online">
-            <span class="visually-hidden">
-              Онлайн
-            </span>
-          </p>
+                <p class="invite-card__user-level user-level user-level--light">
+                  <b class="user-level__value user-level__value--light">
+                    50
+                  </b>
+                  <span class="user-level__text user-level__text--light">
+                    level
+                  </span>
+                </p>
+              </div>
+            </div>
 
-          <form class="invite-card__likes like-counter" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="like-counter__like-toggler" type="submit" name="liked-user-id" value="12345675" aria-label="Лайкнуть">
-              23
-            </button>
-          </form>
-
-          <p class="invite-card__tags">
-            <a class="invite-card__tag" href="#nowhere">
-              #образование
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #карьера
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #учеба
-            </a>
-            <a class="invite-card__tag" href="#nowhere">
-              #линкедин
-            </a>
-          </p>
-
-          <div class="invite-card__wishes">
-            <p class="invite-card__section-title">
-              хочет посетить:
-            </p>
-            <ul class="invite-card__routes">
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--greatBritain" href="#nowhere">
-                  Великобритания
-                </a>
-              </li>
-              <li class="invite-card__route">
-                <a class="invite-card__route-name add-flag add-flag--germany" href="#nowhere">
-                  Германия
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="invite-card__columns">
-            <div class="invite-card__transportation">
-              <p class="invite-card__section-title">
-                транспорт:
+            <div class="invite-card__wishes">
+              <p class="invite-card__subtitle-wrapper">
+                <span class="invite-card__subtitle">хочет посетить:</span>
               </p>
-              <ul class="invite-card__transportation transportation">
-                <li class="transportation__item transportation__item--active transportation__item--airplane">
-                  <span class="visually-hidden">
-                    Доступен авиаперелёт
-                  </span>
+              <ul class="invite-card__routes">
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--greatBritain" href="#nowhere">
+                    Великобритания
+                  </a>
                 </li>
-                <li class="transportation__item transportation__item--active transportation__item--bus">
-                  <span class="visually-hidden">
-                    Доступен наземный транспорт
-                  </span>
-                </li>
-                <li class="transportation__item transportation__item--bicycle" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен велотуризм
-                  </span>
-                </li>
-                <li class="transportation__item transportation__item--hiking" aria-hidden="true">
-                  <span class="visually-hidden">
-                    Доступен пешеходный туризм
-                  </span>
+                <li class="invite-card__route">
+                  <a class="invite-card__route-name add-flag add-flag--germany" href="#nowhere">
+                    Германия
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class="invite-card__user-level">
-              <p class="invite-card__section-title">
-                левел:
-              </p>
-              <b class="invite-card__level-value">
-                50
-              </b>
-            </div>
-          </div>
+          </li>
+        </ul>
 
-          <form class="invite-card__call-form" action="https://echo.htmlacademy.ru" method="GET">
-            <button class="invite-card__call-button button" type="submit" name="invited-user-id" value="12345675">
-              Позвать!
-            </button>
-          </form>
-        </li>
-      </ul>
+        <a class="companions-catalog__more-button" href="#nowhere">
+          Показать еще
+        </a>
 
-      <a class="companions-catalog__more-button" href="#nowhere">
-        Показать еще
-      </a>
+        <ul class="companions-catalog__pagination pagination">
+          <li class="pagination__item pagination__item--number">
+            <a class="pagination__link pagination__link--number">
+              1
+            </a>
+          </li>
 
-      <ul class="companions-catalog__pagination pagination container">
-        <li class="pagination__item">
-          <a class="pagination__link pagination__link--previes" href="#nowhere">
-            <span class="visually-hidden">
-              Предыдущая страница
-            </span>
-          </a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link pagination__link--next" href="#nowhere">
-            <span class="visually-hidden">
-              Следующая страница
-            </span>
-          </a>
-        </li>
-      </ul>
-    </section>
+          <li class="pagination__item pagination__item--number">
+            <a class="pagination__link pagination__link--number" href="#nowhere">
+              2
+            </a>
+          </li>
+
+          <li class="pagination__item pagination__item--number">
+            <a class="pagination__link pagination__link--number" href="#nowhere">
+              3
+            </a>
+          </li>
+
+          <li class="pagination__item pagination__item--number">
+            <a class="pagination__link pagination__link--number" href="#nowhere">
+              4
+            </a>
+          </li>
+
+          <li class="pagination__item pagination__item--arrow pagination__item--arrow-left">
+            <a class="pagination__link pagination__link--arrow pagination__link--previes" href="#nowhere">
+              <span class="visually-hidden">
+                Предыдущая страница
+              </span>
+            </a>
+          </li>
+
+          <li class="pagination__item pagination__item--arrow pagination__item--arrow-right">
+            <a class="pagination__link pagination__link--arrow pagination__link--next" href="#nowhere">
+              <span class="visually-hidden">
+                Следующая страница
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
 
-  <footer class="page-footer page-footer--inner-page">
-    <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="96" height="15">
-    </a>
-
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--fb social__link--with-bg" href="#nowhere">
-          <span class="visually-hidden">
-            Фейсбук
-          </span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--vk social__link--with-bg" href="#nowhere">
-          <span class="visually-hidden">
-            Вконтакте
-          </span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--inst social__link--with-bg" href="#nowhere">
-          <span class="visually-hidden">
-            Инстаграмм
-          </span>
-        </a>
-      </li>
-    </ul>
-
-    <p class="page-footer__copyrights copyright">
-      <span class="copyright__text">
-        Разработано
-      </span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
-        <span class="visually-hidden">
-          HTML Academy
-        </span>
+  <footer class="page-footer page-footer--inner">
+    <div class="page-footer__container container">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="96" height="15">
       </a>
-    </p>
+
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--fb social__link--with-bg" href="#nowhere">
+            <span class="visually-hidden">
+              Фейсбук
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk social__link--with-bg" href="#nowhere">
+            <span class="visually-hidden">
+              Вконтакте
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst social__link--with-bg" href="#nowhere">
+            <span class="visually-hidden">
+              Инстаграмм
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="page-footer__copyrights copyright">
+        <span class="copyright__text">
+          Разработано
+        </span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+          <span class="visually-hidden">
+            HTML Academy
+          </span>
+        </a>
+      </p>
+    </div>
   </footer>
 </body>
 

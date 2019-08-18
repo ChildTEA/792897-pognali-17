@@ -1,0 +1,142 @@
+.route-card {
+  position: relative;
+
+  width: 270px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+
+  @media ($tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 618px;
+  }
+
+  @media ($desktop) {
+    width: 559px;
+  }
+}
+
+.route-card__image {
+  display: block;
+  width: 270px;
+  height: 110px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: $text-color-gray;
+  border-radius: 10px 10px 0 0;
+
+  @media ($tablet) {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+.route-card__info {
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+  margin-top: -11px;
+  padding: 27px 20px 16px 24px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  @media ($tablet) {
+    width: 432px;
+    margin-top: 0;
+    padding: 31px 50px 16px 30px;
+
+    border-radius: 20px 0 0 20px;
+  }
+
+  @media ($desktop) {
+    width: 373px;
+    padding-top: 24px;
+  }
+}
+
+.route-card__lead {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color-gray;
+
+  opacity: 0.3;
+
+  @media ($tablet) {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 17.68px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 22px;
+  }
+}
+
+.route-card__title {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: -4px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: $color-dark-alter;
+
+  @media ($tablet) {
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &--with-flag {
+    &::before {
+      position: absolute;
+      top: -39px;
+      left: 1px;
+
+      @media ($tablet) {
+        top: -15px;
+        left: 368px;
+      }
+
+      @media ($desktop) {
+        top: -1px;
+        left: 308px;
+      }
+    }
+  }
+}
+
+.route-card__visitors {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color-gray;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+
+  @media ($tablet) {
+    position: static;
+    padding-left: 29px;
+    font-size: 20px;
+  }
+}

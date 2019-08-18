@@ -1,0 +1,53 @@
+.like-counter__like-toggler {
+  position: relative;
+
+  padding-left: 37px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: inherit;
+  color: $color-dark-alter;
+
+  background-color: transparent;
+  border: none;
+
+  @media ($tablet) {
+    padding-left: 57px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    width: 31px;
+    height: 31px;
+
+    background-color: #f9eaea;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center 11px;
+    background-size: 13px 11px;
+    border-radius: 50%;
+
+    @media ($tablet) {
+      top: -11px;
+      width: 50px;
+      height: 50px;
+
+      background-position: center 18px;
+      background-size: 20px 17px;
+    }
+  }
+
+  &--liked {
+    &::before {
+      background-image: url("../img/heart-active.svg");
+    }
+  }
+}

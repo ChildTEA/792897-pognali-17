@@ -1,0 +1,172 @@
+.user-actions {
+  margin-top: $shift-top-mobile;
+  background-color: $color-dark-lighter;
+
+  @media ($tablet) {
+    margin-top: $shift-top-tablet;
+  }
+}
+
+.user-actions__container {
+  padding-top: 107px;
+
+  @media ($tablet) {
+    padding-top: 161px;
+  }
+
+  @media ($desktop) {
+    padding-top: 192px;
+  }
+}
+
+.user-actions__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media ($tablet) {
+    margin-bottom: 57px;
+  }
+}
+
+.user-actions__text-group {
+  margin-bottom: 28px;
+
+  @media ($tablet) {
+    margin-bottom: 63px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 57px;
+  }
+}
+
+.user-actions__text {
+  margin: 0 auto;
+  padding-right: 35px;
+  padding-left: 35px;
+
+  text-align: center;
+}
+
+.user-actions__link {
+  color: $color-bright-4;
+  text-decoration: underline;
+}
+
+.user-actions__form {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+
+  @media ($tablet) {
+    margin: 0 35px 50px;
+  }
+
+  @media ($desktop) {
+    margin: 0 74px 60px 72px;
+  }
+}
+
+.user-actions__input-description {
+  flex-grow: 1;
+}
+
+.user-actions__input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 225px;
+  height: 62px;
+  padding: 23px 30px 21px 23px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: inherit;
+  color: $text-color-gray;
+
+  border: none;
+  border-radius: 10px;
+  opacity: 1;
+
+  @media ($tablet) {
+    height: 81px;
+    padding-left: 34px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px 0 0 20px;
+  }
+
+  &::placeholder {
+    color: rgba($text-color-gray, 0.3);
+  }
+
+  &:hover {
+    &::placeholder {
+      color: rgba($text-color-gray, 0.5);
+    }
+  }
+}
+
+.user-actions__send-button {
+  position: relative;
+
+  width: 60px;
+  height: 62px;
+  margin-left: -15px;
+  padding: 0;
+
+  font-family: inherit;
+  color: $text-color-dark;
+
+  background-color: $color-bright-4;
+  border: none;
+  border-radius: 10px;
+
+  @media ($tablet) {
+    width: 82px;
+    height: 81px;
+    margin-left: 0;
+
+    border-radius: 0 20px 20px 0;
+  }
+
+  @media ($desktop) {
+    width: 324px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 23px;
+
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid;
+
+    transform: translateY(-50%);
+
+    @media ($tablet) {
+      right: 36px;
+    }
+  }
+
+  &::after {
+    @media ($desktop) {
+      content: "Регистрация";
+      position: absolute;
+      top: 30px;
+      left: 36px;
+
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: inherit;
+    }
+  }
+}

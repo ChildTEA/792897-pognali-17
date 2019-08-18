@@ -1,0 +1,224 @@
+.pricing {
+  position: relative;
+  counter-reset: num;
+
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 90px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: 1px;
+
+    width: 99px;
+    height: 99px;
+
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media ($tablet) {
+      top: auto;
+      right: 46px;
+      bottom: -88px;
+      z-index: 1;
+    }
+
+    @media ($desktop) {
+      top: 50%;
+      right: 74px;
+
+      width: 198px;
+      height: 198px;
+      margin-top: -98px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 46px;
+    bottom: -1px;
+    left: 0;
+
+    height: 1px;
+    background-color: $divider-color;
+
+    @media ($tablet) {
+      right: 35px;
+      bottom: 29px;
+      left: 85px;
+    }
+
+    @media ($desktop) {
+      right: 270px;
+    }
+  }
+}
+
+.pricing__text {
+  padding-right: 45px;
+
+  &--offer {
+    position: relative;
+    padding-top: 12px;
+
+    @media ($tablet) {
+      flex-grow: 1;
+      min-width: 60%;
+      padding-top: 17px;
+      padding-right: 20px;
+    }
+
+    @media ($desktop) {
+      flex-grow: 0;
+      width: 509px;
+      min-width: auto;
+      padding-top: 17px;
+      padding-right: 20px;
+    }
+
+    &::before {
+      content: counter(num);
+      position: absolute;
+      top: 4px;
+      right: 1px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      color: #ffffff;
+
+      background-color: $color-bright-2;
+      border-radius: 50%;
+      counter-increment: num;
+
+      @media ($tablet) {
+        top: -1px;
+        right: auto;
+        left: -90px;
+
+        width: 67px;
+        height: 67px;
+
+        font-size: 28px;
+        line-height: 28px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 45px;
+      left: 0;
+
+      height: 1px;
+
+      background-color: $divider-color;
+
+      @media ($tablet) {
+        right: -163px;
+        z-index: 1;
+      }
+
+      @media ($desktop) {
+        right: -285px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::before {
+        background-color: $color-bright-3;
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        background-color: $color-bright-4;
+      }
+    }
+  }
+
+  &--price {
+    position: relative;
+    margin-left: 0;
+    padding-bottom: 10px;
+
+    @media ($tablet) {
+      box-sizing: border-box;
+      width: 198px;
+      padding-top: 18px;
+      padding-right: 33px;
+      padding-bottom: 15px;
+
+      text-align: right;
+
+      background-color: #e2e5f2;
+      border-top: none;
+    }
+
+    @media ($desktop) {
+      width: 444px;
+      padding-right: 159px;
+    }
+
+    &:first-of-type {
+      &::before {
+        @media ($tablet) {
+          content: "";
+          position: absolute;
+          top: -43px;
+          right: 0;
+          left: 0;
+
+          height: 43px;
+
+          background-color: inherit;
+          border-radius: 20px 20px 0 0;
+        }
+
+        @media ($desktop) {
+          top: -51px;
+          width: 444px;
+          height: 51px;
+        }
+      }
+    }
+
+    &:last-of-type {
+      &::before {
+        @media ($tablet) {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: -44px;
+          left: 0;
+
+          height: 44px;
+
+          background-color: inherit;
+          border-radius: 0 0 20px 20px;
+        }
+
+        @media ($desktop) {
+          bottom: -51px;
+          width: 444px;
+          height: 51px;
+        }
+      }
+    }
+  }
+}

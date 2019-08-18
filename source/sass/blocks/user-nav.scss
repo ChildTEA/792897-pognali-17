@@ -1,0 +1,29 @@
+.user-nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.user-nav__link {
+  text-decoration: none;
+
+  @media ($tablet) {
+    padding-right: 30px;
+    padding-left: 28px;
+  }
+
+  @media ($desktop) {
+    padding-left: 29px;
+  }
+
+  &--login {
+    width: 129px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  &--bigger {
+    width: 210px;
+  }
+}

@@ -1,0 +1,25 @@
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 24px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-bright-1;
+
+  @media ($tablet) {
+    padding-left: 34px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media ($desktop) {
+    padding-left: 70px;
+  }
+
+  &--centered {
+    padding-left: 0;
+    text-align: center;
+  }
+}

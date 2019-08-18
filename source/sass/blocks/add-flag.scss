@@ -1,0 +1,65 @@
+.add-flag {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 35px;
+    height: 24px;
+
+    background-color: $text-color-gray;
+    border-radius: 3px;
+
+    @media ($tablet) {
+      width: 70px;
+      height: 47px;
+      border-radius: 7px;
+    }
+  }
+
+  &--australia::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--belgium::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--czech::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--dominicana::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--germany::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--greatBritain::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--france::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--seychelles::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+
+  &--sriLanka::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--thailand::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+
+  &--usa::before {
+    background-image: radial-gradient(circle, red 0, red 4px, blue 5px, blue 100%);
+  }
+}

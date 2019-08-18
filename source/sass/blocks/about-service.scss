@@ -1,0 +1,104 @@
+.about-service {
+  position: relative;
+  z-index: 6;
+  overflow: hidden;
+
+  background-color: $color-dark-lighter;
+  border-radius: $rounded-bottom-mobile;
+
+  @media ($tablet) {
+    border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.about-service__container {
+  padding-top: 33px;
+  padding-bottom: 67px;
+
+  background-color: $color-dark-lighter;
+  background-image: url("../img/about-mobile@1x.png"), url("../img/blue-back-square-mobile.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 4px) 0, calc(50% - 113px) 0;
+  background-origin: padding-box;
+
+  @media ($tablet) {
+    padding-top: 42px;
+    padding-bottom: 88px;
+
+    background-image: url("../img/about-tablet@1x.png"), url("../img/blue-back-rect-tablet.png");
+    background-position: right 8px top 48px, 40px 0;
+  }
+
+  @media ($desktop) {
+    padding-top: 132px;
+    padding-bottom: 163px;
+
+    background-image: url("../img/blue-back-square-desktop.png"), url("../img/about-desktop@1x.png");
+    background-position: 40px 71px, right 40px top 85px;
+  }
+}
+
+.about-service__title {
+  margin-bottom: 19px;
+
+  @media ($tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 58px;
+  }
+}
+
+.about-service__text {
+  margin-top: 0;
+  margin-bottom: 19px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @media ($tablet) {
+    margin-bottom: 31px;
+    padding-right: 350px;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 38px;
+    padding-right: 630px;
+    padding-left: 71px;
+  }
+
+  &--lead {
+    margin-bottom: 14px;
+    font-weight: 700;
+
+    @media ($tablet) {
+      margin-bottom: 51px;
+      font-size: 21px;
+      line-height: 25px;
+    }
+
+    @media ($desktop) {
+      margin-bottom: 84px;
+      padding-right: 835px;
+    }
+  }
+}
+
+.about-service__button-wrapper {
+  display: none;
+
+  @media ($tablet) {
+    display: block;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
+    padding-left: 71px;
+  }
+}
+
+.about-service__button {
+  display: table;
+  width: auto;
+}

@@ -1,0 +1,105 @@
+.travel-routes {
+  position: relative;
+  z-index: 5;
+
+  margin-top: $shift-top-mobile;
+  overflow: hidden;
+
+  color: $text-color-gray;
+
+  background-color: $color-light;
+  border-radius: $rounded-bottom-mobile;
+
+  @media ($tablet) {
+    margin-top: $shift-top-tablet;
+    border-radius: $rounded-bottom-tablet;
+  }
+}
+
+.travel-routes__container {
+  position: relative;
+  padding-top: 107px;
+  padding-bottom: 30px;
+
+  @media ($tablet) {
+    padding-top: 158px;
+    padding-bottom: 80px;
+
+    background-image: url("../img/flags-back@1x.png"), url("../img/light-back-square-tablet.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 165px, 40px 491px;
+  }
+
+  @media ($desktop) {
+    padding-top: 251px;
+    padding-bottom: 139px;
+    background-position: right 40px top 173px, 40px 174px;
+  }
+}
+
+.travel-routes__title {
+  margin-bottom: 20px;
+
+  @media ($tablet) {
+    margin-bottom: 59px;
+  }
+
+  @media ($desktop) {
+    padding-left: 800px;
+  }
+}
+
+.travel-routes__list {
+  margin: 0 auto 26px auto;
+  padding: 0;
+  list-style: none;
+
+  @media ($tablet) {
+    margin: 0 auto 47px auto;
+  }
+
+  @media ($desktop) {
+    position: absolute;
+    top: 246px;
+    left: 111px;
+
+    width: 559px;
+  }
+}
+
+.travel-routes__text {
+  margin-top: 0;
+  margin-bottom: 59px;
+  padding-right: 50px;
+  padding-left: 25px;
+
+  @media ($tablet) {
+    margin-bottom: 103px;
+    padding-right: 310px;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 95px;
+    padding-right: 175px;
+    padding-left: 800px;
+  }
+}
+
+.travel-routes__button-wrapper {
+  @media ($tablet) {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  @media ($desktop) {
+    padding-left: 804px;
+  }
+}
+
+.travel-routes__button {
+  @media ($desktop) {
+    display: table;
+    width: auto;
+  }
+}

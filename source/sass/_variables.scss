@@ -1,5 +1,14 @@
+// Screen resolution
+$gt-mobile: "max-width: 767px";
+$tablet: "min-width: 768px";
+$desktop: "min-width: 1440px";
+// $lt-desktop: "max-width: 1";
+$desktop-only: "max-width: 1439px";
+
+// Font
 $font-stack: "Blogger Sans", "Arial", "Trebuchet MS", sans-serif;
-$font-color-light: #ffffff;
+$text-color-gray: #444444;
+$text-color-dark: #1d2e5b;
 
 // Colors
 $color-bright-1: #ff8d30;
@@ -11,14 +20,14 @@ $color-dark-alter: #161c35;
 $color-dark: #161c36;
 $color-light: #edeff6;
 $color-dark-darkest: #121936;
-$text-color-white: #ffffff;
-$text-color-gray: #444444;
-$text-color-dark: #1d2e5b;
-
+$divider-color: rgba(0, 0, 0, 0.05);
 
 // Decoration
-$rounded-bottom: 0 0 30px 30px;
-$rounded-top: 30px 30px 0 0;
+$rounded-bottom-mobile: 0 0 30px 30px;
+$rounded-top-mobile: 30px 30px 0 0;
+$rounded-bottom-tablet: 0 0 60px 60px;
+$rounded-top-tablet: 60px 60px 0 0;
 
 // Section shift
-$shift-top: -35px;
+$shift-top-mobile: -35px;
+$shift-top-tablet: -85px;

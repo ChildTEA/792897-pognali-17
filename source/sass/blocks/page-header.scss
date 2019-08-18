@@ -1,0 +1,78 @@
+.page-header {
+  position: relative;
+  background-color: $color-dark;
+
+  @media ($tablet) {
+    background-color: #182044;
+  }
+
+  @media ($desktop) {
+    background-color: #161c34;
+  }
+
+  &--inner {
+    @media ($tablet) {
+      background-color: $color-dark-alter;
+    }
+  }
+}
+
+.page-header__hamburger {
+  position: absolute;
+  top: 4px;
+  right: 25px;
+  z-index: 3;
+
+  @media ($tablet) {
+    top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
+
+  &--inner {
+    top: 23px;
+
+    @media ($tablet) {
+      top: 22px;
+    }
+  }
+}
+
+.page-header__nav {
+  min-height: 43px;
+  padding-top: 27px;
+
+  @media ($tablet) {
+    padding-top: 40px;
+  }
+
+  @media ($desktop) {
+    padding-top: 49px;
+  }
+}
+
+.page-header__logo {
+  @media ($desktop) {
+    margin-right: 40px;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 100px;
+  height: 19px;
+
+  @media ($tablet) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media ($desktop) {
+    width: 200px;
+    height: 52px;
+  }
+}

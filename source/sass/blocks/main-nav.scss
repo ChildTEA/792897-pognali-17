@@ -1,0 +1,101 @@
+.main-nav {
+  z-index: 2;
+
+  &--open {
+    background-color: #ffffff;
+  }
+
+  &--inner {
+    padding-top: 19px;
+
+    @media ($tablet) {
+      padding-top: 40px;
+    }
+
+    @media ($desktop) {
+      padding-top: 49px;
+    }
+  }
+}
+
+.main-nav__container {
+  position: relative;
+
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media ($desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.main-nav__popup {
+  padding-top: 74px;
+
+  @media ($tablet) {
+    padding: 93px 57px 0;
+  }
+
+  @media ($desktop) {
+    display: block;
+    padding: 0;
+  }
+}
+
+.main-nav__site {
+  margin-bottom: 49px;
+
+  @media ($tablet) {
+    margin-bottom: 133px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.main-nav__side-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.main-nav__user {
+  margin: 0;
+
+  &--with-mb {
+    margin-bottom: 52px;
+  }
+}
+
+.main-nav__short-contacts {
+  margin: 0;
+}
+
+.main-nav__full-contacts {
+  margin: 0 0 30px;
+
+  @media ($tablet) {
+    margin-bottom: 111px;
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
+}
+
+.main-nav__social {
+  width: 135px;
+  margin: 0 auto;
+
+  @media ($tablet) {
+    width: auto;
+    margin-left: 3px;
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
+}
