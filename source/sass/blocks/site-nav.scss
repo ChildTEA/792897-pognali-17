@@ -47,6 +47,14 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    color: $color-bright-4;
+  }
+
+  &:active {
+    color: rgba($color-bright-4, 0.3);
+  }
+
   @media ($tablet) {
     font-size: 60px;
     line-height: 71.01px;

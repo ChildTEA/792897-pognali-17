@@ -2,6 +2,7 @@
   display: flex;
   padding: 0;
   list-style: none;
+  color: $color-dark-alter;
 
   @media ($tablet) {
     display: none;
@@ -22,6 +23,10 @@
   background-position: center center;
   border-radius: 50%;
 
+  &:active {
+    color: rgba($color-dark-alter, 0.3);
+  }
+
   @media ($desktop) {
     width: 50px;
     height: 50px;
@@ -32,6 +37,10 @@
     background-image: url("../img/topmenu-mail.svg");
     background-position: center;
     background-size: 18px 14px;
+
+    &:hover {
+      background-color: $color-bright-1;
+    }
   }
 
   &--phone {
@@ -42,6 +51,10 @@
 
     @media ($desktop) {
       background-position: 17px center;
+    }
+
+    &:hover {
+      background-color: #f26926;
     }
   }
 }

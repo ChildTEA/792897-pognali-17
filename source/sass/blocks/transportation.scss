@@ -8,6 +8,8 @@
 }
 
 .transportation__item {
+  position: relative;
+
   width: 32px;
   height: 32px;
 
@@ -32,6 +34,11 @@
   &:last-of-type {
     @media ($desktop) {
       margin-right: 0;
+    }
+
+    &[tooltip] {
+      content: atrr(tooltip);
+      position: absolute;
     }
   }
 

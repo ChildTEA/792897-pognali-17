@@ -19,6 +19,10 @@
     height: 60px;
   }
 
+  &:hover {
+    background-color: $color-bright-3;
+  }
+
   &--with-bg {
     background-color: $color-bright-4;
     border-radius: 50%;
