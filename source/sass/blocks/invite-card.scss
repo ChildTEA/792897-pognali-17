@@ -295,6 +295,7 @@
 }
 
 .invite-card__user-level {
+  position: relative;
   margin: -7px 2px 0 auto;
 
   @media ($tablet) {
@@ -304,6 +305,12 @@
   @media ($desktop) {
     margin-top: 0;
   }
+}
+
+.invite-card__level-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .invite-card__wishes {
