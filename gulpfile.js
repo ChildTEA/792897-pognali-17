@@ -10,6 +10,8 @@ var stylelint = require("gulp-stylelint");
 var editorconfig = require("gulp-lintspaces");
 var server = require("browser-sync").create();
 var editorconfigPaths = require("./package.json")["editorconfig-cli"];
+var svgstore = require('gulp-svgstore');
+var imagemin = require('gulp-imagemin');
 
 gulp.task("editorconfig", function () {
   return gulp.src(editorconfigPaths)
@@ -44,6 +46,18 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task('sprite', function () {
+  return gulp.src('source/img/sprite/**/*.svg')
+    .pipe(imagemin([
+      imagemin.svgo()
+    ]))
+    .pipe(svgstore({
+      name: 'sprite.svg',
+      inlineSvg: true
+    }))
+    .pipe(gulp.dest('source/img'));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -62,4 +76,4 @@ gulp.task("reload", function (done) {
   done();
 });
 
-gulp.task("start", gulp.series("editorconfig", "stylelint", "css", "server"));
+gulp.task("start", gulp.series("editorconfig", "stylelint", "css", "sprite", "server"));

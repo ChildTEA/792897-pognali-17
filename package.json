@@ -14,6 +14,7 @@
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
     "gulp-stylelint": "^9.0.0",
+    "gulp-svgstore": "^7.0.1",
     "htmlacademy-stylelint-config": "0.0.1",
     "stylelint": "10.1.x"
   },
@@ -21,11 +22,55 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
+    "build": "gulp sprite css",
     "start": "gulp start"
   },
   "stylelint": {
     "extends": "htmlacademy-stylelint-config"
+  },
+  "imagemin": {
+    "base": {
+      "base": "source/img"
+    },
+    "jpg": {
+      "max": 80,
+      "progressive": true
+    },
+    "svgo": {
+      "plugins": [
+        {
+          "removeViewBox": false
+        },
+        {
+          "removeTitle": true
+        },
+        {
+          "cleanupNumericValues": {
+            "floatPrecision": 2
+          }
+        },
+        {
+          "convertPathData": {
+            "floatPrecision": 2
+          }
+        },
+        {
+          "transformsWithOnePath": {
+            "floatPrecision": 2
+          }
+        },
+        {
+          "convertTransform": {
+            "floatPrecision": 2
+          }
+        },
+        {
+          "cleanupListOfValues": {
+            "floatPrecision": 2
+          }
+        }
+      ]
+    }
   },
   "browserslist": [
     "last 2 versions",
