@@ -30,6 +30,10 @@
     padding: 0 44px 0 0;
   }
 
+  &:hover {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }

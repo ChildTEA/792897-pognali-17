@@ -60,44 +60,52 @@
     margin-bottom: 0;
     padding-top: 1px;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 48%;  // Комментарий: Для подгонки под макет и адекватного отображения при изменении количества строк
-    left: 0;
+.map__point-icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
 
-    width: 45px;
-    height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
 
-    background-color: $color-dark-darkest;
-    background-image: url("../img/contacts-location.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 14px 22px;
-    border-radius: 50%;
+  background-color: $color-dark-darkest;
+  border-radius: 50%;
 
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 
-    @media ($tablet) {
-      top: 40%;
-      left: 35px;
+  @media ($tablet) {
+    top: 40%;
+    left: 35px;
+    width: 68px;
+    height: 68px;
+  }
 
-      width: 68px;
-      height: 68px;
+  @media ($desktop) {
+    top: 48%;
+    left: 6px;
+    width: 90px;
+    height: 90px;
+  }
+}
 
-      background-size: 21px 32px;
-    }
+.map__point-icon {
+  width: 14px;
+  height: 22px;
+  fill: $color-bright-4;
 
-    @media ($desktop) {
-      top: 48%;
-      left: 6px;
+  @media ($tablet) {
+    width: 21px;
+    height: 32px;
+  }
 
-      width: 90px;
-      height: 90px;
-
-      background-size: 28px 43px;
-    }
+  @media ($desktop) {
+    width: 28px;
+    height: 43px;
   }
 }
 

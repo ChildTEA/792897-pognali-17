@@ -14,6 +14,10 @@
     <nav class="page-header__nav main-nav main-nav--closed popup-wrapper">
       <div class="main-nav__container container">
         <button class="page-header__hamburger hamburger hamburger--opener" type="button">
+          <svg class="hamburger__icon" width="25" height="11" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#menu" />
+          </svg>
+
           <span class="visually-hidden">
             Переключить видимость меню
           </span>
@@ -92,6 +96,10 @@
           <ul class="main-nav__short-contacts contacts-menu desktop-only">
             <li class="contacts-menu__item">
               <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
+                <svg class="contacts-menu__link-icon contacts-menu__link-icon--phone" aria-hidden="true" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#topmenu-phone" />
+                </svg>
+
                 <span class="visually-hidden">
                   8 800 555-86-28
                 </span>
@@ -99,6 +107,10 @@
             </li>
             <li class="contacts-menu__item">
               <a class="contacts-menu__link contacts-menu__link--email" href="mailto:mail@htmlacademy.ru">
+                <svg class="contacts-menu__link-icon contacts-menu__link-icon--email" aria-hidden="true" width="18" height="14">
+                  <use xlink:href="img/sprite.svg#contacts-mail" />
+                </svg>
+
                 <span class="visually-hidden">
                   mail@htmlacademy.ru
                 </span>
@@ -137,6 +149,10 @@
           <ul class="intro__contacts contacts-menu">
             <li class="contacts-menu__item">
               <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
+                <svg class="contacts-menu__link-icon contacts-menu__link-icon--phone" aria-hidden="true" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#topmenu-phone" />
+                </svg>
+
                 <span class="visually-hidden">
                   8 800 555-86-28
                 </span>
@@ -144,6 +160,10 @@
             </li>
             <li class="contacts-menu__item">
               <a class="contacts-menu__link contacts-menu__link--email" href="mailto:mail@htmlacademy.ru">
+                <svg class="contacts-menu__link-icon contacts-menu__link-icon--email" aria-hidden="true" width="18" height="14">
+                  <use xlink:href="img/sprite.svg#contacts-mail" />
+                </svg>
+
                 <span class="visually-hidden">
                   mail@htmlacademy.ru
                 </span>
@@ -241,42 +261,65 @@
         <ul class="travel-routes__list">
           <li class="travel-routes__item route-card">
             <img class="route-card__image" src="img/thailand-mobile@1x.jpg" alt="Тайланд" width="270" height="110">
+
             <div class="route-card__info">
-              <p class="route-card__title route-card__title--with-flag add-flag add-flag--thailand">
+              <p class="route-card__title route-card__title--with-flag add-flag add-flag--thailand add-flag--thailand-m">
                 Тайланд
               </p>
+
               <p class="route-card__lead">
                 Джугли зовут!
               </p>
+
               <p class="route-card__visitors">
+                <svg class="route-card__visitors-icon" width="11" height="11" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#user" />
+                </svg>
+
                 18321
               </p>
             </div>
           </li>
+
           <li class="travel-routes__item route-card">
             <img class="route-card__image" src="img/france-mobile@1x.jpg" alt="Тайланд" width="270" height="110">
+
             <div class="route-card__info">
-              <p class="route-card__title route-card__title--with-flag add-flag add-flag--france">
+              <p class="route-card__title route-card__title--with-flag add-flag add-flag--france add-flag--france-m">
                 Франция
               </p>
+
               <p class="route-card__lead">
                 Трэ бьен, манифик!
               </p>
+
               <p class="route-card__visitors">
+                <svg class="route-card__visitors-icon" width="11" height="11" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#user" />
+                </svg>
+
                 12518
               </p>
             </div>
           </li>
+
           <li class="travel-routes__item route-card">
             <img class="route-card__image" src="img/czech-mobile@1x.jpg" alt="Тайланд" width="270" height="110">
+
             <div class="route-card__info">
-              <p class="route-card__title route-card__title--with-flag add-flag add-flag--czech">
+              <p class="route-card__title route-card__title--with-flag add-flag add-flag--czech add-flag--czech-m">
                 Чехия
               </p>
+
               <p class="route-card__lead">
                 Закоулки старой Европы
               </p>
+
               <p class="route-card__visitors">
+                <svg class="route-card__visitors-icon" width="11" height="11" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#user" />
+                </svg>
+
                 5326
               </p>
             </div>
@@ -314,9 +357,11 @@
                 <svg class="user-card__level-progress level-progress" width="60" height="60" role="presentation" aria-hidden="true">
                   <circle class="level-progress__bar" r="28.5" cx="30" cy="30" stroke-width="3" stroke-dasharray="176 180"></circle>
                 </svg>
+
                 <b class="user-level__value" aria-label="Уровень пользовотеля">
                   99
                 </b>
+
                 <span class="user-level__text">
                   level
                 </span>
@@ -350,7 +395,10 @@
                 <span class="visually-hidden">
                   Офлайн.
                 </span>
-                Таня Фирсова
+
+                <a class="user-card__profile-link" href="#nowhere">
+                  Таня Фирсова
+                </a>
               </p>
 
               <p class="user-card__tags">
@@ -375,22 +423,40 @@
               </p>
 
               <ul class="user-card__transportation transportation">
-                <li class="transportation__item transportation__item--alter transportation__item--active transportation__item--airplane">
+                <li class="transportation__item transportation__item--alter transportation__item--active">
+                  <svg class="transportation__icon transportation__icon--airplane" width="19" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#plane" />
+                  </svg>
+
                   <span class="visually-hidden">
                     Авиаперелёт (доступен)
                   </span>
                 </li>
-                <li class="transportation__item transportation__item--alter transportation__item--bus">
+
+                <li class="transportation__item transportation__item--alter">
+                  <svg class="transportation__icon transportation__icon--bus" width="17" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#bus" />
+                  </svg>
+
                   <span class="visually-hidden">
                     Наземный транспорт (недоступен)
                   </span>
                 </li>
-                <li class="transportation__item transportation__item--alter transportation__item--bicycle">
+
+                <li class="transportation__item transportation__item--alter">
+                  <svg class="transportation__icon transportation__icon--bicycle" width="24" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#bike" />
+                  </svg>
                   <span class="visually-hidden">
                     Велотуризм (недоступен)
                   </span>
                 </li>
-                <li class="transportation__item transportation__item--alter transportation__item--hiking">
+
+                <li class="transportation__item transportation__item--alter">
+                  <svg class="transportation__icon transportation__icon--hiking" width="20" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#run" />
+                  </svg>
+
                   <span class="visually-hidden">
                     Пешеходный туризм (недоступен)
                   </span>
@@ -407,9 +473,11 @@
                 <svg class="user-card__level-progress level-progress" width="60" height="60" role="presentation" aria-hidden="true">
                   <circle class="level-progress__bar" r="28.5" cx="30" cy="30" stroke-width="3" stroke-dasharray="148 180"></circle>
                 </svg>
+
                 <b class="user-level__value" aria-label="Уровень пользовотеля">
                   80
                 </b>
+
                 <span class="user-level__text">
                   level
                 </span>
@@ -440,7 +508,10 @@
                 <span class="visually-hidden">
                   Онлайн.
                 </span>
-                Петя Демин
+
+                <a class="user-card__profile-link" href="#nowhere">
+                  Петя Демин
+                </a>
               </p>
 
               <p class="user-card__tags">
@@ -462,22 +533,41 @@
               </p>
 
               <ul class="user-card__transportation transportation">
-                <li class="transportation__item transportation__item--alter transportation__item--active transportation__item--airplane">
+                <li class="transportation__item transportation__item--alter transportation__item--active">
+                  <svg class="transportation__icon transportation__icon--airplane" width="19" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#plane" />
+                  </svg>
+
                   <span class="visually-hidden">
                     Авиаперелёт (доступен)
                   </span>
                 </li>
-                <li class="transportation__item transportation__item--alter transportation__item--active transportation__item--bus">
+
+                <li class="transportation__item transportation__item--alter transportation__item--active">
+                  <svg class="transportation__icon transportation__icon--bus" width="17" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#bus" />
+                  </svg>
+
                   <span class="visually-hidden">
                     Наземный транспорт (доступен)
                   </span>
                 </li>
-                <li class="transportation__item transportation__item--alter transportation__item--bicycle">
+
+                <li class="transportation__item transportation__item--alter">
+                  <svg class="transportation__icon transportation__icon--bicycle" width="24" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#bike" />
+                  </svg>
+
                   <span class="visually-hidden">
                     Велотуризм (недоступен)
                   </span>
                 </li>
-                <li class="transportation__item transportation__item--alter transportation__item--active transportation__item--hiking">
+
+                <li class="transportation__item transportation__item--alter transportation__item--active">
+                  <svg class="transportation__icon transportation__icon--hiking" width="20" height="21" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#run" />
+                  </svg>
+
                   <span class="visually-hidden">
                     Пешеходный туризм (доступен)
                   </span>
@@ -523,6 +613,12 @@
         </dl>
 
         <a class="add-profile__business-pricing" href="#nowhere">
+          <div class="add-profile__business-pricing-icon-wrapper gt-mobile">
+            <svg class="add-profile__business-pricing-icon" width="17" height="21" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#business"/>
+            </svg>
+          </div>
+
           Показать тарифы для бизнеса
         </a>
       </div>
@@ -617,11 +713,24 @@
         <ul class="contacts__list contacts-list">
           <li class="contacts-list__item">
             <a class="contacts-list__link contacts-list__link--bright contacts-list__link--phone" href="tel:+78005558628">
+              <div class="contacts-list__link-icon-wrapper">
+                <svg class="contacts-list__link-icon contacts-list__link-icon--phone" width="18" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#contacts-phone" />
+                </svg>
+              </div>
+
               8 800 555-86-28
             </a>
           </li>
+
           <li class="contacts-list__item">
             <a class="contacts-list__link contacts-list__link--bright contacts-list__link--email" href="mailto:mail@htmlacademy.ru">
+              <div class="contacts-list__link-icon-wrapper">
+                <svg class="contacts-list__link-icon contacts-list__link-icon--email" width="18" height="13" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#contacts-mail" />
+                </svg>
+              </div>
+
               mail@htmlacademy.ru
             </a>
           </li>
@@ -637,9 +746,15 @@
           </h2>
 
           <div class="map__wrapper">
-            <p class="map__end-point">
+            <div class="map__end-point">
+              <div class="map__point-icon-wrapper">
+                <svg class="map__point-icon" width="14" height="22" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#contacts-location"/>
+                </svg>
+              </div>
+
               ул. Большая Конюшенная,&nbsp;19/8
-            </p>
+            </div>
 
             <a class="map__button button button--alter button--bordered">
               Проложить маршрут
@@ -661,21 +776,33 @@
 
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--fb social__link--with-bg" href="#nowhere">
+          <a class="social__link social__link--with-bg" href="#nowhere">
+            <svg class="social__link-icon social__link-icon--fb" width="11" height="21" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#facebook" />
+            </svg>
+
             <span class="visually-hidden">
               Фейсбук
             </span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--vk social__link--with-bg" href="#nowhere">
+          <a class="social__link social__link--with-bg" href="#nowhere">
+            <svg class="social__link-icon social__link-icon--vk" width="23" height="12" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#vk" />
+            </svg>
+
             <span class="visually-hidden">
               Вконтакте
             </span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--inst social__link--with-bg" href="#nowhere">
+          <a class="social__link social__link--with-bg" href="#nowhere">
+            <svg class="social__link-icon social__link-icon--inst" width="18" height="18" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#instagram" />
+            </svg>
+
             <span class="visually-hidden">
               Инстаграмм
             </span>

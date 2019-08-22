@@ -34,7 +34,6 @@
 
 .contacts-list__link {
   position: relative;
-
   display: block;
   padding-left: 61px;
 
@@ -53,59 +52,76 @@
     padding-left: 120px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -13px;
-    left: 0;
-
-    width: 45px;
-    height: 45px;
-    background-color: $color-dark-darkest;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-
-    @media ($tablet) {
-      top: -22px;
-      width: 68px;
-      height: 68px;
-    }
-
-    @media ($desktop) {
-      top: -33px;
-      width: 90px;
-      height: 90px;
-    }
+  &:hover {
+    color: $color-bright-3;
   }
 
-  &--phone::before {
-    background-image: url("../img/contacts-phone.svg");
-    background-size: 18px 18px;
-
-    @media ($tablet) {
-      background-size: 27px 27px;
-    }
-
-    @media ($desktop) {
-      background-size: 36px 36px;
-    }
-  }
-
-  &--email::before {
-    background-image: url("../img/contacts-mail.svg");
-    background-size: 18px 13px;
-
-    @media ($tablet) {
-      background-size: 27px 20px;
-    }
-
-    @media ($desktop) {
-      background-size: 36px 26px;
-    }
+  &:active {
+    opacity: 0.3;
   }
 
   &--bright {
     color: $color-bright-4;
+  }
+}
+
+.contacts-list__link-icon-wrapper {
+  position: absolute;
+  top: -13px;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  background-color: $color-dark-darkest;
+  border-radius: 50%;
+
+  @media ($tablet) {
+    top: -22px;
+    width: 68px;
+    height: 68px;
+  }
+
+  @media ($desktop) {
+    top: -33px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.contacts-list__link-icon {
+  fill: currentColor;
+
+  &--phone {
+    width: 18px;
+    height: 18px;
+
+    @media ($tablet) {
+      width: 27px;
+      height: 27px;
+    }
+
+    @media ($desktop) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &--email {
+    width: 18px;
+    height: 13px;
+
+    @media ($tablet) {
+      width: 28px;
+      height: 20px;
+    }
+
+    @media ($desktop) {
+      width: 36px;
+      height: 26px;
+    }
   }
 }

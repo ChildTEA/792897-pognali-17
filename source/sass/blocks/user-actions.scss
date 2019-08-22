@@ -52,6 +52,14 @@
 .user-actions__link {
   color: $color-bright-4;
   text-decoration: underline;
+
+  &:hover {
+    color: $color-bright-1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .user-actions__form {
@@ -99,14 +107,28 @@
     border-radius: 20px 0 0 20px;
   }
 
+  &:hover {
+    background-color: $color-light;
+
+    &::placeholder {
+      color: rgba($text-color-gray, 0.5);
+    }
+  }
+
+  &:active,
+  &:focus {
+    color: #ffffff;
+    background-color: $color-dark-lighter;
+    box-shadow: inset 0 0 0 4px #ffffff;
+  }
+
   &::placeholder {
     color: rgba($text-color-gray, 0.3);
   }
 
-  &:hover {
-    &::placeholder {
-      color: rgba($text-color-gray, 0.5);
-    }
+  &--warning {
+    color: #ff0000;
+    background-color: #ffefef;
   }
 }
 

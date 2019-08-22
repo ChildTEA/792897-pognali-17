@@ -10,8 +10,13 @@
 .transportation__item {
   position: relative;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
+
+  color: rgba(0, 0, 0, 0.15);
 
   background-color: $color-light;
   background-repeat: no-repeat;
@@ -42,47 +47,11 @@
     }
   }
 
-  &--airplane {
-    background-image: url("../img/plane.svg");
-    background-size: 14px 16px;
-
-    @media ($tablet) {
-      background-size: 19px 21px;
-    }
-  }
-
-  &--bus {
-    background-image: url("../img/bus.svg");
-    background-size: 13px 16px;
-
-    @media ($tablet) {
-      background-size: 17px 21px;
-    }
-  }
-
-  &--bicycle {
-    background-image: url("../img/bike.svg");
-    background-size: 19px 17px;
-
-    @media ($tablet) {
-      background-size: 24px 21px;
-    }
-  }
-
-  &--hiking {
-    background-image: url("../img/run.svg");
-    background-size: 15px 17px;
-
-    @media ($tablet) {
-      background-size: 20px 21px;
-    }
-  }
-
   &--alter {
     position: relative;
     width: 24px;
     height: 21px;
-    margin: 0 10px 0 0;  // Временно, для стилизации
+    margin: 0 10px 0 0;
 
     background-color: transparent;
     background-size: auto 21px;
@@ -91,5 +60,33 @@
     &:last-of-type {
       margin-right: 0;
     }
+  }
+
+  &--active {
+    color: $text-color-dark;
+  }
+}
+
+.transportation__icon {
+  fill: currentColor;
+
+  &--airplane {
+    width: 19px;
+    height: 21px;
+  }
+
+  &--bus {
+    width: 17px;
+    height: 21px;
+  }
+
+  &--bicycle {
+    width: 24px;
+    height: 21px;
+  }
+
+  &--hiking {
+    width: 20px;
+    height: 21px;
   }
 }

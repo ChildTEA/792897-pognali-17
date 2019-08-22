@@ -77,28 +77,40 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    color: #132576;
   }
 
   @media ($desktop) {
     margin-left: 71px;
   }
 
-  &::before {
-    @media ($tablet) {
-      content: "";
-      position: absolute;
-      top: -25px;
-      left: 0;
-
-      width: 67px;
-      height: 67px;
-
-      background-color: #e2e5f2;
-      background-image: url("../img/business.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 17px 21px;
-      border-radius: 50%;
-    }
+  &:hover {
+    color: rgba($color-dark-lighter, 0.7);
   }
+
+  &:active {
+    color: rgba($color-dark-lighter, 0.3);
+  }
+}
+
+.add-profile__business-pricing-icon-wrapper {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 67px;
+  height: 67px;
+
+  background-color: #e2e5f2;
+  border-radius: 50%;
+}
+
+.add-profile__business-pricing-icon {
+
+  width: 17px;
+  height: 21px;
+  fill: currentColor;
 }
