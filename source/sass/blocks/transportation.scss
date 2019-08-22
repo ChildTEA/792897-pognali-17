@@ -73,20 +73,48 @@
   &--airplane {
     width: 19px;
     height: 21px;
+
+    &-s {
+      @media ($gt-mobile) {
+        width: 14px;
+        height: 16px;
+      }
+    }
   }
 
   &--bus {
     width: 17px;
     height: 21px;
+
+    &-s {
+      @media ($gt-mobile) {
+        width: 13px;
+        height: 16px;
+      }
+    }
   }
 
   &--bicycle {
     width: 24px;
     height: 21px;
+
+    &-s {
+      @media ($gt-mobile) {
+        width: 19px;
+        height: 17px;
+      }
+    }
   }
 
   &--hiking {
     width: 20px;
     height: 21px;
+
+    &-s {
+      @media ($gt-mobile) {
+        width: 15px;
+        height: 17px;
+      }
+    }
   }
 }
