@@ -85,19 +85,11 @@
   padding-right: 30px;
   padding-left: 86px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-  color: $text-color-dark;
-
   @media ($tablet) {
     display: table;
     margin-bottom: 18px;
     padding-right: 28px;
     padding-left: 3px;
-
-    font-size: 30px;
-    line-height: 30px;
   }
 
   @media ($desktop) {
@@ -136,6 +128,27 @@
     &::before {
       background-color: #81e31e;
     }
+  }
+}
+
+.invite-card__profile-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color-dark;
+  text-decoration: none;
+
+  @media ($tablet) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
