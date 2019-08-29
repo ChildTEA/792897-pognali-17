@@ -95,17 +95,34 @@
 }
 
 .page-main__return-link {
-  padding: 2px 62px 0 0;
+  position: relative;
+  display: block;
+  padding: 6px 62px 0 0;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
 
-  background-image: url("../img/return.svg");
-  background-repeat: no-repeat;
-  background-position: right 0 top 1px;
-  background-size: 32px 16px;
-  background-origin: padding-box;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-main-return-icon {
+  position: absolute;
+  top: 7px;
+  right: 0;
+
+  width: 32px;
+  height: 16px;
+
+  fill: currentColor;
 }
 
 
