@@ -53,7 +53,8 @@
   color: $color-bright-4;
   text-decoration: underline;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-bright-1;
   }
 
@@ -107,7 +108,8 @@
     border-radius: 20px 0 0 20px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-light;
 
     &::placeholder {

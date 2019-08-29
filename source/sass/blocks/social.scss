@@ -23,7 +23,8 @@
     height: 60px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #ffffff;
     background-color: $color-dark-lighter;
   }
@@ -36,33 +37,6 @@
     background-color: $color-bright-4;
     border-radius: 50%;
   }
-
-  // &--fb {
-  //   background-image: url("../img/facebook.svg");
-  //   background-size: 11px 21px;
-
-  //   @media ($tablet) {
-  //     background-size: 14px 28px;
-  //   }
-  // }
-
-  // &--inst {
-  //   background-image: url("../img/instagram.svg");
-  //   background-size: 18px 18px;
-
-  //   @media ($tablet) {
-  //     background-size: 24px 24px;
-  //   }
-  // }
-
-  // &--vk {
-  //   background-image: url("../img/vk.svg");
-  //   background-size: 23px 12px;
-
-  //   @media ($tablet) {
-  //     background-size: 31px 16px;
-  //   }
-  // }
 }
 
 .social__link-icon {

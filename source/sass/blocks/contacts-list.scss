@@ -52,7 +52,8 @@
     padding-left: 120px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-bright-3;
   }
 

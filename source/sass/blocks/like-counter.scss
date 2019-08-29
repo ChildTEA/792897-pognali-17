@@ -18,28 +18,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: -6px;
-  //   left: 0;
-
-  //   width: 31px;
-  //   height: 31px;
-
-  //   background-color: #f9eaea;
-  //   border-radius: 50%;
-
-  //   @media ($tablet) {
-  //     top: -11px;
-  //     width: 50px;
-  //     height: 50px;
-
-  //     background-position: center 18px;
-  //     background-size: 20px 17px;
-  //   }
-  // }
 }
 
 .like-counter__icon-wrapper {
@@ -67,7 +45,8 @@
     background-size: 20px 17px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color-dark-lighter, 0.5);
     background-color: #e2e5f2;
   }
@@ -81,7 +60,8 @@
     color: #f02323;
     background-color: #f9eaea;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #f02323;
       background-color: #f9d8d8;
     }

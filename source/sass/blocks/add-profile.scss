@@ -84,7 +84,8 @@
     margin-left: 71px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color-dark-lighter, 0.7);
   }
 

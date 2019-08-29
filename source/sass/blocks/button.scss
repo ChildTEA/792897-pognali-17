@@ -23,7 +23,8 @@
     line-height: 30px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-bright-3;
   }
 

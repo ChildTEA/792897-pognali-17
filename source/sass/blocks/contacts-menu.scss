@@ -33,7 +33,8 @@
   &--email {
     background-color: $color-bright-3;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $color-bright-1;
     }
 
@@ -45,7 +46,8 @@
   &--phone {
     background-color: $color-bright-1;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #f26926;
     }
   }

@@ -66,14 +66,13 @@
     padding-right: 74px;  // Временное решение для центровки по макету
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($text-color-dark, 0.6);
-    // opacity: 0.6;
   }
 
   &:active {
     color: rgba($text-color-dark, 0.3);
-    // opacity: 0.3;
   }
 }
 

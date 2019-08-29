@@ -58,7 +58,8 @@
   }
 
   &[data-tip] {
-    &:hover {
+    &:hover,
+    &:focus {
       &::before {
         content: "";
         position: absolute;
