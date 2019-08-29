@@ -34,6 +34,8 @@
 
 .main-nav__popup {
   padding-top: 74px;
+  color: $color-dark-lighter;
+  background-color: #ffffff;
 
   @media ($tablet) {
     padding: 93px 57px 0;
@@ -42,6 +44,8 @@
   @media ($desktop) {
     display: block;
     padding: 0;
+    color: inherit;
+    background-color: transparent;
   }
 }
 
