@@ -87,31 +87,39 @@
         </div>
 
         <div class="main-nav__side-menu gt-mobile">
-            <ul class="main-nav__short-contacts contacts-menu">
-              <li class="contacts-menu__item">
-                <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
-                  <span class="visually-hidden">
-                    8 800 555-86-28
-                  </span>
-                </a>
-              </li>
-              <li class="contacts-menu__item">
-                <a class="contacts-menu__link contacts-menu__link--email" href="mailto:mail@htmlacademy.ru">
-                  <span class="visually-hidden">
-                    mail@htmlacademy.ru
-                  </span>
-                </a>
-              </li>
-            </ul>
+          <ul class="main-nav__short-contacts contacts-menu">
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__link contacts-menu__link--phone" href="tel:+78005558628">
+                <svg class="contacts-menu__link-icon contacts-menu__link-icon--phone" aria-hidden="true" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#topmenu-phone" />
+                </svg>
 
-            <ul class="main-nav__user user-nav">
-              <li class="user-nav__item">
-                <a class="user-nav__link user-nav__link--login button" href="#nowhere">
-                  Авторизация
-                </a>
-              </li>
-            </ul>
-          </div>
+                <span class="visually-hidden">
+                  8 800 555-86-28
+                </span>
+              </a>
+            </li>
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__link contacts-menu__link--email" href="mailto:mail@htmlacademy.ru">
+                <svg class="contacts-menu__link-icon contacts-menu__link-icon--email" aria-hidden="true" width="18" height="14">
+                  <use xlink:href="img/sprite.svg#contacts-mail" />
+                </svg>
+
+                <span class="visually-hidden">
+                  mail@htmlacademy.ru
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__user user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--login button" href="#nowhere">
+                Авторизация
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -122,12 +130,6 @@
         <h1 class="page-main__title">
           Направления
         </h1>
-
-        <p class="page-main__return">
-          <a href="index.html" class="page-main__return-link">
-            На главную
-          </a>
-        </p>
       </div>
     </div>
   </main>
@@ -176,4 +178,5 @@
     </div>
   </footer>
 </body>
+
 </html>
