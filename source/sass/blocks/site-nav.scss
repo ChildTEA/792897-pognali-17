@@ -58,21 +58,19 @@
     color: #ffffff;
   }
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
 
-    @media ($desktop) {
-      color: $color-bright-4;
-      opacity: 1;
+      @media ($desktop) {
+        color: $color-bright-4;
+        opacity: 1;
+      }
     }
-  }
 
-  &:active {
-    opacity: 0.3;
-
-    // @media ($desktop) {
-    //   color: rgba($color-bright-4, 0.3);
-    // }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
