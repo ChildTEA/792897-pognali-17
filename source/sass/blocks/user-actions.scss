@@ -161,6 +161,15 @@
     width: 324px;
   }
 
+  &:hover,
+  &:focus {
+    background-color: $color-bright-3;
+  }
+
+  &:active {
+    color: rgba($color-dark-alter, 0.3);
+  }
+
   &::before {
     content: "";
     position: absolute;
