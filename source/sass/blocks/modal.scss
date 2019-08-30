@@ -1,0 +1,45 @@
+.modal {
+  // position: absolute;
+  // z-index: 10;
+  // margin: 0 25px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 20px;
+
+  @media ($tablet) {
+    border-radius: 30px;
+  }
+
+  @media ($desktop) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.modal__close-button {
+  width: 100%;
+  // margin-top: 31px;
+  padding-top: 19px;
+  padding-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background-color: #f3f4f8;
+  border: none;
+  border-radius: 0 0 20px 20px;
+
+  @media ($tablet) {
+    // margin-top: 22px;
+    padding-top: 41px;
+    padding-bottom: 43px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
+}
