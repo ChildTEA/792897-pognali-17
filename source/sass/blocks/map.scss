@@ -62,7 +62,7 @@
   }
 }
 
-.map__point-icon-wrapper {
+.map__point-icon {
   position: absolute;
   top: 50%;
   left: 0;
@@ -91,23 +91,24 @@
     width: 90px;
     height: 90px;
   }
+
+  & svg {
+    width: 14px;
+    height: 22px;
+    fill: $color-bright-4;
+
+    @media ($tablet) {
+      width: 21px;
+      height: 32px;
+    }
+
+    @media ($desktop) {
+      width: 28px;
+      height: 43px;
+    }
+  }
 }
 
-.map__point-icon {
-  width: 14px;
-  height: 22px;
-  fill: $color-bright-4;
-
-  @media ($tablet) {
-    width: 21px;
-    height: 32px;
-  }
-
-  @media ($desktop) {
-    width: 28px;
-    height: 43px;
-  }
-}
 
 .map__button {
   @media ($tablet) {

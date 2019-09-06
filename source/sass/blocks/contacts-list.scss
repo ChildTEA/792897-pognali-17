@@ -66,7 +66,7 @@
   }
 }
 
-.contacts-list__link-icon-wrapper {
+.contacts-list__link-icon {
   position: absolute;
   top: -13px;
   left: 0;
@@ -91,38 +91,70 @@
     width: 90px;
     height: 90px;
   }
-}
-
-.contacts-list__link-icon {
-  fill: currentColor;
 
   &--phone {
-    width: 18px;
-    height: 18px;
+    & svg {
+      width: 18px;
+      height: 18px;
 
-    @media ($tablet) {
-      width: 27px;
-      height: 27px;
-    }
+      @media ($tablet) {
+        width: 27px;
+        height: 27px;
+      }
 
-    @media ($desktop) {
-      width: 36px;
-      height: 36px;
+      @media ($desktop) {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 
   &--email {
-    width: 18px;
-    height: 13px;
+    & svg {
+      width: 18px;
+      height: 13px;
 
-    @media ($tablet) {
-      width: 28px;
-      height: 20px;
-    }
+      @media ($tablet) {
+        width: 28px;
+        height: 20px;
+      }
 
-    @media ($desktop) {
-      width: 36px;
-      height: 26px;
+      @media ($desktop) {
+        width: 36px;
+        height: 26px;
+      }
     }
   }
 }
+
+// .contacts-list__link-icon {
+//   &--phone {
+//     width: 18px;
+//     height: 18px;
+
+//     @media ($tablet) {
+//       width: 27px;
+//       height: 27px;
+//     }
+
+//     @media ($desktop) {
+//       width: 36px;
+//       height: 36px;
+//     }
+//   }
+
+//   &--email {
+//     width: 18px;
+//     height: 13px;
+
+//     @media ($tablet) {
+//       width: 28px;
+//       height: 20px;
+//     }
+
+//     @media ($desktop) {
+//       width: 36px;
+//       height: 26px;
+//     }
+//   }
+// }
