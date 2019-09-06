@@ -1,4 +1,4 @@
-.like-counter__like-toggler {
+.like-counter__toggler {
   position: relative;
 
   padding-left: 37px;
@@ -20,7 +20,7 @@
   }
 }
 
-.like-counter__icon-wrapper {
+.like-counter__icon {
   position: absolute;
   top: -6px;
   left: 0;
@@ -70,22 +70,27 @@
       color: rgba(#f02323, 0.3);
       background-color: #f9d8d8;
     }
+
+    & .like-counter__icon-img--liked {
+      display: block;
+    }
+
+    & .like-counter__icon-img--no-like {
+      display: none;
+    }
+  }
+
+  & svg {
+    width: 13px;
+    height: 11px;
+
+    @media ($tablet) {
+      width: 20px;
+      height: 17px;
+    }
   }
 }
 
-.like-counter__like-icon {
-  width: 13px;
-  height: 11px;
-  fill: transparent;
-  stroke: currentColor;
-
-  @media ($tablet) {
-    width: 20px;
-    height: 17px;
-  }
-
-  &--liked {
-    fill: currentColor;
-    stroke: transparent;
-  }
+.like-counter__icon-img--liked {
+  display: none;
 }
