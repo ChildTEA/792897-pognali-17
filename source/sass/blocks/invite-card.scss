@@ -169,6 +169,14 @@
   }
 }
 
+.invite-card__name-component {
+  display: block;
+
+  @media ($tablet) {
+    display: inline;
+  }
+}
+
 .invite-card__tags {
   margin: 0 0 13px;
   padding-right: 35px;
