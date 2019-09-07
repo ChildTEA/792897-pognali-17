@@ -28,6 +28,10 @@
     background-image: url("../img/flags-back@1x.png"), url("../img/light-back-square-tablet.png");
     background-repeat: no-repeat;
     background-position: right 40px top 165px, 40px 491px;
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url("../img/flags-back@2x.png"), url("../img/light-back-square-tablet.png");
+    }
   }
 
   @media ($desktop) {
