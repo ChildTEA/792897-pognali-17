@@ -161,11 +161,11 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    opacity: $hover-opacity;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: $active-opacity;
   }
 }
 
