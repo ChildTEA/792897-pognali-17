@@ -49,25 +49,31 @@
 
   &--australia {
     &::before {
-      background-image: url("../img/flag-australia.png");
+      background-image: url("../img/flag-australia.svg");
+    }
+  }
+
+  &--bosnia {
+    &::before {
+      background-image: url("../img/flag-bosnia.svg");
     }
   }
 
   &--belgium {
     &::before {
-      background-image: url("../img/flag-belgium.png");
+      background-image: url("../img/flag-belgium.svg");
     }
   }
 
   &--czech {
     &::before {
-      background-image: url("../img/flag-czech_large.png");
+      background-image: url("../img/flag-czech.svg");
     }
   }
 
   &--dominicana {
     &::before {
-      background-image: url("../img/flag-dominica.png");
+      background-image: url("../img/flag-dominica.svg");
     }
   }
 
@@ -79,37 +85,37 @@
 
   &--greatBritain {
     &::before {
-      background-image: url("../img/flag-uk.png");
+      background-image: url("../img/flag-united-kingdom.svg");
     }
   }
 
   &--france {
     &::before {
-      background-image: url("../img/flag-france_large.png");
+      background-image: url("../img/flag-france.svg");
     }
   }
 
   &--seychelles {
     &::before {
-      background-image: url("../img/flag-seychelles.png");
+      background-image: url("../img/flag-seychelles.svg");
     }
   }
 
   &--sri-lanka {
     &::before {
-      background-image: url("../img/flag-sri-lanka.png");
+      background-image: url("../img/flag-sri-lanka.svg");
     }
   }
 
   &--thailand {
     &::before {
-      background-image: url("../img/flag-thailand_large.png");
+      background-image: url("../img/flag-thailand.svg");
     }
   }
 
   &--usa {
     &::before {
-      background-image: url("../img/flag-usa.png");
+      background-image: url("../img/flag-usa.svg");
     }
   }
 }
