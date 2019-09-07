@@ -813,7 +813,13 @@
         </div>
       </div>
       <div class="map__interactive-map">
-        <img class="map__placeholder" src="https://via.placeholder.com/320x546.png?text=Map" alt="Проложить маршрут от ул. Большая Конюшенная, 19/8" width="320" height="546">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg 1x, map-desktop@2x.jpg 2x">
+
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, map-tablet@2x.jpg 2x">
+
+          <img class="map__placeholder" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Проложить маршрут от ул. Большая Конюшенная, 19/8" width="320" height="546">
+        </picture>
       </div>
     </section>
   </main>
