@@ -5,7 +5,7 @@
 }
 
 .gt-mobile {
-  @media ($gt-mobile) {
+  @media ($mobile-only) {
     display: none;
   }
 }
